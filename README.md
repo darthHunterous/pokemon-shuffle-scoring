@@ -1,12 +1,12 @@
 # <img src="public/icons/icon.svg" alt="app icon" style="height: 1em;"> Pokémon Shuffle Scoring App
 
-This web app simplifies scoring of the card game [Forest Shuffle](https://lookout-spiele.de/en/games/forrestshuffle.html), published by [Lookout Games](https://lookout-spiele.de). After the game ends, players can select the cards they've played in their forest. The app calculates the final scores and determines the winner of the game.
+This web app simplifies scoring of the card game [Pokemon Shuffle](https://pokemonshuffle.figma.site/?lang=en) based on [Forest Shuffle](https://lookout-spiele.de/en/games/forrestshuffle.html), published by [Lookout Games](https://lookout-spiele.de). After the game ends, players can select the cards they've played in their forest. The app calculates the final scores and determines the winner of the game.
 
 The app is available at https://darthHunterous.github.io/pokemon-shuffle-scoring.
 
 ## Features
 
-- Easy scoring of Forest Shuffle plays
+- Easy scoring of Pokémon Shuffle plays
 - Support for all available expansions ([Alpine](https://lookout-spiele.de/en/games/forestshufflealpine.html), [Woodland Edge](https://lookout-spiele.de/en/games/forestshuffleedge.html) & [Exploration](https://www.lookout-spiele.de/en/games/exploration.html)) and promo cards
 - Multilingual (so far English, German & Dutch)
 - Offline functionality
