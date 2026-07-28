@@ -2,11 +2,11 @@ name: NodeJS
 
 on:
   push:
-    branches: ["*"]
+    branches:
+      - main
   pull_request:
-    branches: ["*"]
-  release:
-    types: [released]
+    branches:
+      - main
 
 jobs:
   build:
@@ -60,7 +60,6 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-    if: github.event_name == 'release'
     needs:
       - build
       - test
