@@ -1,7 +1,7 @@
 {
   "name": "Forest Shuffle Score App",
   "short_name": "Forest Shuffle",
-  "description": "De Forest Shuffle Scoring App vereenvoudigt het scoren van het kaartspel Forest Shuffle.",
+  "description": "De Pokémon Shuffle Scoring App vereenvoudigt het scoren van het kaartspel Forest Shuffle.",
   "theme_color": "#9ac81d",
   "background_color": "#0b0d0e",
   "display": "standalone",
