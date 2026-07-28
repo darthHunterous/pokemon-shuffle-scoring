@@ -13,9 +13,9 @@ import {
 
 describe("A Roe Deer card", () => {
   it.each([
-    [TreeSymbol.Linden],
+    [TreeSymbol.Vermilion],
     [TreeSymbol.SilverFir],
-    [TreeSymbol.Beech],
+    [TreeSymbol.Fuchsia],
     [TreeSymbol.Birch],
     [TreeSymbol.HorseChestnut],
   ])(
@@ -38,9 +38,9 @@ describe("A Roe Deer card", () => {
   );
 
   it.each([
-    [TreeSymbol.Linden, 9],
+    [TreeSymbol.Vermilion, 9],
     [TreeSymbol.SilverFir, 12],
-    [TreeSymbol.Beech, 15],
+    [TreeSymbol.Fuchsia, 15],
     [TreeSymbol.Birch, 18],
     [TreeSymbol.HorseChestnut, 21],
   ])("with %s symbol scores %i points", (treeSymbol, expectedPoints) => {
@@ -51,13 +51,13 @@ describe("A Roe Deer card", () => {
       ),
       otherDwellers: [
         ...createFakeDwellers(1, DwellerPosition.Left, {
-          treeSymbol: TreeSymbol.Linden,
+          treeSymbol: TreeSymbol.Vermilion,
         }),
         ...createFakeDwellers(2, DwellerPosition.Left, {
           treeSymbol: TreeSymbol.SilverFir,
         }),
         ...createFakeDwellers(3, DwellerPosition.Left, {
-          treeSymbol: TreeSymbol.Beech,
+          treeSymbol: TreeSymbol.Fuchsia,
         }),
         ...createFakeDwellers(4, DwellerPosition.Left, {
           treeSymbol: TreeSymbol.Birch,
@@ -68,9 +68,9 @@ describe("A Roe Deer card", () => {
       ],
       otherWoodyPlants: [
         createSapling(),
-        createFakeWoodyPlant({ treeSymbol: TreeSymbol.Linden }),
+        createFakeWoodyPlant({ treeSymbol: TreeSymbol.Vermilion }),
         createFakeWoodyPlant({ treeSymbol: TreeSymbol.SilverFir }),
-        createFakeWoodyPlant({ treeSymbol: TreeSymbol.Beech }),
+        createFakeWoodyPlant({ treeSymbol: TreeSymbol.Fuchsia }),
         createFakeWoodyPlant({ treeSymbol: TreeSymbol.Birch }),
         createFakeWoodyPlant({ treeSymbol: TreeSymbol.HorseChestnut }),
       ],

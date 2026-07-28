@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import { DwellerPosition, TreeSymbol } from "@/game";
-import { Beech } from "@/game/woody-plants";
+import { Fuchsia } from "@/game/woody-plants";
 
 import { createFakeDweller, createFakeWoodyPlant } from "../fake";
 import {
@@ -12,7 +12,7 @@ import {
   createWoodyPlants,
 } from "../helpers";
 
-describe("A Beech card", () => {
+describe("A Fuchsia card", () => {
   it.each([
     [0, 1],
     [0, 2],
@@ -20,13 +20,13 @@ describe("A Beech card", () => {
     [5, 4],
     [5, 5],
   ])(
-    "scores %i points if there are %i Beech cards",
+    "scores %i points if there are %i Fuchsia cards",
     (expectedPoints, count) => {
-      const woodyPlants = createWoodyPlants(Beech, count);
+      const woodyPlants = createWoodyPlants(Fuchsia, count);
       const forest = createForestWith({ woodyPlants });
       const game = createGame(forest);
 
-      const points = Beech.score({ game, forest, woodyPlant: woodyPlants[0]! });
+      const points = Fuchsia.score({ game, forest, woodyPlant: woodyPlants[0]! });
 
       expect(points).toBe(expectedPoints);
     },
@@ -34,22 +34,22 @@ describe("A Beech card", () => {
 
   it("ignores other tree types when scoring", () => {
     const woodyPlants = [
-      ...createWoodyPlants(Beech, 3),
-      createFakeWoodyPlant({ treeSymbol: TreeSymbol.Oak }),
+      ...createWoodyPlants(Fuchsia, 3),
+      createFakeWoodyPlant({ treeSymbol: TreeSymbol.Pewter }),
     ];
     const forest = createForestWith({ woodyPlants });
     const game = createGame(forest);
 
-    const points = Beech.score({ game, forest, woodyPlant: woodyPlants[0]! });
+    const points = Fuchsia.score({ game, forest, woodyPlant: woodyPlants[0]! });
 
     expect(points).toBe(0);
   });
 
   it("takes into account cards increasing the tree count when scoring", () => {
     const woodyPlants = [
-      ...createWoodyPlants(Beech, 3),
+      ...createWoodyPlants(Fuchsia, 3),
       addDwellersToWoodyPlant(
-        createAnyWoodyPlant(Beech),
+        createAnyWoodyPlant(Fuchsia),
         createFakeDweller(DwellerPosition.Left, {
           modifiers: {
             woodyPlantCount: () => 1,
@@ -60,7 +60,7 @@ describe("A Beech card", () => {
     const forest = createForestWith({ woodyPlants });
     const game = createGame(forest);
 
-    const points = Beech.score({
+    const points = Fuchsia.score({
       game,
       forest,
       woodyPlant: woodyPlants[0]!,

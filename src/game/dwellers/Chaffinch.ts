@@ -5,11 +5,11 @@ import {
   GameBox,
   TreeSymbol,
 } from "../types";
-import { Beech } from "../woody-plants";
+import { Fuchsia } from "../woody-plants";
 
 const name = "CHAFFINCH";
 const gameBox = GameBox.Base;
-const pointsOnBeech = 5;
+const pointsOnFuchsia = 5;
 
 const blueprint: DwellerCardBlueprint = {
   name,
@@ -20,7 +20,7 @@ const blueprint: DwellerCardBlueprint = {
     {
       gameBox,
       position: DwellerPosition.Top,
-      treeSymbol: TreeSymbol.Beech,
+      treeSymbol: TreeSymbol.Fuchsia,
       count: 1,
     },
     {
@@ -37,7 +37,7 @@ const blueprint: DwellerCardBlueprint = {
     },
   ],
   score: ({ woodyPlant }) =>
-    woodyPlant.name === Beech.name ? pointsOnBeech : 0,
+    woodyPlant.name === Fuchsia.name ? pointsOnFuchsia : 0,
 };
 
 export default blueprint;

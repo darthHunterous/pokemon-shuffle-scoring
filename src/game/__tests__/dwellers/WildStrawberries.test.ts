@@ -5,17 +5,17 @@ import { WildStrawberries } from "@/game/dwellers";
 import { CardType } from "@/game/types";
 import * as WoodyPlants from "@/game/woody-plants";
 import {
-  Beech,
+  Fuchsia,
   Birch,
   Blackthorne,
   DouglasFir,
   Elderberry,
   EuropeanLarch,
   HorseChestnut,
-  Linden,
+  Vermilion,
   MoorBirch,
   OChristmasTree,
-  TurkeyOak,
+  Mauville,
 } from "@/game/woody-plants";
 
 import {
@@ -76,12 +76,12 @@ describe("A Wild Strawberries card", () => {
         createAnyWoodyPlant(Elderberry),
         createAnyWoodyPlant(Blackthorne),
         // Trees
-        createAnyWoodyPlant(Beech),
+        createAnyWoodyPlant(Fuchsia),
         createAnyWoodyPlant(Birch),
         createAnyWoodyPlant(DouglasFir),
         createAnyWoodyPlant(EuropeanLarch),
         createAnyWoodyPlant(HorseChestnut),
-        createAnyWoodyPlant(Linden),
+        createAnyWoodyPlant(Vermilion),
       ],
     });
     const game = createGame(forest);
@@ -99,7 +99,7 @@ describe("A Wild Strawberries card", () => {
   it.each([
     [MoorBirch.name, MoorBirch.countsAs, MoorBirch],
     [OChristmasTree.name, OChristmasTree.countsAs, OChristmasTree],
-    [TurkeyOak.name, TurkeyOak.countsAs, TurkeyOak],
+    [Mauville.name, Mauville.countsAs, Mauville],
   ])("treats %s as %s when scoring", (_1, _2, blueprint) => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
       dwellerUnderTest: createAnyDweller(WildStrawberries),
@@ -108,10 +108,10 @@ describe("A Wild Strawberries card", () => {
         createAnyWoodyPlant(
           treeBlueprints.find((b) => b.name === blueprint.countsAs)!,
         ),
-        createAnyWoodyPlant(WoodyPlants.Beech),
+        createAnyWoodyPlant(WoodyPlants.Fuchsia),
         createAnyWoodyPlant(WoodyPlants.EuropeanLarch),
         createAnyWoodyPlant(WoodyPlants.HorseChestnut),
-        createAnyWoodyPlant(WoodyPlants.Linden),
+        createAnyWoodyPlant(WoodyPlants.Vermilion),
         createAnyWoodyPlant(WoodyPlants.StonePine),
         createAnyWoodyPlant(WoodyPlants.Sycamore),
       ],
