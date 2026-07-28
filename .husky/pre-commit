@@ -1,0 +1,3 @@
+npm run i18n:sort
+git add src/translations
+npm run i18n:check
