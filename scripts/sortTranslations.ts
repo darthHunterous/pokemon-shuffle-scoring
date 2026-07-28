@@ -11,7 +11,7 @@ for (const file of files) {
 
   const sortedMessages = Object.fromEntries(
     Object.entries(messages).sort(([a], [b]) =>
-      a.localeCompare(b),
+      a < b ? -1 : a > b ? 1 : 0,
     ),
   );
 
