@@ -1,8 +1,8 @@
-# <img src="public/icons/icon.svg" alt="app icon" style="height: 1em;"> Forest Shuffle Scoring App
+# <img src="public/icons/icon.svg" alt="app icon" style="height: 1em;"> Pokémon Shuffle Scoring App
 
 This web app simplifies scoring of the card game [Forest Shuffle](https://lookout-spiele.de/en/games/forrestshuffle.html), published by [Lookout Games](https://lookout-spiele.de). After the game ends, players can select the cards they've played in their forest. The app calculates the final scores and determines the winner of the game.
 
-The app is available at https://soldag.github.io/forest-shuffle-scoring.
+The app is available at https://darthHunterous.github.io/pokemon-shuffle-scoring.
 
 ## Features
 
@@ -28,13 +28,13 @@ This app is written in React with TypeScript. [Joy UI](https://mui.com/joy-ui/ge
 For developing, clone the repository, install the dependencies and start the development server:
 
 ```sh
-git clone git@github.com:soldag/forest-shuffle-scoring.git
-cd forest-shuffle-scoring
+git clone git@github.com:darthHunterous/pokemon-shuffle-scoring.git
+cd pokemon-shuffle-scoring
 npm install
 npm run dev
 ```
 
-The app is then available at http://localhost:5173/forest-shuffle-scoring.
+The app is then available at http://localhost:5173/pokemon-shuffle-scoring.
 
 ## Disclaimer
 

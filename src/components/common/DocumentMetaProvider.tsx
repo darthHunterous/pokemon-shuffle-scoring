@@ -40,7 +40,7 @@ const DocumentMetaProvider = () => {
         <link
           key={locale}
           rel="alternate"
-          href={`https://soldag.github.io/forest-shuffle-scoring/?lang=${locale}`}
+          href={`https://darthHunterous.github.io/pokemon-shuffle-scoring/?lang=${locale}`}
           hrefLang={locale}
         />
       ))}
