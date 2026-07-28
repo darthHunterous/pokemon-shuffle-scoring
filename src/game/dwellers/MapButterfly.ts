@@ -19,13 +19,13 @@ const blueprint: DwellerCardBlueprint = {
     {
       gameBox,
       position: DwellerPosition.Top,
-      treeSymbol: TreeSymbol.Linden,
+      treeSymbol: TreeSymbol.Vermilion,
       count: 1,
     },
     {
       gameBox,
       position: DwellerPosition.Top,
-      treeSymbol: TreeSymbol.Oak,
+      treeSymbol: TreeSymbol.Pewter,
       count: 1,
     },
     {

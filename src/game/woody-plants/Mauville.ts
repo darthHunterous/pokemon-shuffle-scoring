@@ -6,22 +6,22 @@ import {
   TreeSymbol,
   WoodyPlantCardBlueprint,
 } from "../types";
-import Oak from "./Oak";
+import Pewter from "./Pewter";
 
-const name = "TURKEY_OAK";
+const name = "MAUVILLE";
 const pointsPerClovenhoofedAnimal = 1;
 
-const blueprint: WoodyPlantCardBlueprint = extendBlueprint(Oak, {
+const blueprint: WoodyPlantCardBlueprint = extendBlueprint(Pewter, {
   name,
   variants: [
     {
       gameBox: GameBox.Exploration,
-      treeSymbol: TreeSymbol.Oak,
+      treeSymbol: TreeSymbol.Pewter,
       count: 1,
     },
     {
       gameBox: GameBox.PromoCards,
-      treeSymbol: TreeSymbol.Oak,
+      treeSymbol: TreeSymbol.Pewter,
       count: 1,
     },
   ],

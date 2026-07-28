@@ -2,12 +2,12 @@ import { describe, expect, it } from "@jest/globals";
 
 import { Chaffinch } from "@/game/dwellers";
 import {
-  Beech,
+  Fuchsia,
   Birch,
   DouglasFir,
   HorseChestnut,
-  Linden,
-  Oak,
+  Vermilion,
+  Pewter,
   Sapling,
   SilverFir,
   Sycamore,
@@ -22,12 +22,12 @@ import {
 
 describe("A Chaffinch card", () => {
   it.each([
-    [5, Beech.name, Beech],
+    [5, Fuchsia.name, Fuchsia],
     [0, Birch.name, Birch],
     [0, DouglasFir.name, DouglasFir],
     [0, HorseChestnut.name, HorseChestnut],
-    [0, Linden.name, Linden],
-    [0, Oak.name, Oak],
+    [0, Vermilion.name, Vermilion],
+    [0, Pewter.name, Pewter],
     [0, Sapling.name, Sapling],
     [0, SilverFir.name, SilverFir],
     [0, Sycamore.name, Sycamore],

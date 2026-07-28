@@ -5,7 +5,7 @@ import {
   GameBox,
   TreeSymbol,
 } from "../types";
-import { Oak } from "../woody-plants";
+import { Pewter } from "../woody-plants";
 
 const name = "RED_SQUIRREL";
 const gameBox = GameBox.Base;
@@ -20,7 +20,7 @@ const blueprint: DwellerCardBlueprint = {
     {
       gameBox,
       position: DwellerPosition.Top,
-      treeSymbol: TreeSymbol.Beech,
+      treeSymbol: TreeSymbol.Fuchsia,
       count: 1,
     },
     {
@@ -38,11 +38,11 @@ const blueprint: DwellerCardBlueprint = {
     {
       gameBox,
       position: DwellerPosition.Top,
-      treeSymbol: TreeSymbol.Oak,
+      treeSymbol: TreeSymbol.Pewter,
       count: 1,
     },
   ],
-  score: ({ woodyPlant }) => (woodyPlant.name == Oak.name ? points : 0),
+  score: ({ woodyPlant }) => (woodyPlant.name == Pewter.name ? points : 0),
 };
 
 export default blueprint;

@@ -1,8 +1,8 @@
 {
-  "name": "forest-shuffle-scoring",
+  "name": "pokemon-shuffle-scoring",
   "private": true,
-  "version": "0.5.1",
-  "homepage": "https://soldag.github.io/forest-shuffle-scoring",
+  "version": "0.0.1",
+  "homepage": "https://darthHunterous.github.io/pokemon-shuffle-scoring",
   "type": "module",
   "devEngines": {
     "runtime": {

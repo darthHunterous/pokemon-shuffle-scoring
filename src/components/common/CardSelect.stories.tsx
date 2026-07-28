@@ -122,10 +122,10 @@ export const WoodyPlant: Story = {
     cards: [
       {
         id: "90672103-0733-4e39-ba92-88c0c231cb9f",
-        name: "BEECH",
+        name: "FUCHSIA",
         gameBox: GameBox.Base,
         types: [CardType.Tree],
-        treeSymbol: TreeSymbol.Beech,
+        treeSymbol: TreeSymbol.Fuchsia,
         isPartOfDeck: true,
         dwellers: {
           [DwellerPosition.Top]: [],
@@ -150,10 +150,10 @@ export const WoodyPlant: Story = {
       },
       {
         id: "77f5b597-0ee6-4e7d-b19f-aeeadd0f8e33",
-        name: "LINDEN",
+        name: "VERMILION",
         gameBox: GameBox.Base,
         types: [CardType.Tree],
-        treeSymbol: TreeSymbol.Linden,
+        treeSymbol: TreeSymbol.Vermilion,
         isPartOfDeck: true,
         dwellers: {
           [DwellerPosition.Top]: [],

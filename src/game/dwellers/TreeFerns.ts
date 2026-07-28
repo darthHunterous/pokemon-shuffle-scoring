@@ -26,7 +26,7 @@ const blueprint: DwellerCardBlueprint = {
     {
       gameBox,
       position: DwellerPosition.Bottom,
-      treeSymbol: TreeSymbol.Linden,
+      treeSymbol: TreeSymbol.Vermilion,
       count: 1,
     },
     {

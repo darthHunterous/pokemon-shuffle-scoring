@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { BeechMarten } from "@/game/dwellers";
+import { Cubone } from "@/game/dwellers";
 import { createDweller } from "@/game/factory";
 import { DwellerPosition } from "@/game/types";
 
@@ -11,7 +11,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Beech Marten card", () => {
+describe("A Cubone card", () => {
   it.each([
     [0, 0, 0, 0],
     [0, 1, 0, 0],
@@ -21,10 +21,10 @@ describe("A Beech Marten card", () => {
   ])(
     "scores %i points with %i dwellers on top, %i on the bottom, %i on the left and 1 on the right",
     (expectedPoints, top, bottom, left) => {
-      const variant = BeechMarten.variants.find(
+      const variant = Cubone.variants.find(
         (v) => v.position === DwellerPosition.Right,
       )!;
-      const dweller = createDweller(BeechMarten, variant);
+      const dweller = createDweller(Cubone, variant);
       const woodyPlant = addDwellersToWoodyPlant(
         createFakeWoodyPlant(),
         ...createFakeDwellers(top, DwellerPosition.Top),
@@ -35,7 +35,7 @@ describe("A Beech Marten card", () => {
       const forest = createForestWith({ woodyPlants: [woodyPlant] });
       const game = createGame(forest);
 
-      const points = BeechMarten.score({
+      const points = Cubone.score({
         game,
         forest,
         woodyPlant,

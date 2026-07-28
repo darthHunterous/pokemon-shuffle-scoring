@@ -20,10 +20,10 @@ export const Default: Story = {
   args: {
     card: {
       id: "da4b1712-09fd-47ee-8595-c09ed5b657b3",
-      name: "LINDEN",
+      name: "VERMILION",
       gameBox: GameBox.Base,
       types: [CardType.Tree],
-      treeSymbol: TreeSymbol.Linden,
+      treeSymbol: TreeSymbol.Vermilion,
       isPartOfDeck: true,
       dwellers: {
         [DwellerPosition.Top]: [],

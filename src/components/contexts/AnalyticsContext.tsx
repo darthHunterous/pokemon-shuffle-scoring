@@ -9,7 +9,7 @@ import { useHashLocation } from "wouter/use-hash-location";
 
 const GOATCOUNTER_CONFIG = {
   src: "https://gc.zgo.at/count.js",
-  endpoint: "https://forest-shuffle-scoring.goatcounter.com/count",
+  endpoint: "https://pokemon-shuffle-scoring.goatcounter.com/count",
   settings: {
     no_onload: true,
   },

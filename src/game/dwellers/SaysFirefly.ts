@@ -18,13 +18,13 @@ const blueprint: DwellerCardBlueprint = extendBlueprint(Fireflies, {
     {
       gameBox: GameBox.Exploration,
       position: DwellerPosition.Bottom,
-      treeSymbol: TreeSymbol.Linden,
+      treeSymbol: TreeSymbol.Vermilion,
       count: 1,
     },
     {
       gameBox: GameBox.PromoCards,
       position: DwellerPosition.Bottom,
-      treeSymbol: TreeSymbol.Linden,
+      treeSymbol: TreeSymbol.Vermilion,
       count: 1,
     },
   ],

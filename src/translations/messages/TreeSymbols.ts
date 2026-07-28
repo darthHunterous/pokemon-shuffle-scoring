@@ -11,9 +11,9 @@ const messages = defineMessages<TreeSymbol, MessageDescriptor>({
     id: "TreeSymbols.Bamboo",
     defaultMessage: "Bamboo",
   },
-  BEECH: {
-    id: "TreeSymbols.Beech",
-    defaultMessage: "Beech",
+  FUCHSIA: {
+    id: "TreeSymbols.Fuchsia",
+    defaultMessage: "Fuchsia",
   },
   BIRCH: {
     id: "TreeSymbols.Birch",
@@ -35,13 +35,13 @@ const messages = defineMessages<TreeSymbol, MessageDescriptor>({
     id: "TreeSymbols.HorseChestnut",
     defaultMessage: "Horse Chestnut",
   },
-  LINDEN: {
-    id: "TreeSymbols.Linden",
-    defaultMessage: "Linden",
+  VERMILION: {
+    id: "TreeSymbols.Vermilion",
+    defaultMessage: "Vermilion",
   },
-  OAK: {
-    id: "TreeSymbols.Oak",
-    defaultMessage: "Oak",
+  PEWTER: {
+    id: "TreeSymbols.Pewter",
+    defaultMessage: "Pewter",
   },
   SILVER_FIR: {
     id: "TreeSymbols.SilverFir",

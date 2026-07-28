@@ -8,7 +8,7 @@ import {
 } from "../types";
 
 const name = "EUROPEAN_BISON";
-const pointsPerBeechOrOak = 2;
+const pointsPerFuchsiaOrPewter = 2;
 
 const blueprint: DwellerCardBlueprint = {
   name,
@@ -19,38 +19,38 @@ const blueprint: DwellerCardBlueprint = {
     {
       gameBox: GameBox.WoodlandEdge,
       position: DwellerPosition.Left,
-      treeSymbol: TreeSymbol.Beech,
+      treeSymbol: TreeSymbol.Fuchsia,
       count: 1,
     },
     {
       gameBox: GameBox.WoodlandEdge,
       position: DwellerPosition.Left,
-      treeSymbol: TreeSymbol.Oak,
+      treeSymbol: TreeSymbol.Pewter,
       count: 1,
     },
     {
       gameBox: GameBox.WoodlandEdge,
       position: DwellerPosition.Right,
-      treeSymbol: TreeSymbol.Beech,
+      treeSymbol: TreeSymbol.Fuchsia,
       count: 1,
     },
     // Promo card P007
     {
       gameBox: GameBox.Exploration,
       position: DwellerPosition.Left,
-      treeSymbol: TreeSymbol.Beech,
+      treeSymbol: TreeSymbol.Fuchsia,
       count: 1,
     },
     {
       gameBox: GameBox.PromoCards,
       position: DwellerPosition.Left,
-      treeSymbol: TreeSymbol.Beech,
+      treeSymbol: TreeSymbol.Fuchsia,
       count: 1,
     },
   ],
   score: ({ forest }) =>
-    countTreeSymbols(forest, [TreeSymbol.Beech, TreeSymbol.Oak]) *
-    pointsPerBeechOrOak,
+    countTreeSymbols(forest, [TreeSymbol.Fuchsia, TreeSymbol.Pewter]) *
+    pointsPerFuchsiaOrPewter,
 };
 
 export default blueprint;

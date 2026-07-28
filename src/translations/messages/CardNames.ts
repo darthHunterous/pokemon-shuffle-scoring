@@ -2,9 +2,9 @@ import { IntlShape, MessageDescriptor, defineMessages } from "react-intl";
 
 const messages = defineMessages<string, MessageDescriptor | undefined>({
   // Trees
-  BEECH: {
-    id: "CardNames.Beech",
-    defaultMessage: "Beech",
+  FUCHSIA: {
+    id: "CardNames.Fuchsia",
+    defaultMessage: "Fuchsia",
   },
   BIRCH: {
     id: "CardNames.Birch",
@@ -22,9 +22,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.HorseChestnut",
     defaultMessage: "Horse Chestnut",
   },
-  LINDEN: {
-    id: "CardNames.Linden",
-    defaultMessage: "Linden",
+  VERMILION: {
+    id: "CardNames.Vermilion",
+    defaultMessage: "Vermilion",
   },
   MOOR_BIRCH: {
     id: "CardNames.MoorBirch",
@@ -34,9 +34,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.OChristmasTree",
     defaultMessage: "O Christmas Tree",
   },
-  OAK: {
-    id: "CardNames.Oak",
-    defaultMessage: "Oak",
+  PEWTER: {
+    id: "CardNames.Pewter",
+    defaultMessage: "Pewter",
   },
   SAPLING: {
     id: "CardNames.Sapling",
@@ -54,9 +54,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Sycamore",
     defaultMessage: "Sycamore",
   },
-  TURKEY_OAK: {
-    id: "CardNames.TurkeyOak",
-    defaultMessage: "Turkey Oak",
+  MAUVILLE: {
+    id: "CardNames.Mauville",
+    defaultMessage: "Mauville",
   },
 
   // Shrubs
@@ -106,9 +106,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.BeeSwarm",
     defaultMessage: "Bee Swarm",
   },
-  BEECH_MARTEN: {
-    id: "CardNames.BeechMarten",
-    defaultMessage: "Beech Marten",
+  CUBONE: {
+    id: "CardNames.Cubone",
+    defaultMessage: "Cubone",
   },
   BLACKBERRIES: {
     id: "CardNames.Blackberries",

@@ -17,7 +17,7 @@ const blueprint: WoodyPlantCardBlueprint = {
   variants: [
     {
       gameBox,
-      treeSymbol: TreeSymbol.Beech,
+      treeSymbol: TreeSymbol.Fuchsia,
       count: 1,
     },
     {
@@ -32,7 +32,7 @@ const blueprint: WoodyPlantCardBlueprint = {
     },
     {
       gameBox,
-      treeSymbol: TreeSymbol.Oak,
+      treeSymbol: TreeSymbol.Pewter,
       count: 1,
     },
   ],

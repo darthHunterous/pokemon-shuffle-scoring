@@ -57,10 +57,10 @@ export const Empty: Story = {
   args: {
     ...createArgs({
       id: "da4b1712-09fd-47ee-8595-c09ed5b657b3",
-      name: "LINDEN",
+      name: "VERMILION",
       gameBox: GameBox.Base,
       types: [CardType.Tree],
-      treeSymbol: TreeSymbol.Linden,
+      treeSymbol: TreeSymbol.Vermilion,
       isPartOfDeck: true,
       dwellers: {
         [DwellerPosition.Top]: [],
@@ -77,10 +77,10 @@ export const FullyOccupied: Story = {
   args: {
     ...createArgs({
       id: "da4b1712-09fd-47ee-8595-c09ed5b657b3",
-      name: "LINDEN",
+      name: "VERMILION",
       gameBox: GameBox.Base,
       types: [CardType.Tree],
-      treeSymbol: TreeSymbol.Linden,
+      treeSymbol: TreeSymbol.Vermilion,
       isPartOfDeck: true,
       dwellers: {
         [DwellerPosition.Top]: [
@@ -111,7 +111,7 @@ export const FullyOccupied: Story = {
             name: "EUROPEAN_HARE",
             gameBox: GameBox.Base,
             types: [CardType.PawedAnimal],
-            treeSymbol: TreeSymbol.Beech,
+            treeSymbol: TreeSymbol.Fuchsia,
             isPartOfDeck: true,
             position: DwellerPosition.Left,
             modifiers: {
@@ -126,7 +126,7 @@ export const FullyOccupied: Story = {
             name: "EUROPEAN_HARE",
             gameBox: GameBox.Base,
             types: [CardType.PawedAnimal],
-            treeSymbol: TreeSymbol.Linden,
+            treeSymbol: TreeSymbol.Vermilion,
             isPartOfDeck: true,
             position: DwellerPosition.Left,
             modifiers: {

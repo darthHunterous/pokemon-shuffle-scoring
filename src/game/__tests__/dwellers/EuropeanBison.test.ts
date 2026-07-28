@@ -13,8 +13,8 @@ import {
 } from "../helpers";
 
 describe("A European Bison card", () => {
-  it("scores 2 points if there are no other cards with Beech or Oak symbol", () => {
-    const affectedTreeSymbols = [TreeSymbol.Beech, TreeSymbol.Oak];
+  it("scores 2 points if there are no other cards with Fuchsia or Pewter symbol", () => {
+    const affectedTreeSymbols = [TreeSymbol.Fuchsia, TreeSymbol.Pewter];
     const cardFilter = (c: WoodyPlantCard | DwellerCard) =>
       !c.treeSymbol || !affectedTreeSymbols.includes(c.treeSymbol);
 
@@ -37,17 +37,17 @@ describe("A European Bison card", () => {
     [1, 1, 6],
     [5, 5, 22],
   ])(
-    "with %s other Beech and %s Oak symbols scores %i points",
-    (beechCount, oakCount, expectedPoints) => {
+    "with %s other Fuchsia and %s Pewter symbols scores %i points",
+    (fuchsiaCount, pewterCount, expectedPoints) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
         dwellerUnderTest: createAnyDweller(EuropeanBison),
         otherWoodyPlants: [
           createSapling(),
-          ...createFakeWoodyPlants(beechCount, {
-            treeSymbol: TreeSymbol.Beech,
+          ...createFakeWoodyPlants(fuchsiaCount, {
+            treeSymbol: TreeSymbol.Fuchsia,
           }),
-          ...createFakeWoodyPlants(oakCount, {
-            treeSymbol: TreeSymbol.Oak,
+          ...createFakeWoodyPlants(pewterCount, {
+            treeSymbol: TreeSymbol.Pewter,
           }),
         ],
       });

@@ -3,12 +3,12 @@ import { defineMessages } from "react-intl";
 export default defineMessages({
   appName: {
     id: "Common.appName",
-    defaultMessage: "Forest Shuffle Scoring App",
+    defaultMessage: "Pokémon Shuffle Scoring App",
   },
   appDescription: {
     id: "Common.appDescription",
     defaultMessage:
-      "The Forest Shuffle Scoring App simplifies scoring of the card game Forest Shuffle.",
+      "The Pokémon Shuffle Scoring App simplifies scoring of the card game Forest Shuffle.",
   },
   appKeywords: {
     id: "Common.appKeywords",
