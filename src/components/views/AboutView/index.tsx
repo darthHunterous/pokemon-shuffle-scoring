@@ -20,7 +20,7 @@ const gameUrls = {
     "https://loja.galapagosjogos.com.br/forest-shuffle/produto/FSF001",
 };
 const publisherUrl = "https://lookout-spiele.de";
-const githubUrl = "https://github.com/soldag/forest-shuffle-scoring";
+const githubUrl = "https://github.com/darthHunterous/pokemon-shuffle-scoring";
 
 const contributions = [
   {
