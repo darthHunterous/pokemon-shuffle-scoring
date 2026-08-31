@@ -7,7 +7,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "SILVER_WASHED_FRITILLARY";
+const name = "BUTTERFREE";
 const gameBox = GameBox.Base;
 
 const blueprint: DwellerCardBlueprint = {

@@ -80,7 +80,7 @@ export { default as Sable } from "./Sable";
 export { default as SavisPipistrelle } from "./SavisPipistrelle";
 export { default as SaysFirefly } from "./SaysFirefly";
 export { default as Sheep } from "./Sheep";
-export { default as SilverWashedFritillary } from "./SilverWashedFritillary";
+export { default as Butterfree } from "./Butterfree";
 export { default as Squeaker } from "./Squeaker";
 export { default as StagBeetle } from "./StagBeetle";
 export { default as Steinbock } from "./Steinbock";

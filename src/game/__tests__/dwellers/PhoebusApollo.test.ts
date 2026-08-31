@@ -8,7 +8,7 @@ import {
   PeacockButterfly,
   PhoebusApollo,
   PurpleEmperor,
-  SilverWashedFritillary,
+  Butterfree,
 } from "@/game/dwellers";
 import { CardType, DwellerPosition } from "@/game/types";
 
@@ -49,7 +49,7 @@ describe("A Phoebus Apollo card", () => {
           MapButterfly,
           PeacockButterfly,
           PurpleEmperor,
-          SilverWashedFritillary,
+          Butterfree,
         ],
         lengths,
       );

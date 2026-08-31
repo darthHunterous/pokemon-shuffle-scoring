@@ -402,9 +402,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.SaysFirefly",
     defaultMessage: "Say's Firefly",
   },
-  SILVER_WASHED_FRITILLARY: {
-    id: "CardNames.SilverWashedFritillary",
-    defaultMessage: "Silver-Washed-Fritillary",
+  BUTTERFREE: {
+    id: "CardNames.Butterfree",
+    defaultMessage: "Butterfree",
   },
   STINGING_NETTLE: {
     id: "CardNames.StingingNettle",
