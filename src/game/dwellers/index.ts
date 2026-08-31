@@ -89,7 +89,7 @@ export { default as TawnyOwl } from "./TawnyOwl";
 export { default as TreeFerns } from "./TreeFerns";
 export { default as TreeFrog } from "./TreeFrog";
 export { default as Troll } from "./Troll";
-export { default as VioletCarpenterBee } from "./VioletCarpenterBee";
+export { default as Caterpie } from "./Caterpie";
 export { default as WaterVole } from "./WaterVole";
 export { default as Whinchat } from "./Whinchat";
 export { default as WhiteStork } from "./WhiteStork";

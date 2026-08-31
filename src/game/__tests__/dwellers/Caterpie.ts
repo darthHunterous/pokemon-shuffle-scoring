@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { VioletCarpenterBee } from "@/game/dwellers";
+import { Caterpie } from "@/game/dwellers";
 
 import {
   createAnyDweller,
@@ -9,14 +9,14 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Violet Carpenter Bee card", () => {
+describe("A Caterpie card", () => {
   it("scores 0 points in an empty forest", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(VioletCarpenterBee),
+      dwellerUnderTest: createAnyDweller(Caterpie),
     });
     const game = createGame(forest);
 
-    const points = VioletCarpenterBee.score({
+    const points = Caterpie.score({
       game,
       forest,
       woodyPlant,
@@ -28,11 +28,11 @@ describe("A Violet Carpenter Bee card", () => {
 
   it("scores 0 points in a complete forest", () => {
     const { dweller, woodyPlant, forest } = createCompleteForestWithDweller({
-      dwellerUnderTest: createAnyDweller(VioletCarpenterBee),
+      dwellerUnderTest: createAnyDweller(Caterpie),
     });
     const game = createGame(forest);
 
-    const points = VioletCarpenterBee.score({
+    const points = Caterpie.score({
       game,
       forest,
       woodyPlant,
