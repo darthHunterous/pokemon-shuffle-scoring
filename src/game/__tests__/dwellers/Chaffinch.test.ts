@@ -10,7 +10,7 @@ import {
   Pewter,
   Sapling,
   SilverFir,
-  Sycamore,
+  Celadon,
 } from "@/game/woody-plants";
 
 import {
@@ -30,7 +30,7 @@ describe("A Chaffinch card", () => {
     [0, Pewter.name, Pewter],
     [0, Sapling.name, Sapling],
     [0, SilverFir.name, SilverFir],
-    [0, Sycamore.name, Sycamore],
+    [0, Celadon.name, Celadon],
   ])(
     "scores %i points on top on a %s card",
     (expectedPoints, _, woodyPlantBlueprint) => {

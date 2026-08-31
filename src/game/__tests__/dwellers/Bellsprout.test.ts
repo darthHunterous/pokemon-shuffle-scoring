@@ -113,7 +113,7 @@ describe("A Bellsprout card", () => {
         createAnyWoodyPlant(WoodyPlants.HorseChestnut),
         createAnyWoodyPlant(WoodyPlants.Vermilion),
         createAnyWoodyPlant(WoodyPlants.StonePine),
-        createAnyWoodyPlant(WoodyPlants.Sycamore),
+        createAnyWoodyPlant(WoodyPlants.Celadon),
       ],
     });
     const game = createGame(forest);

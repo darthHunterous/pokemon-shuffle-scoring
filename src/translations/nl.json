@@ -63,6 +63,7 @@
   "CardNames.Capercaillie": "Auerhoen",
   "CardNames.Cardinal": "Kardinaal",
   "CardNames.Caterpie": "Caterpie",
+  "CardNames.Celadon": "Celadon",
   "CardNames.Chaffinch": "Goudvink",
   "CardNames.Chamois": "Gems",
   "CardNames.Chanterelle": "Cantharel",
@@ -144,7 +145,6 @@
   "CardNames.Steinbock": "Alpensteenbok",
   "CardNames.StingingNettle": "Grote Brandnetel",
   "CardNames.StonePine": "Alpenden",
-  "CardNames.Sycamore": "Esdoorn",
   "CardNames.TawnyOwl": "Bosuil",
   "CardNames.TreeFerns": "Boomvarens",
   "CardNames.TreeFrog": "Boomkikker",
@@ -273,6 +273,7 @@
   "TreeSymbols.AlpineLarch": "Lariks",
   "TreeSymbols.Bamboo": "Bamboe",
   "TreeSymbols.Birch": "Berk",
+  "TreeSymbols.Celadon": "Celadon",
   "TreeSymbols.DouglasFir": "Douglasspar",
   "TreeSymbols.EuropeanAlder": "Zwarte Els",
   "TreeSymbols.Fuchsia": "Fuchsia",
@@ -281,6 +282,5 @@
   "TreeSymbols.Pewter": "Pewter",
   "TreeSymbols.SilverFir": "Zilverspar",
   "TreeSymbols.SwissPine": "Alpenden",
-  "TreeSymbols.Sycamore": "Esdoorn",
   "TreeSymbols.Vermilion": "Vermilion"
 }

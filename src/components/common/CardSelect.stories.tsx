@@ -177,10 +177,10 @@ export const WoodyPlant: Story = {
       },
       {
         id: "562a054f-d4a8-4cfd-9371-c12b4ff46c87",
-        name: "SYCAMORE",
+        name: "CELADON",
         gameBox: GameBox.Base,
         types: [CardType.Tree],
-        treeSymbol: TreeSymbol.Sycamore,
+        treeSymbol: TreeSymbol.Celadon,
         isPartOfDeck: true,
         dwellers: {
           [DwellerPosition.Top]: [],

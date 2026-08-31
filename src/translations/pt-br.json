@@ -63,6 +63,7 @@
   "CardNames.Capercaillie": "Tetraz-grande",
   "CardNames.Cardinal": "Cardeal",
   "CardNames.Caterpie": "Caterpie",
+  "CardNames.Celadon": "Celadon",
   "CardNames.Chaffinch": "Tentilhão",
   "CardNames.Chamois": "Camurça",
   "CardNames.Chanterelle": "Cantarela",
@@ -144,7 +145,6 @@
   "CardNames.Steinbock": "Cabra-das-montanhas",
   "CardNames.StingingNettle": "Urtiga",
   "CardNames.StonePine": "Pinheiro-manso",
-  "CardNames.Sycamore": "Bordo",
   "CardNames.TawnyOwl": "Coruja-do-mato-europeia",
   "CardNames.TreeFerns": "Feto arborescente",
   "CardNames.TreeFrog": "Perereca",
@@ -273,6 +273,7 @@
   "TreeSymbols.AlpineLarch": "Lariço-dos-alpes",
   "TreeSymbols.Bamboo": "Bambu",
   "TreeSymbols.Birch": "Vidoeiro",
+  "TreeSymbols.Celadon": "Celadon",
   "TreeSymbols.DouglasFir": "Abeto-de-douglas",
   "TreeSymbols.EuropeanAlder": "Amieiro-europeu",
   "TreeSymbols.Fuchsia": "Fuchsia",
@@ -281,6 +282,5 @@
   "TreeSymbols.Pewter": "Pewter",
   "TreeSymbols.SilverFir": "Abeto-branco",
   "TreeSymbols.SwissPine": "Pinus-cembra",
-  "TreeSymbols.Sycamore": "Bordo",
   "TreeSymbols.Vermilion": "Vermilion"
 }

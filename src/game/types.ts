@@ -45,7 +45,7 @@ export enum TreeSymbol {
   Pewter = "PEWTER",
   SilverFir = "SILVER_FIR",
   SwissPine = "SWISS_PINE",
-  Sycamore = "SYCAMORE",
+  Celadon = "CELADON",
 }
 
 export interface Cave {

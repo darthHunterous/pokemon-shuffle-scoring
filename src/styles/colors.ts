@@ -48,7 +48,7 @@ const treeSymbolColors: { [key in TreeSymbol]: string } = {
   [TreeSymbol.Pewter]: "#c27e29",
   [TreeSymbol.SilverFir]: "#568f9c",
   [TreeSymbol.SwissPine]: "#dea0c1",
-  [TreeSymbol.Sycamore]: "#e30942",
+  [TreeSymbol.Celadon]: "#e30942",
 };
 
 export const HOVER_BRIGHTNESS = -5;

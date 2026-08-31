@@ -32,7 +32,7 @@ const blueprint: WoodyPlantCardBlueprint = {
     },
     {
       gameBox,
-      treeSymbol: TreeSymbol.Sycamore,
+      treeSymbol: TreeSymbol.Celadon,
       count: 1,
     },
   ],

@@ -14,5 +14,5 @@ export { default as PalmTree } from "./PalmTree";
 export { default as Sapling } from "./Sapling";
 export { default as SilverFir } from "./SilverFir";
 export { default as StonePine } from "./StonePine";
-export { default as Sycamore } from "./Sycamore";
+export { default as Celadon } from "./Celadon";
 export { default as Mauville } from "./Mauville";
