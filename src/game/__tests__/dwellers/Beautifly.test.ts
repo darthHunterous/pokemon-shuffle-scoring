@@ -2,7 +2,7 @@ import { describe, expect, it } from "@jest/globals";
 
 import {
   Brimstone,
-  CamberwellBeauty,
+  Beautifly,
   LargeTortoiseshell,
   MapButterfly,
   PeacockButterfly,
@@ -21,7 +21,7 @@ import {
   generateCardIds,
 } from "../helpers";
 
-describe("A Camberwell Beauty card", () => {
+describe("A Beautifly card", () => {
   it.each([
     [0, [1]],
     [3, [2]],
@@ -41,7 +41,7 @@ describe("A Camberwell Beauty card", () => {
     "scores %i points for a set of butterflies with lengths %p",
     (expectedPoints, lengths) => {
       const { dwellerUnderTest, otherDwellers } = createDwellerSets(
-        CamberwellBeauty,
+        Beautifly,
         [
           Brimstone,
           LargeTortoiseshell,
@@ -59,7 +59,7 @@ describe("A Camberwell Beauty card", () => {
       });
       const game = createGame(forest);
 
-      const points = CamberwellBeauty.score({
+      const points = Beautifly.score({
         game,
         forest,
         woodyPlant,
@@ -74,7 +74,7 @@ describe("A Camberwell Beauty card", () => {
     const ids = generateCardIds(2).toSorted();
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
       dwellerUnderTest: {
-        ...createAnyDweller(CamberwellBeauty),
+        ...createAnyDweller(Beautifly),
         id: ids[1],
       },
       otherDwellers: [
@@ -86,7 +86,7 @@ describe("A Camberwell Beauty card", () => {
     });
     const game = createGame(forest);
 
-    const points = CamberwellBeauty.score({
+    const points = Beautifly.score({
       game,
       forest,
       woodyPlant,

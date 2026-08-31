@@ -34,7 +34,7 @@ export const Bottom: Story = {
   args: {
     card: {
       id: "43f458f5-81ea-4019-a479-949d74094776",
-      name: "BLACKBERRIES",
+      name: "BULBASAUR",
       gameBox: GameBox.Base,
       types: [CardType.Plant],
       treeSymbol: TreeSymbol.SilverFir,

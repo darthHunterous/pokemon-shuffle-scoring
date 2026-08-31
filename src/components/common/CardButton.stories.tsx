@@ -21,7 +21,7 @@ export const SingleColor: Story = {
   args: {
     card: {
       id: "43f458f5-81ea-4019-a479-949d74094776",
-      name: "BLACKBERRIES",
+      name: "BULBASAUR",
       types: [CardType.Plant],
       treeSymbol: TreeSymbol.SilverFir,
       isPartOfDeck: true,

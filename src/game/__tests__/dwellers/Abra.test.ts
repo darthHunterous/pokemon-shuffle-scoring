@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { PennyBun } from "@/game/dwellers";
+import { Abra } from "@/game/dwellers";
 
 import {
   createAnyDweller,
@@ -12,11 +12,11 @@ import {
 describe("A Penny Bun card", () => {
   it("scores no points in an empty forest", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(PennyBun),
+      dwellerUnderTest: createAnyDweller(Abra),
     });
     const game = createGame(forest);
 
-    const points = PennyBun.score({
+    const points = Abra.score({
       game,
       forest,
       woodyPlant,
@@ -28,11 +28,11 @@ describe("A Penny Bun card", () => {
 
   it("scores no points in a complete forest", () => {
     const { dweller, woodyPlant, forest } = createCompleteForestWithDweller({
-      dwellerUnderTest: createAnyDweller(PennyBun),
+      dwellerUnderTest: createAnyDweller(Abra),
     });
     const game = createGame(forest);
 
-    const points = PennyBun.score({
+    const points = Abra.score({
       game,
       forest,
       woodyPlant,

@@ -2,7 +2,7 @@ import { describe, expect, it } from "@jest/globals";
 
 import {
   Brimstone,
-  CamberwellBeauty,
+  Beautifly,
   LargeTortoiseshell,
   MapButterfly,
   PeacockButterfly,
@@ -44,7 +44,7 @@ describe("A Silver-Washed Fritillary card", () => {
         SilverWashedFritillary,
         [
           Brimstone,
-          CamberwellBeauty,
+          Beautifly,
           LargeTortoiseshell,
           MapButterfly,
           PeacockButterfly,

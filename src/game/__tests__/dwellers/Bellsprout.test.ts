@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 import * as _ from "lodash-es";
 
-import { WildStrawberries } from "@/game/dwellers";
+import { Bellsprout } from "@/game/dwellers";
 import { CardType } from "@/game/types";
 import * as WoodyPlants from "@/game/woody-plants";
 import {
@@ -25,19 +25,19 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Wild Strawberries card", () => {
+describe("A Bellsprout card", () => {
   const treeBlueprints = Object.values(WoodyPlants).filter((w) =>
     w.types.includes(CardType.Tree),
   );
 
   it("scores 10 points if forest has all tree species", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(WildStrawberries),
+      dwellerUnderTest: createAnyDweller(Bellsprout),
       otherWoodyPlants: treeBlueprints.map(createAnyWoodyPlant),
     });
     const game = createGame(forest);
 
-    const points = WildStrawberries.score({
+    const points = Bellsprout.score({
       game,
       forest,
       woodyPlant,
@@ -52,12 +52,12 @@ describe("A Wild Strawberries card", () => {
     (treeCount) => {
       const trees = treeBlueprints.slice(0, treeCount).map(createAnyWoodyPlant);
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(WildStrawberries),
+        dwellerUnderTest: createAnyDweller(Bellsprout),
         otherWoodyPlants: trees,
       });
       const game = createGame(forest);
 
-      const points = WildStrawberries.score({
+      const points = Bellsprout.score({
         game,
         forest,
         woodyPlant,
@@ -70,7 +70,7 @@ describe("A Wild Strawberries card", () => {
 
   it("ignores shrubs when scoring", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(WildStrawberries),
+      dwellerUnderTest: createAnyDweller(Bellsprout),
       otherWoodyPlants: [
         // Shrubs
         createAnyWoodyPlant(Elderberry),
@@ -86,7 +86,7 @@ describe("A Wild Strawberries card", () => {
     });
     const game = createGame(forest);
 
-    const points = WildStrawberries.score({
+    const points = Bellsprout.score({
       game,
       forest,
       woodyPlant,
@@ -102,7 +102,7 @@ describe("A Wild Strawberries card", () => {
     [Mauville.name, Mauville.countsAs, Mauville],
   ])("treats %s as %s when scoring", (_1, _2, blueprint) => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(WildStrawberries),
+      dwellerUnderTest: createAnyDweller(Bellsprout),
       otherWoodyPlants: [
         createAnyWoodyPlant(blueprint),
         createAnyWoodyPlant(
@@ -118,7 +118,7 @@ describe("A Wild Strawberries card", () => {
     });
     const game = createGame(forest);
 
-    const points = WildStrawberries.score({
+    const points = Bellsprout.score({
       game,
       forest,
       woodyPlant,

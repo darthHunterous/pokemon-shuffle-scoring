@@ -2,7 +2,7 @@ import { describe, expect, it } from "@jest/globals";
 
 import {
   Brimstone,
-  CamberwellBeauty,
+  Beautifly,
   LargeTortoiseshell,
   MapButterfly,
   PeacockButterfly,
@@ -44,7 +44,7 @@ describe("A Phoebus Apollo card", () => {
         PhoebusApollo,
         [
           Brimstone,
-          CamberwellBeauty,
+          Beautifly,
           LargeTortoiseshell,
           MapButterfly,
           PeacockButterfly,

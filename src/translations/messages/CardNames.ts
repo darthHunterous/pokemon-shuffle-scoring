@@ -110,9 +110,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Cubone",
     defaultMessage: "Cubone",
   },
-  BLACKBERRIES: {
-    id: "CardNames.Blackberries",
-    defaultMessage: "Blackberries",
+  BULBASAUR: {
+    id: "CardNames.Bulbasaur",
+    defaultMessage: "Bulbasaur",
   },
   BLACK_TRUMPET: {
     id: "CardNames.BlackTrumpet",
@@ -138,9 +138,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Bullfinch",
     defaultMessage: "Bullfinch",
   },
-  CAMBERWELL_BEAUTY: {
-    id: "CardNames.CamberwellBeauty",
-    defaultMessage: "Camberwell Beauty",
+  BEAUTIFLY: {
+    id: "CardNames.Beautifly",
+    defaultMessage: "Beautifly",
   },
   CAPERCAILLIE: {
     id: "CardNames.Capercaillie",
@@ -342,8 +342,8 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.PeacockButterfly",
     defaultMessage: "Peacock Butterfly",
   },
-  PENNY_BUN: {
-    id: "CardNames.PennyBun",
+  ABRA: {
+    id: "CardNames.Abra",
     defaultMessage: "Penny Bun",
   },
   PHOEBUS_APOLLO: {
@@ -454,9 +454,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.WildBoar",
     defaultMessage: "Wild Boar",
   },
-  WILD_STRAWBERRIES: {
-    id: "CardNames.WildStrawberries",
-    defaultMessage: "Wild Strawberries",
+  BELLSPROUT: {
+    id: "CardNames.Bellsprout",
+    defaultMessage: "Bellsprout",
   },
   WILD_TULIP: {
     id: "CardNames.WildTulip",

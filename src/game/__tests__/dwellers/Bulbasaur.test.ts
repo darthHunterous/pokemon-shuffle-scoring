@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { Blackberries } from "@/game/dwellers";
+import { Bulbasaur } from "@/game/dwellers";
 import { CardType, DwellerPosition } from "@/game/types";
 
 import { createFakeDwellers } from "../fake";
@@ -11,7 +11,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Blackberries card", () => {
+describe("A Bulbasaur card", () => {
   it.each([
     [2, 0],
     [4, 1],
@@ -20,7 +20,7 @@ describe("A Blackberries card", () => {
     "scores %i points with %i other plant cards",
     (expectedPoints, otherPlantCount) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(Blackberries),
+        dwellerUnderTest: createAnyDweller(Bulbasaur),
         otherDwellers: [
           ...createFakeDwellers(otherPlantCount, DwellerPosition.Bottom, {
             types: [CardType.Plant],
@@ -30,7 +30,7 @@ describe("A Blackberries card", () => {
       });
       const game = createGame(forest);
 
-      const points = Blackberries.score({
+      const points = Bulbasaur.score({
         game,
         forest,
         woodyPlant,
@@ -41,15 +41,15 @@ describe("A Blackberries card", () => {
     },
   );
 
-  it("also scores for other Blackberries", () => {
-    const allDwellers = createAllDwellers(Blackberries);
+  it("also scores for other Bulbasaur", () => {
+    const allDwellers = createAllDwellers(Bulbasaur);
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
       dwellerUnderTest: allDwellers[0],
       otherDwellers: allDwellers.slice(1, 3),
     });
     const game = createGame(forest);
 
-    const points = Blackberries.score({
+    const points = Bulbasaur.score({
       game,
       forest,
       woodyPlant,

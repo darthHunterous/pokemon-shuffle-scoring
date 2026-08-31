@@ -1,4 +1,4 @@
-import { countTreeSpecies } from "../scoring/helpers";
+import { scoreButterflies } from "../scoring/butterflies";
 import {
   CardType,
   DwellerCardBlueprint,
@@ -7,32 +7,35 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "WILD_STRAWBERRIES";
+const name = "BEAUTIFLY";
 const gameBox = GameBox.Base;
-const points = 10;
-const minTreeSpeciesCount = 8;
 
 const blueprint: DwellerCardBlueprint = {
   name,
-  types: [CardType.Plant],
+  types: [CardType.Butterfly, CardType.Insect],
   cost: 0,
   isPartOfDeck: true,
   variants: [
     {
       gameBox,
-      position: DwellerPosition.Bottom,
+      position: DwellerPosition.Top,
       treeSymbol: TreeSymbol.Birch,
       count: 1,
     },
     {
       gameBox,
-      position: DwellerPosition.Bottom,
+      position: DwellerPosition.Top,
+      treeSymbol: TreeSymbol.HorseChestnut,
+      count: 1,
+    },
+    {
+      gameBox,
+      position: DwellerPosition.Top,
       treeSymbol: TreeSymbol.Sycamore,
       count: 2,
     },
   ],
-  score: ({ forest }) =>
-    countTreeSpecies(forest) < minTreeSpeciesCount ? 0 : points,
+  score: ({ forest, dweller }) => scoreButterflies(forest, dweller),
 };
 
 export default blueprint;

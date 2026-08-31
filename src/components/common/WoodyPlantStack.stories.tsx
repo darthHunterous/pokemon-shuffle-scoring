@@ -78,7 +78,7 @@ export const Default: Story = {
           [DwellerPosition.Bottom]: [
             {
               id: "43f458f5-81ea-4019-a479-949d74094776",
-              name: "BLACKBERRIES",
+              name: "BULBASAUR",
               gameBox: GameBox.Base,
               types: [CardType.Plant],
               treeSymbol: TreeSymbol.SilverFir,
