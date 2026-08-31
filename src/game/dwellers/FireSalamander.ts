@@ -35,7 +35,7 @@ const blueprint: DwellerCardBlueprint = {
     {
       gameBox: GameBox.Base,
       position: DwellerPosition.Bottom,
-      treeSymbol: TreeSymbol.DouglasFir,
+      treeSymbol: TreeSymbol.Cerulean,
       count: 1,
     },
     // Promo card P002

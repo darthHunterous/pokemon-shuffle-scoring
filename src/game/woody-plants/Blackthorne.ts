@@ -22,7 +22,7 @@ const blueprint: WoodyPlantCardBlueprint = {
     },
     {
       gameBox,
-      treeSymbol: TreeSymbol.DouglasFir,
+      treeSymbol: TreeSymbol.Cerulean,
       count: 1,
     },
     {

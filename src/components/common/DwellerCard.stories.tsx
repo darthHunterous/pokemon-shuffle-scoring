@@ -65,7 +65,7 @@ export const Right: Story = {
       name: "LYNX",
       gameBox: GameBox.Base,
       types: [CardType.PawedAnimal],
-      treeSymbol: TreeSymbol.DouglasFir,
+      treeSymbol: TreeSymbol.Cerulean,
       isPartOfDeck: true,
       position: DwellerPosition.Right,
     },

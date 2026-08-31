@@ -8,7 +8,7 @@ import {
   Fuchsia,
   Birch,
   Blackthorne,
-  DouglasFir,
+  Cerulean,
   Elderberry,
   EuropeanLarch,
   HorseChestnut,
@@ -78,7 +78,7 @@ describe("A Bellsprout card", () => {
         // Trees
         createAnyWoodyPlant(Fuchsia),
         createAnyWoodyPlant(Birch),
-        createAnyWoodyPlant(DouglasFir),
+        createAnyWoodyPlant(Cerulean),
         createAnyWoodyPlant(EuropeanLarch),
         createAnyWoodyPlant(HorseChestnut),
         createAnyWoodyPlant(Vermilion),

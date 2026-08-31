@@ -16,7 +16,7 @@ const blueprint: WoodyPlantCardBlueprint = {
   variants: [
     {
       gameBox: GameBox.Base,
-      treeSymbol: TreeSymbol.DouglasFir,
+      treeSymbol: TreeSymbol.Cerulean,
       count: 7,
     },
   ],

@@ -4,7 +4,7 @@ import { RedSquirrel } from "@/game/dwellers";
 import {
   Fuchsia,
   Birch,
-  DouglasFir,
+  Cerulean,
   HorseChestnut,
   Vermilion,
   Pewter,
@@ -24,7 +24,7 @@ describe("A Red Squirrel card", () => {
   it.each([
     [0, Fuchsia.name, Fuchsia],
     [0, Birch.name, Birch],
-    [0, DouglasFir.name, DouglasFir],
+    [0, Cerulean.name, Cerulean],
     [0, HorseChestnut.name, HorseChestnut],
     [0, Vermilion.name, Vermilion],
     [5, Pewter.name, Pewter],

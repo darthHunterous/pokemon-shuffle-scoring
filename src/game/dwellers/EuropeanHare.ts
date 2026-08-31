@@ -83,7 +83,7 @@ const blueprint: DwellerCardBlueprint = {
     {
       gameBox: GameBox.PromoCards,
       position: DwellerPosition.Right,
-      treeSymbol: TreeSymbol.DouglasFir,
+      treeSymbol: TreeSymbol.Cerulean,
       count: 1,
     },
   ],

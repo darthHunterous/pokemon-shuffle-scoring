@@ -14,8 +14,8 @@ import {
 } from "../helpers";
 
 describe("An Elk card", () => {
-  it("scores 2 points if there are no Saplings or other cards with Birch or Douglas Fir symbol", () => {
-    const affectedTreeSymbols = [TreeSymbol.Birch, TreeSymbol.DouglasFir];
+  it("scores 2 points if there are no Saplings or other cards with Birch or Cerulean symbol", () => {
+    const affectedTreeSymbols = [TreeSymbol.Birch, TreeSymbol.Cerulean];
     const cardFilter = (c: WoodyPlantCard | DwellerCard) =>
       c.name !== Sapling.name &&
       (!c.treeSymbol || !affectedTreeSymbols.includes(c.treeSymbol));
@@ -39,7 +39,7 @@ describe("An Elk card", () => {
     [4, 0, 0, 1],
     [14, 2, 2, 2],
   ])(
-    "scores $s points with %s Saplings, %s cards with Birch symbol and %s other cards with DouglasFir symbol",
+    "scores $s points with %s Saplings, %s cards with Birch symbol and %s other cards with Cerulean symbol",
     (expectedPoints, saplingCount, birchCount, douglasFirCount) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
         dwellerUnderTest: createAnyDweller(Elk),
@@ -49,7 +49,7 @@ describe("An Elk card", () => {
             treeSymbol: TreeSymbol.Birch,
           }),
           ...createFakeWoodyPlants(douglasFirCount, {
-            treeSymbol: TreeSymbol.DouglasFir,
+            treeSymbol: TreeSymbol.Cerulean,
           }),
         ],
       });

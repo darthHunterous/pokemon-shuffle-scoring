@@ -16,13 +16,13 @@ const blueprint: DwellerCardBlueprint = extendBlueprint(Chanterelle, {
     {
       gameBox: GameBox.Exploration,
       position: DwellerPosition.Bottom,
-      treeSymbol: TreeSymbol.DouglasFir,
+      treeSymbol: TreeSymbol.Cerulean,
       count: 1,
     },
     {
       gameBox: GameBox.PromoCards,
       position: DwellerPosition.Bottom,
-      treeSymbol: TreeSymbol.DouglasFir,
+      treeSymbol: TreeSymbol.Cerulean,
       count: 1,
     },
   ],

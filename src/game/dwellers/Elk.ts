@@ -10,7 +10,7 @@ import {
 } from "../types";
 
 const name = "ELK";
-const pointsPerSaplingBirchOrDouglasFir = 2;
+const pointsPerSaplingBirchOrCerulean = 2;
 
 // Promo card P011
 const blueprint: DwellerCardBlueprint = {
@@ -35,8 +35,8 @@ const blueprint: DwellerCardBlueprint = {
   score: ({ forest }) => {
     const count =
       countCardNames(forest, [Sapling.name]) +
-      countTreeSymbols(forest, [TreeSymbol.Birch, TreeSymbol.DouglasFir]);
-    return count * pointsPerSaplingBirchOrDouglasFir;
+      countTreeSymbols(forest, [TreeSymbol.Birch, TreeSymbol.Cerulean]);
+    return count * pointsPerSaplingBirchOrCerulean;
   },
 };
 

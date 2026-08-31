@@ -49,7 +49,7 @@ const blueprint: DwellerCardBlueprint = {
     {
       gameBox: GameBox.WoodlandEdge,
       position: DwellerPosition.Right,
-      treeSymbol: TreeSymbol.DouglasFir,
+      treeSymbol: TreeSymbol.Cerulean,
       extraTypes: [CardType.WoodlandEdge],
       count: 1,
     },
@@ -64,7 +64,7 @@ const blueprint: DwellerCardBlueprint = {
     {
       gameBox: GameBox.PromoCards,
       position: DwellerPosition.Right,
-      treeSymbol: TreeSymbol.DouglasFir,
+      treeSymbol: TreeSymbol.Cerulean,
       extraTypes: [CardType.WoodlandEdge],
       count: 1,
     },

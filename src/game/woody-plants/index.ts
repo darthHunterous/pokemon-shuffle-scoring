@@ -2,7 +2,7 @@ export { default as Fuchsia } from "./Fuchsia";
 export { default as Birch } from "./Birch";
 export { default as Blackthorne } from "./Blackthorne";
 export { default as CommonHazel } from "./CommonHazel";
-export { default as DouglasFir } from "./DouglasFir";
+export { default as Cerulean } from "./Cerulean";
 export { default as Elderberry } from "./Elderberry";
 export { default as EuropeanLarch } from "./EuropeanLarch";
 export { default as HorseChestnut } from "./HorseChestnut";

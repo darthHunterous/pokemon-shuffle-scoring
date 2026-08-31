@@ -14,7 +14,7 @@ import {
 describe("A Chamois card", () => {
   it.each([
     [TreeSymbol.AlpineLarch],
-    [TreeSymbol.DouglasFir],
+    [TreeSymbol.Cerulean],
     [TreeSymbol.SwissPine],
   ])(
     "with %s symbol scores 3 points if there's no other cards with that symbol",
@@ -37,7 +37,7 @@ describe("A Chamois card", () => {
 
   it.each([
     [TreeSymbol.AlpineLarch, 9],
-    [TreeSymbol.DouglasFir, 12],
+    [TreeSymbol.Cerulean, 12],
     [TreeSymbol.SwissPine, 15],
   ])("with %s symbol scores %i points", (treeSymbol, expectedPoints) => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
@@ -50,7 +50,7 @@ describe("A Chamois card", () => {
           treeSymbol: TreeSymbol.AlpineLarch,
         }),
         ...createFakeDwellers(2, DwellerPosition.Left, {
-          treeSymbol: TreeSymbol.DouglasFir,
+          treeSymbol: TreeSymbol.Cerulean,
         }),
         ...createFakeDwellers(3, DwellerPosition.Left, {
           treeSymbol: TreeSymbol.SwissPine,
@@ -59,7 +59,7 @@ describe("A Chamois card", () => {
       otherWoodyPlants: [
         createSapling(),
         createFakeWoodyPlant({ treeSymbol: TreeSymbol.AlpineLarch }),
-        createFakeWoodyPlant({ treeSymbol: TreeSymbol.DouglasFir }),
+        createFakeWoodyPlant({ treeSymbol: TreeSymbol.Cerulean }),
         createFakeWoodyPlant({ treeSymbol: TreeSymbol.SwissPine }),
       ],
     });
