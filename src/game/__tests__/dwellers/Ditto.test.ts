@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { Raccoon } from "@/game/dwellers";
+import { Ditto } from "@/game/dwellers";
 
 import {
   createAnyDweller,
@@ -9,14 +9,14 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Raccoon card", () => {
+describe("A Ditto card", () => {
   it("scores no points in an empty forest", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(Raccoon),
+      dwellerUnderTest: createAnyDweller(Ditto),
     });
     const game = createGame(forest);
 
-    const points = Raccoon.score({
+    const points = Ditto.score({
       game,
       forest,
       woodyPlant,
@@ -28,11 +28,11 @@ describe("A Raccoon card", () => {
 
   it("scores no points in a complete forest", () => {
     const { dweller, woodyPlant, forest } = createCompleteForestWithDweller({
-      dwellerUnderTest: createAnyDweller(Raccoon),
+      dwellerUnderTest: createAnyDweller(Ditto),
     });
     const game = createGame(forest);
 
-    const points = Raccoon.score({
+    const points = Ditto.score({
       game,
       forest,
       woodyPlant,

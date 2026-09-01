@@ -68,7 +68,7 @@ export { default as Abra } from "./Abra";
 export { default as PhoebusApollo } from "./PhoebusApollo";
 export { default as PondTurtle } from "./PondTurtle";
 export { default as PurpleEmperor } from "./PurpleEmperor";
-export { default as Raccoon } from "./Raccoon";
+export { default as Ditto } from "./Ditto";
 export { default as RedDeer } from "./RedDeer";
 export { default as RedFox } from "./RedFox";
 export { default as RedPanda } from "./RedPanda";

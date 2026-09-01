@@ -358,9 +358,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.PurpleEmperor",
     defaultMessage: "Purple Emperor",
   },
-  RACCOON: {
-    id: "CardNames.Raccoon",
-    defaultMessage: "Raccoon",
+  DITTO: {
+    id: "CardNames.Ditto",
+    defaultMessage: "Ditto",
   },
   RED_DEER: {
     id: "CardNames.RedDeer",
