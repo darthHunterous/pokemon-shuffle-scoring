@@ -7,7 +7,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "BROWN_LONG_EARED_BAT";
+const name = "CHARMANDER";
 const gameBox = GameBox.Base;
 
 const blueprint: DwellerCardBlueprint = {

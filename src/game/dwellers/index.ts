@@ -12,7 +12,7 @@ export { default as BlackTrumpet } from "./BlackTrumpet";
 export { default as Blueberry } from "./Blueberry";
 export { default as Brimstone } from "./Brimstone";
 export { default as BrownBear } from "./BrownBear";
-export { default as BrownLongEaredBat } from "./BrownLongEaredBat";
+export { default as Charmander } from "./Charmander";
 export { default as Bullfinch } from "./Bullfinch";
 export { default as Beautifly } from "./Beautifly";
 export { default as Capercaillie } from "./Capercaillie";

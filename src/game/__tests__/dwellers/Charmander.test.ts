@@ -3,7 +3,7 @@ import { describe, expect, it } from "@jest/globals";
 import {
   BarbastelleBat,
   BechsteinsBat,
-  BrownLongEaredBat,
+  Charmander,
   CommonPipistrelle,
   DuererFledermaus,
   GreaterHorseshoeBat,
@@ -17,7 +17,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Brown Long-Eared Bat card", () => {
+describe("A Charmander card", () => {
   const otherBats = [
     BarbastelleBat,
     BechsteinsBat,
@@ -38,12 +38,12 @@ describe("A Brown Long-Eared Bat card", () => {
     "scores %i points if there are %i other bat species",
     (expectedPoints, _, otherBatBlueprints) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(BrownLongEaredBat),
+        dwellerUnderTest: createAnyDweller(Charmander),
         otherDwellers: otherBatBlueprints.map(createAnyDweller),
       });
       const game = createGame(forest);
 
-      const points = BrownLongEaredBat.score({
+      const points = Charmander.score({
         game,
         forest,
         woodyPlant,
@@ -56,12 +56,12 @@ describe("A Brown Long-Eared Bat card", () => {
 
   it("ignores multiple instances of the same bat", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(BrownLongEaredBat),
+      dwellerUnderTest: createAnyDweller(Charmander),
       otherDwellers: createAllDwellers(BarbastelleBat),
     });
     const game = createGame(forest);
 
-    const points = BrownLongEaredBat.score({
+    const points = Charmander.score({
       game,
       forest,
       woodyPlant,

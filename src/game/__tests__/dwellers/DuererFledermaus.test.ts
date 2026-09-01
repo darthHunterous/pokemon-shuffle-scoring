@@ -3,7 +3,7 @@ import { describe, expect, it } from "@jest/globals";
 import {
   BarbastelleBat,
   BechsteinsBat,
-  BrownLongEaredBat,
+  Charmander,
   CommonPipistrelle,
   DuererFledermaus,
   GreaterHorseshoeBat,
@@ -21,7 +21,7 @@ describe("A Dürer-Fledermaus card", () => {
   const otherBats = [
     BarbastelleBat,
     BechsteinsBat,
-    BrownLongEaredBat,
+    Charmander,
     CommonPipistrelle,
     GreaterHorseshoeBat,
     SavisPipistrelle,
