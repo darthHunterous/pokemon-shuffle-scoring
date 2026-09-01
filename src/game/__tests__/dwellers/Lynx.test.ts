@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { Lynx, RoeDeer } from "@/game/dwellers";
+import { Lynx, Voltorb } from "@/game/dwellers";
 
 import {
   createAllDwellers,
@@ -15,11 +15,11 @@ describe("A Lynx card", () => {
     [10, 1],
     [10, 2],
   ])(
-    "scores %i points if there are %i Roe Deer cards",
+    "scores %i points if there are %i Voltorb cards",
     (expectedPoints, count) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
         dwellerUnderTest: createAnyDweller(Lynx),
-        otherDwellers: createAllDwellers(RoeDeer).slice(0, count),
+        otherDwellers: createAllDwellers(Voltorb).slice(0, count),
       });
       const game = createGame(forest);
 

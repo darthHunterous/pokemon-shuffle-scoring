@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import { DwellerPosition } from "@/game";
-import { Diglett, DiglettAlola, RedFox } from "@/game/dwellers";
+import { GigantamaxEevee, Diglett, DiglettAlola } from "@/game/dwellers";
 import { createDweller } from "@/game/factory";
 
 import { createFakeWoodyPlant } from "../fake";
@@ -14,7 +14,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Red Fox card", () => {
+describe("A Gigantamax Eevee card", () => {
   it.each([
     [0, 0, 0],
     [2, 1, 0],
@@ -24,7 +24,7 @@ describe("A Red Fox card", () => {
     "scores %i points if there are %i Diglett cards and %i Diglett Alola cards",
     (expectedPoints, DiglettCount, diglettAlolaCount) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(RedFox),
+        dwellerUnderTest: createAnyDweller(GigantamaxEevee),
         otherDwellers: [
           ...createAllDwellers(Diglett).slice(0, DiglettCount),
           ...createAllDwellers(DiglettAlola).slice(0, diglettAlolaCount),
@@ -32,7 +32,7 @@ describe("A Red Fox card", () => {
       });
       const game = createGame(forest);
 
-      const points = RedFox.score({
+      const points = GigantamaxEevee.score({
         game,
         forest,
         woodyPlant,
@@ -45,8 +45,8 @@ describe("A Red Fox card", () => {
 
   it("takes into account Diglett cards sharing a slot when scoring", () => {
     const dweller = createDweller(
-      RedFox,
-      RedFox.variants.find((v) => v.position === DwellerPosition.Left)!,
+      GigantamaxEevee,
+      GigantamaxEevee.variants.find((v) => v.position === DwellerPosition.Left)!,
     );
     const otherDwellers = createAllDwellers(Diglett)
       .filter((v) => v.position === DwellerPosition.Right)
@@ -59,7 +59,7 @@ describe("A Red Fox card", () => {
     const forest = createForestWith({ woodyPlants: [woodyPlant] });
     const game = createGame(forest);
 
-    const points = RedFox.score({
+    const points = GigantamaxEevee.score({
       game,
       forest,
       woodyPlant,

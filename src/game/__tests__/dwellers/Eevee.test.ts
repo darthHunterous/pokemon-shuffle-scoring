@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import { DwellerPosition } from "@/game";
-import { ArcticFox, Diglett, DiglettAlola } from "@/game/dwellers";
+import { Diglett, DiglettAlola, Eevee } from "@/game/dwellers";
 import { createDweller } from "@/game/factory";
 
 import { createFakeWoodyPlant } from "../fake";
@@ -14,7 +14,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Arctic Fox card", () => {
+describe("A Eevee card", () => {
   it.each([
     [0, 0, 0],
     [2, 1, 0],
@@ -24,7 +24,7 @@ describe("A Arctic Fox card", () => {
     "scores %i points if there are %i Diglett cards and %i Diglett Alola cards",
     (expectedPoints, DiglettCount, diglettAlolaCount) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(ArcticFox),
+        dwellerUnderTest: createAnyDweller(Eevee),
         otherDwellers: [
           ...createAllDwellers(Diglett).slice(0, DiglettCount),
           ...createAllDwellers(DiglettAlola).slice(0, diglettAlolaCount),
@@ -32,7 +32,7 @@ describe("A Arctic Fox card", () => {
       });
       const game = createGame(forest);
 
-      const points = ArcticFox.score({
+      const points = Eevee.score({
         game,
         forest,
         woodyPlant,
@@ -45,8 +45,8 @@ describe("A Arctic Fox card", () => {
 
   it("takes into account Diglett cards sharing a slot when scoring", () => {
     const dweller = createDweller(
-      ArcticFox,
-      ArcticFox.variants.find((v) => v.position === DwellerPosition.Left)!,
+      Eevee,
+      Eevee.variants.find((v) => v.position === DwellerPosition.Left)!,
     );
     const otherDwellers = createAllDwellers(Diglett)
       .filter((v) => v.position === DwellerPosition.Right)
@@ -59,7 +59,7 @@ describe("A Arctic Fox card", () => {
     const forest = createForestWith({ woodyPlants: [woodyPlant] });
     const game = createGame(forest);
 
-    const points = ArcticFox.score({
+    const points = Eevee.score({
       game,
       forest,
       woodyPlant,

@@ -82,9 +82,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.AlpineNewt",
     defaultMessage: "Alpine Newt",
   },
-  ARCTIC_FOX: {
-    id: "CardNames.ArcticFox",
-    defaultMessage: "Arctic Fox",
+  GIGANTAMAX_EEVEE: {
+    id: "CardNames.GigantamaxEevee",
+    defaultMessage: "Gigantamax Eevee",
   },
   BARBASTELLE_BAT: {
     id: "CardNames.BarbastelleBat",
@@ -366,9 +366,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.RedDeer",
     defaultMessage: "Red Deer",
   },
-  RED_FOX: {
-    id: "CardNames.RedFox",
-    defaultMessage: "Red Fox",
+  EEVEE: {
+    id: "CardNames.Eevee",
+    defaultMessage: "Eevee",
   },
   RED_PANDA: {
     id: "CardNames.RedPanda",
@@ -386,9 +386,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Robin",
     defaultMessage: "Robin",
   },
-  ROE_DEER: {
-    id: "CardNames.RoeDeer",
-    defaultMessage: "Roe Deer",
+  VOLTORB: {
+    id: "CardNames.Voltorb",
+    defaultMessage: "Voltorb",
   },
   SABLE: {
     id: "CardNames.Sable",

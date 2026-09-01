@@ -5,13 +5,13 @@ import {
   GameBox,
   TreeSymbol,
 } from "../types";
-import RedFox from "./RedFox";
+import Eevee from "./Eevee";
 
-const name = "ARCTIC_FOX";
+const name = "GIGANTAMAX_EEVEE";
 const gameBox = GameBox.Exploration;
 
 // Promo card P016
-const blueprint: DwellerCardBlueprint = extendBlueprint(RedFox, {
+const blueprint: DwellerCardBlueprint = extendBlueprint(Eevee, {
   name,
   variants: [
     {

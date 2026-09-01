@@ -9,7 +9,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Penny Bun card", () => {
+describe("A Abra card", () => {
   it("scores no points in an empty forest", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
       dwellerUnderTest: createAnyDweller(Abra),

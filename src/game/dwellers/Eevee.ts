@@ -9,7 +9,7 @@ import {
 import Diglett from "./Diglett";
 import DiglettAlola from "./DiglettAlola";
 
-const name = "RED_FOX";
+const name = "EEVEE";
 const gameBox = GameBox.Base;
 const pointsPerDiglett = 2;
 

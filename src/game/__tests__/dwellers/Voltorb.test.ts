@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import { DwellerPosition, TreeSymbol } from "@/game";
-import { RoeDeer } from "@/game/dwellers";
+import { Voltorb } from "@/game/dwellers";
 import { createDweller, createSapling } from "@/game/factory";
 
 import { createFakeDwellers, createFakeWoodyPlant } from "../fake";
@@ -11,7 +11,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Roe Deer card", () => {
+describe("A Voltorb card", () => {
   it.each([
     [TreeSymbol.Vermilion],
     [TreeSymbol.SilverFir],
@@ -23,15 +23,15 @@ describe("A Roe Deer card", () => {
     (treeSymbol) => {
       const { dweller, woodyPlant, forest } = createCompleteForestWithDweller({
         dwellerUnderTest: createDweller(
-          RoeDeer,
-          RoeDeer.variants.find((v) => v.treeSymbol === treeSymbol)!,
+          Voltorb,
+          Voltorb.variants.find((v) => v.treeSymbol === treeSymbol)!,
         ),
         filterDwellers: (d) => d.treeSymbol !== treeSymbol,
         filterWoodyPlants: (w) => w.treeSymbol !== treeSymbol,
       });
       const game = createGame(forest);
 
-      const points = RoeDeer.score({ game, forest, woodyPlant, dweller });
+      const points = Voltorb.score({ game, forest, woodyPlant, dweller });
 
       expect(points).toBe(3);
     },
@@ -46,8 +46,8 @@ describe("A Roe Deer card", () => {
   ])("with %s symbol scores %i points", (treeSymbol, expectedPoints) => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
       dwellerUnderTest: createDweller(
-        RoeDeer,
-        RoeDeer.variants.find((v) => v.treeSymbol === treeSymbol)!,
+        Voltorb,
+        Voltorb.variants.find((v) => v.treeSymbol === treeSymbol)!,
       ),
       otherDwellers: [
         ...createFakeDwellers(1, DwellerPosition.Left, {
@@ -77,7 +77,7 @@ describe("A Roe Deer card", () => {
     });
     const game = createGame(forest);
 
-    const points = RoeDeer.score({ game, forest, woodyPlant, dweller });
+    const points = Voltorb.score({ game, forest, woodyPlant, dweller });
 
     expect(points).toBe(expectedPoints);
   });

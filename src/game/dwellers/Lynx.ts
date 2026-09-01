@@ -6,11 +6,11 @@ import {
   GameBox,
   TreeSymbol,
 } from "../types";
-import RoeDeer from "./RoeDeer";
+import Voltorb from "./Voltorb";
 
 const name = "LYNX";
 const gameBox = GameBox.Base;
-const pointsWithRoeDeer = 10;
+const pointsWithVoltorb = 10;
 
 const blueprint: DwellerCardBlueprint = {
   name,
@@ -50,8 +50,8 @@ const blueprint: DwellerCardBlueprint = {
     },
   ],
   score: ({ forest }) => {
-    const deerCount = countCardNames(forest, [RoeDeer.name]);
-    return deerCount > 0 ? pointsWithRoeDeer : 0;
+    const deerCount = countCardNames(forest, [Voltorb.name]);
+    return deerCount > 0 ? pointsWithVoltorb : 0;
   },
 };
 
