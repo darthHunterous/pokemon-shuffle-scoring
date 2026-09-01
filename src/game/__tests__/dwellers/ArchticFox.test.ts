@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import { DwellerPosition } from "@/game";
-import { ArcticFox, EuropeanHare, MountainHare } from "@/game/dwellers";
+import { ArcticFox, Diglett, DiglettAlola } from "@/game/dwellers";
 import { createDweller } from "@/game/factory";
 
 import { createFakeWoodyPlant } from "../fake";
@@ -21,13 +21,13 @@ describe("A Arctic Fox card", () => {
     [2, 0, 1],
     [18, 6, 3],
   ])(
-    "scores %i points if there are %i European Hare cards and %i Mountain Hare cards",
-    (expectedPoints, europeanHareCount, mountainHareCount) => {
+    "scores %i points if there are %i Diglett cards and %i Diglett Alola cards",
+    (expectedPoints, DiglettCount, diglettAlolaCount) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
         dwellerUnderTest: createAnyDweller(ArcticFox),
         otherDwellers: [
-          ...createAllDwellers(EuropeanHare).slice(0, europeanHareCount),
-          ...createAllDwellers(MountainHare).slice(0, mountainHareCount),
+          ...createAllDwellers(Diglett).slice(0, DiglettCount),
+          ...createAllDwellers(DiglettAlola).slice(0, diglettAlolaCount),
         ],
       });
       const game = createGame(forest);
@@ -43,12 +43,12 @@ describe("A Arctic Fox card", () => {
     },
   );
 
-  it("takes into account European Hare cards sharing a slot when scoring", () => {
+  it("takes into account Diglett cards sharing a slot when scoring", () => {
     const dweller = createDweller(
       ArcticFox,
       ArcticFox.variants.find((v) => v.position === DwellerPosition.Left)!,
     );
-    const otherDwellers = createAllDwellers(EuropeanHare)
+    const otherDwellers = createAllDwellers(Diglett)
       .filter((v) => v.position === DwellerPosition.Right)
       .slice(0, 2);
     const woodyPlant = addDwellersToWoodyPlant(

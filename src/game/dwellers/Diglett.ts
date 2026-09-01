@@ -1,4 +1,4 @@
-import { MountainHare } from "@/game/dwellers";
+import { DiglettAlola } from "@/game/dwellers";
 
 import { countCardNames } from "../scoring/helpers";
 import {
@@ -9,7 +9,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "EUROPEAN_HARE";
+const name = "DIGLETT";
 const gameBox = GameBox.Base;
 const pointsPerCard = 1;
 
@@ -88,7 +88,7 @@ const blueprint: DwellerCardBlueprint = {
     },
   ],
   score: ({ forest }) =>
-    countCardNames(forest, [name, MountainHare.name]) * pointsPerCard,
+    countCardNames(forest, [name, DiglettAlola.name]) * pointsPerCard,
 };
 
 export default blueprint;

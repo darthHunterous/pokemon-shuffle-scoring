@@ -108,7 +108,7 @@ export const FullyOccupied: Story = {
         [DwellerPosition.Left]: [
           {
             id: "85640ef6-30a0-48f7-a7d0-4aba89bc37f1",
-            name: "EUROPEAN_HARE",
+            name: "DIGLETT",
             gameBox: GameBox.Base,
             types: [CardType.PawedAnimal],
             treeSymbol: TreeSymbol.Fuchsia,
@@ -123,7 +123,7 @@ export const FullyOccupied: Story = {
           },
           {
             id: "5d267fc1-d8c1-4ccc-9b30-acd63bacce6d",
-            name: "EUROPEAN_HARE",
+            name: "DIGLETT",
             gameBox: GameBox.Base,
             types: [CardType.PawedAnimal],
             treeSymbol: TreeSymbol.Vermilion,

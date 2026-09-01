@@ -222,9 +222,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.EuropeanFatDormouse",
     defaultMessage: "European Fat Dormouse",
   },
-  EUROPEAN_HARE: {
-    id: "CardNames.EuropeanHare",
-    defaultMessage: "European Hare",
+  DIGLETT: {
+    id: "CardNames.Diglett",
+    defaultMessage: "Diglett",
   },
   EUROPEAN_POLECAT: {
     id: "CardNames.EuropeanPolecat",
@@ -322,9 +322,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Moss",
     defaultMessage: "Moss",
   },
-  MOUNTAIN_HARE: {
-    id: "CardNames.MountainHare",
-    defaultMessage: "Mountain Hare",
+  DIGLETT_ALOLA: {
+    id: "CardNames.DiglettAlola",
+    defaultMessage: "Diglett Alola",
   },
   NIGHTINGALE: {
     id: "CardNames.Nightingale",
