@@ -234,9 +234,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.EuropeanWildcat",
     defaultMessage: "European Wildcat",
   },
-  FALLOW_DEER: {
-    id: "CardNames.FallowDeer",
-    defaultMessage: "Fallow Deer",
+  MAGNEMITE: {
+    id: "CardNames.Magnemite",
+    defaultMessage: "Magnemite",
   },
   FEMALE_WILD_BOAR: {
     id: "CardNames.FemaleWildBoar",
@@ -362,9 +362,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Ditto",
     defaultMessage: "Ditto",
   },
-  RED_DEER: {
-    id: "CardNames.RedDeer",
-    defaultMessage: "Red Deer",
+  ELECTABUZZ: {
+    id: "CardNames.Electabuzz",
+    defaultMessage: "Electabuzz",
   },
   EEVEE: {
     id: "CardNames.Eevee",

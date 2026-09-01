@@ -55,24 +55,24 @@ const messages: { [key in CardType]: Record<Numerus, MessageDescriptor> } = {
       defaultMessage: "Butterflies",
     },
   }),
-  CLOVENHOOFED_ANIMAL: defineMessages<Numerus, MessageDescriptor>({
+  ELECTRICAL_POKEMON: defineMessages<Numerus, MessageDescriptor>({
     singular: {
-      id: "CardTypes.ClovenhoofedAnimal.singular",
-      defaultMessage: "Cloven-hoofed animal",
+      id: "CardTypes.ElectricalPokemon.singular",
+      defaultMessage: "Electrical Pokémon",
     },
     plural: {
-      id: "CardTypes.ClovenhoofedAnimal.plural",
-      defaultMessage: "Cloven-hoofed animal",
+      id: "CardTypes.ElectricalPokemon.plural",
+      defaultMessage: "Electrical Pokémon",
     },
   }),
-  DEER: defineMessages<Numerus, MessageDescriptor>({
+  NORMAL: defineMessages<Numerus, MessageDescriptor>({
     singular: {
-      id: "CardTypes.Deer.singular",
-      defaultMessage: "Deer",
+      id: "CardTypes.Normal.singular",
+      defaultMessage: "Normal",
     },
     plural: {
-      id: "CardTypes.Deer.plural",
-      defaultMessage: "Deer",
+      id: "CardTypes.Normal.plural",
+      defaultMessage: "Normal",
     },
   }),
   INSECT: defineMessages<Numerus, MessageDescriptor>({

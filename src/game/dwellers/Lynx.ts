@@ -50,8 +50,8 @@ const blueprint: DwellerCardBlueprint = {
     },
   ],
   score: ({ forest }) => {
-    const deerCount = countCardNames(forest, [Voltorb.name]);
-    return deerCount > 0 ? pointsWithVoltorb : 0;
+    const voltorbCount = countCardNames(forest, [Voltorb.name]);
+    return voltorbCount > 0 ? pointsWithVoltorb : 0;
   },
 };
 

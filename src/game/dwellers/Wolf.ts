@@ -9,7 +9,7 @@ import {
 
 const name = "WOLF";
 const gameBox = GameBox.Base;
-const pointsPerDeer = 5;
+const pointsPerNormal = 5;
 
 const blueprint: DwellerCardBlueprint = {
   name,
@@ -37,7 +37,7 @@ const blueprint: DwellerCardBlueprint = {
     },
   ],
   score: ({ forest }) =>
-    countCardTypes(forest, [CardType.Deer]) * pointsPerDeer,
+    countCardTypes(forest, [CardType.Normal]) * pointsPerNormal,
 };
 
 export default blueprint;

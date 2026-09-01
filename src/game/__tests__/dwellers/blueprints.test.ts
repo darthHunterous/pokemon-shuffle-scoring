@@ -10,13 +10,13 @@ const allowedTypeCombinations = [
   new Set([CardType.Amphibian]),
   new Set([CardType.Bat]),
   new Set([CardType.Bird]),
-  new Set([CardType.ClovenhoofedAnimal]),
+  new Set([CardType.ElectricalPokemon]),
   new Set([CardType.Insect]),
   new Set([CardType.Mushroom]),
   new Set([CardType.PawedAnimal]),
   new Set([CardType.Person]),
   new Set([CardType.Plant]),
-  new Set([CardType.Deer, CardType.ClovenhoofedAnimal]),
+  new Set([CardType.Normal, CardType.ElectricalPokemon]),
   new Set([CardType.Butterfly, CardType.Insect]),
   new Set([CardType.Plant, CardType.Swamp]),
 ];
@@ -31,11 +31,11 @@ const allowedPositionsByType: { [key in CardType]: Set<DwellerPosition> } = {
     DwellerPosition.Right,
   ]),
   [CardType.Butterfly]: new Set([DwellerPosition.Top]),
-  [CardType.ClovenhoofedAnimal]: new Set([
+  [CardType.ElectricalPokemon]: new Set([
     DwellerPosition.Left,
     DwellerPosition.Right,
   ]),
-  [CardType.Deer]: new Set([DwellerPosition.Left, DwellerPosition.Right]),
+  [CardType.Normal]: new Set([DwellerPosition.Left, DwellerPosition.Right]),
   [CardType.Insect]: new Set([
     DwellerPosition.Left,
     DwellerPosition.Right,

@@ -16,12 +16,12 @@ describe("A Sheep card", () => {
     [6, 1],
     [30, 9],
   ])(
-    "scores %i points for %i cloven-hoofed cards",
+    "scores %i points for %i electrical cards",
     (expectedPoints, plantCount) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
         dwellerUnderTest: createAnyDweller(Sheep),
         otherDwellers: createFakeDwellers(plantCount, DwellerPosition.Bottom, {
-          types: [CardType.ClovenhoofedAnimal],
+          types: [CardType.ElectricalPokemon],
         }),
       });
       const game = createGame(forest);

@@ -14,7 +14,7 @@ const pointsPerSqueaker = 10;
 
 const blueprint: DwellerCardBlueprint = {
   name,
-  types: [CardType.ClovenhoofedAnimal, CardType.WoodlandEdge],
+  types: [CardType.ElectricalPokemon, CardType.WoodlandEdge],
   cost: 2,
   isPartOfDeck: true,
   variants: [

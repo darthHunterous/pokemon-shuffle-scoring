@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { FallowDeer } from "@/game/dwellers";
+import { Magnemite } from "@/game/dwellers";
 import { CardType, DwellerPosition } from "@/game/types";
 
 import { createFakeDwellers } from "../fake";
@@ -10,23 +10,23 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Fallow Deer card", () => {
+describe("A Magnemite card", () => {
   it.each([
     [3, 0],
     [6, 1],
     [15, 4],
   ])(
-    "scores %i points if there are %i other cloven-hoofed animal cards",
+    "scores %i points if there are %i other electrical pokémon cards",
     (expectedPoints, count) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(FallowDeer),
+        dwellerUnderTest: createAnyDweller(Magnemite),
         otherDwellers: createFakeDwellers(count, DwellerPosition.Left, {
-          types: [CardType.ClovenhoofedAnimal],
+          types: [CardType.ElectricalPokemon],
         }),
       });
       const game = createGame(forest);
 
-      const points = FallowDeer.score({
+      const points = Magnemite.score({
         game,
         forest,
         woodyPlant,

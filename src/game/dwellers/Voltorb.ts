@@ -13,7 +13,7 @@ const pointsPerTreeSymbol = 3;
 
 const blueprint: DwellerCardBlueprint = {
   name,
-  types: [CardType.ClovenhoofedAnimal, CardType.Deer],
+  types: [CardType.ElectricalPokemon, CardType.Normal],
   cost: 2,
   isPartOfDeck: true,
   variants: [

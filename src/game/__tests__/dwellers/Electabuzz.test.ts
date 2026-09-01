@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import { CardType, DwellerPosition } from "@/game";
-import { RedDeer } from "@/game/dwellers";
+import { Electabuzz } from "@/game/dwellers";
 import { Sapling } from "@/game/woody-plants";
 
 import {
@@ -16,7 +16,7 @@ import {
   createWoodyPlants,
 } from "../helpers";
 
-describe("A Red Deer card", () => {
+describe("A Electabuzz card", () => {
   it.each([
     [1, 0, 1],
     [3, 1, 2],
@@ -25,7 +25,7 @@ describe("A Red Deer card", () => {
     "scores %i points for %i plant and %i tree cards",
     (expectedPoints, plantCount, treeCount) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(RedDeer),
+        dwellerUnderTest: createAnyDweller(Electabuzz),
         otherDwellers: createFakeDwellers(plantCount, DwellerPosition.Bottom, {
           types: [CardType.Plant],
         }),
@@ -33,7 +33,7 @@ describe("A Red Deer card", () => {
       });
       const game = createGame(forest);
 
-      const points = RedDeer.score({
+      const points = Electabuzz.score({
         game,
         forest,
         woodyPlant,
@@ -46,12 +46,12 @@ describe("A Red Deer card", () => {
 
   it("takes into account Sapling cards when scoring", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(RedDeer),
+      dwellerUnderTest: createAnyDweller(Electabuzz),
       otherWoodyPlants: createWoodyPlants(Sapling, 2),
     });
     const game = createGame(forest);
 
-    const points = RedDeer.score({
+    const points = Electabuzz.score({
       game,
       forest,
       woodyPlant,
@@ -63,7 +63,7 @@ describe("A Red Deer card", () => {
 
   it("ignores cards increasing the tree count when scoring", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(RedDeer),
+      dwellerUnderTest: createAnyDweller(Electabuzz),
       otherDwellers: [
         createFakeDweller(DwellerPosition.Left, {
           modifiers: {
@@ -74,7 +74,7 @@ describe("A Red Deer card", () => {
     });
     const game = createGame(forest);
 
-    const points = RedDeer.score({
+    const points = Electabuzz.score({
       game,
       forest,
       woodyPlant,

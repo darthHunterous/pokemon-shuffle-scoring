@@ -7,13 +7,13 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "FALLOW_DEER";
+const name = "ELECTABUZZ";
 const gameBox = GameBox.Base;
-const pointsPerClovenhoofedAnimal = 3;
+const pointsPerTreeOrPlant = 1;
 
 const blueprint: DwellerCardBlueprint = {
   name,
-  types: [CardType.ClovenhoofedAnimal, CardType.Deer],
+  types: [CardType.ElectricalPokemon, CardType.Normal],
   cost: 2,
   isPartOfDeck: true,
   variants: [
@@ -21,24 +21,30 @@ const blueprint: DwellerCardBlueprint = {
       gameBox,
       position: DwellerPosition.Left,
       treeSymbol: TreeSymbol.Vermilion,
+      count: 1,
+    },
+    {
+      gameBox,
+      position: DwellerPosition.Left,
+      treeSymbol: TreeSymbol.SilverFir,
+      count: 1,
+    },
+    {
+      gameBox,
+      position: DwellerPosition.Right,
+      treeSymbol: TreeSymbol.HorseChestnut,
       count: 2,
     },
     {
       gameBox,
       position: DwellerPosition.Right,
-      treeSymbol: TreeSymbol.Cinnabar,
-      count: 1,
-    },
-    {
-      gameBox,
-      position: DwellerPosition.Right,
-      treeSymbol: TreeSymbol.Celadon,
+      treeSymbol: TreeSymbol.Pewter,
       count: 1,
     },
   ],
   score: ({ forest }) =>
-    countCardTypes(forest, [CardType.ClovenhoofedAnimal]) *
-    pointsPerClovenhoofedAnimal,
+    countCardTypes(forest, [CardType.Tree, CardType.Plant]) *
+    pointsPerTreeOrPlant,
 };
 
 export default blueprint;

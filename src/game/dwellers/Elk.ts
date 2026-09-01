@@ -15,7 +15,7 @@ const pointsPerSaplingCinnabarOrCerulean = 2;
 // Promo card P011
 const blueprint: DwellerCardBlueprint = {
   name,
-  types: [CardType.ClovenhoofedAnimal, CardType.Deer],
+  types: [CardType.ElectricalPokemon, CardType.Normal],
   cost: 3,
   isPartOfDeck: true,
   variants: [

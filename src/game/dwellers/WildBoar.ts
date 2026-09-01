@@ -14,7 +14,7 @@ const points = 10;
 
 const blueprint: DwellerCardBlueprint = {
   name,
-  types: [CardType.ClovenhoofedAnimal],
+  types: [CardType.ElectricalPokemon],
   cost: 2,
   isPartOfDeck: true,
   variants: [

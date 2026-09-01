@@ -15,11 +15,11 @@ describe("A Wolf card", () => {
     [0, 0],
     [5, 1],
     [25, 5],
-  ])("scores %i points if there are %i deer cards", (expectedPoints, count) => {
+  ])("scores %i points if there are %i normal cards", (expectedPoints, count) => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
       dwellerUnderTest: createAnyDweller(Wolf),
       otherDwellers: createFakeDwellers(count, DwellerPosition.Left, {
-        types: [CardType.Deer],
+        types: [CardType.Normal],
       }),
     });
     const game = createGame(forest);
