@@ -40,7 +40,7 @@ describe("An Elk card", () => {
     [14, 2, 2, 2],
   ])(
     "scores $s points with %s Saplings, %s cards with Birch symbol and %s other cards with Cerulean symbol",
-    (expectedPoints, saplingCount, birchCount, douglasFirCount) => {
+    (expectedPoints, saplingCount, birchCount, ceruleanCount) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
         dwellerUnderTest: createAnyDweller(Elk),
         otherWoodyPlants: [
@@ -48,7 +48,7 @@ describe("An Elk card", () => {
           ...createFakeWoodyPlants(birchCount, {
             treeSymbol: TreeSymbol.Birch,
           }),
-          ...createFakeWoodyPlants(douglasFirCount, {
+          ...createFakeWoodyPlants(ceruleanCount, {
             treeSymbol: TreeSymbol.Cerulean,
           }),
         ],

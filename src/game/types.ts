@@ -37,7 +37,7 @@ export enum TreeSymbol {
   Bamboo = "BAMBOO",
   Fuchsia = "FUCHSIA",
   Birch = "BIRCH",
-  Cerulean = "DOUGLAS_FIR",
+  Cerulean = "CERULEAN",
   EuropeanAlder = "EUROPEAN_ALDER",
   GoldenPalm = "GOLDEN_PALM",
   HorseChestnut = "HORSE_CHESTNUT",

@@ -10,7 +10,7 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Birch",
     defaultMessage: "Birch",
   },
-  DOUGLAS_FIR: {
+  CERULEAN: {
     id: "CardNames.Cerulean",
     defaultMessage: "Cerulean",
   },
@@ -344,7 +344,7 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
   },
   ABRA: {
     id: "CardNames.Abra",
-    defaultMessage: "Penny Bun",
+    defaultMessage: "Abra",
   },
   PHOEBUS_APOLLO: {
     id: "CardNames.PhoebusApollo",
