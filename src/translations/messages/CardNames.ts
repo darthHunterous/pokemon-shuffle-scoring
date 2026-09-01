@@ -286,9 +286,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.GreaterHorseshoeBat",
     defaultMessage: "Greater Horseshoe Bat",
   },
-  HEDGEHOG: {
-    id: "CardNames.Hedgehog",
-    defaultMessage: "Hedgehog",
+  CLEFAIRY: {
+    id: "CardNames.Clefairy",
+    defaultMessage: "Clefairy",
   },
   LARGE_TORTOISESHELL: {
     id: "CardNames.LargeTortoiseshell",
