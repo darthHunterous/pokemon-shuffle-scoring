@@ -2,7 +2,7 @@ import { extendBlueprint } from "../blueprints";
 import { GameBox, TreeSymbol, WoodyPlantCardBlueprint } from "../types";
 import Birch from "./Birch";
 
-const name = "MOOR_BIRCH";
+const name = "LAVARIDGE";
 
 // Promo card P001
 const blueprint: WoodyPlantCardBlueprint = extendBlueprint(Birch, {

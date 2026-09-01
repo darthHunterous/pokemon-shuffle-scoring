@@ -7,7 +7,7 @@ export { default as Elderberry } from "./Elderberry";
 export { default as EuropeanLarch } from "./EuropeanLarch";
 export { default as HorseChestnut } from "./HorseChestnut";
 export { default as Vermilion } from "./Vermilion";
-export { default as MoorBirch } from "./MoorBirch";
+export { default as Lavaridge } from "./Lavaridge";
 export { default as Pewter } from "./Pewter";
 export { default as OChristmasTree } from "./OChristmasTree";
 export { default as PalmTree } from "./PalmTree";

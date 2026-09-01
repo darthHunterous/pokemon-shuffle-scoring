@@ -13,7 +13,7 @@ import {
   EuropeanLarch,
   HorseChestnut,
   Vermilion,
-  MoorBirch,
+  Lavaridge,
   OChristmasTree,
   Mauville,
 } from "@/game/woody-plants";
@@ -97,7 +97,7 @@ describe("A Bellsprout card", () => {
   });
 
   it.each([
-    [MoorBirch.name, MoorBirch.countsAs, MoorBirch],
+    [Lavaridge.name, Lavaridge.countsAs, Lavaridge],
     [OChristmasTree.name, OChristmasTree.countsAs, OChristmasTree],
     [Mauville.name, Mauville.countsAs, Mauville],
   ])("treats %s as %s when scoring", (_1, _2, blueprint) => {
