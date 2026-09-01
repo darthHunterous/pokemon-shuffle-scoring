@@ -72,7 +72,7 @@ export { default as Ditto } from "./Ditto";
 export { default as Electabuzz } from "./Electabuzz";
 export { default as Eevee } from "./Eevee";
 export { default as RedPanda } from "./RedPanda";
-export { default as RedSquirrel } from "./RedSquirrel";
+export { default as Geodude } from "./Geodude";
 export { default as Robber } from "./Robber";
 export { default as Robin } from "./Robin";
 export { default as Voltorb } from "./Voltorb";

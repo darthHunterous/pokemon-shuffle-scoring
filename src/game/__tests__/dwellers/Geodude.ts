@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { RedSquirrel } from "@/game/dwellers";
+import { Geodude } from "@/game/dwellers";
 import {
   Fuchsia,
   Cinnabar,
@@ -20,7 +20,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Red Squirrel card", () => {
+describe("A Geodude card", () => {
   it.each([
     [0, Fuchsia.name, Fuchsia],
     [0, Cinnabar.name, Cinnabar],
@@ -35,12 +35,12 @@ describe("A Red Squirrel card", () => {
     "scores %i points on top on a %s card",
     (expectedPoints, _, woodyPlantBlueprint) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(RedSquirrel),
+        dwellerUnderTest: createAnyDweller(Geodude),
         woodyPlantUnderTest: createAnyWoodyPlant(woodyPlantBlueprint),
       });
       const game = createGame(forest);
 
-      const points = RedSquirrel.score({
+      const points = Geodude.score({
         game,
         forest,
         woodyPlant,

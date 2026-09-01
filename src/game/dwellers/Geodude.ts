@@ -7,7 +7,7 @@ import {
 } from "../types";
 import { Pewter } from "../woody-plants";
 
-const name = "RED_SQUIRREL";
+const name = "GEODUDE";
 const gameBox = GameBox.Base;
 const points = 5;
 
