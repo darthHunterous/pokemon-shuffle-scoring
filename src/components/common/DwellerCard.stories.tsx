@@ -23,7 +23,7 @@ export const Top: Story = {
       name: "PURPLE_EMPEROR",
       gameBox: GameBox.Base,
       types: [CardType.Butterfly, CardType.Insect],
-      treeSymbol: TreeSymbol.Birch,
+      treeSymbol: TreeSymbol.Cinnabar,
       isPartOfDeck: true,
       position: DwellerPosition.Top,
     },

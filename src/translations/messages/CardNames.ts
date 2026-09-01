@@ -6,9 +6,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Fuchsia",
     defaultMessage: "Fuchsia",
   },
-  BIRCH: {
-    id: "CardNames.Birch",
-    defaultMessage: "Birch",
+  CINNABAR: {
+    id: "CardNames.Cinnabar",
+    defaultMessage: "Cinnabar",
   },
   CERULEAN: {
     id: "CardNames.Cerulean",

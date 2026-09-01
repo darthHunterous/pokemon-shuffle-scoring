@@ -16,7 +16,7 @@ describe("A Roe Deer card", () => {
     [TreeSymbol.Vermilion],
     [TreeSymbol.SilverFir],
     [TreeSymbol.Fuchsia],
-    [TreeSymbol.Birch],
+    [TreeSymbol.Cinnabar],
     [TreeSymbol.HorseChestnut],
   ])(
     "with %s symbol scores 3 points if there's no other cards with that symbol",
@@ -41,7 +41,7 @@ describe("A Roe Deer card", () => {
     [TreeSymbol.Vermilion, 9],
     [TreeSymbol.SilverFir, 12],
     [TreeSymbol.Fuchsia, 15],
-    [TreeSymbol.Birch, 18],
+    [TreeSymbol.Cinnabar, 18],
     [TreeSymbol.HorseChestnut, 21],
   ])("with %s symbol scores %i points", (treeSymbol, expectedPoints) => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
@@ -60,7 +60,7 @@ describe("A Roe Deer card", () => {
           treeSymbol: TreeSymbol.Fuchsia,
         }),
         ...createFakeDwellers(4, DwellerPosition.Left, {
-          treeSymbol: TreeSymbol.Birch,
+          treeSymbol: TreeSymbol.Cinnabar,
         }),
         ...createFakeDwellers(5, DwellerPosition.Left, {
           treeSymbol: TreeSymbol.HorseChestnut,
@@ -71,7 +71,7 @@ describe("A Roe Deer card", () => {
         createFakeWoodyPlant({ treeSymbol: TreeSymbol.Vermilion }),
         createFakeWoodyPlant({ treeSymbol: TreeSymbol.SilverFir }),
         createFakeWoodyPlant({ treeSymbol: TreeSymbol.Fuchsia }),
-        createFakeWoodyPlant({ treeSymbol: TreeSymbol.Birch }),
+        createFakeWoodyPlant({ treeSymbol: TreeSymbol.Cinnabar }),
         createFakeWoodyPlant({ treeSymbol: TreeSymbol.HorseChestnut }),
       ],
     });

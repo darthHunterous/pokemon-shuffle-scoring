@@ -3,7 +3,7 @@ import { describe, expect, it } from "@jest/globals";
 import { RedSquirrel } from "@/game/dwellers";
 import {
   Fuchsia,
-  Birch,
+  Cinnabar,
   Cerulean,
   HorseChestnut,
   Vermilion,
@@ -23,7 +23,7 @@ import {
 describe("A Red Squirrel card", () => {
   it.each([
     [0, Fuchsia.name, Fuchsia],
-    [0, Birch.name, Birch],
+    [0, Cinnabar.name, Cinnabar],
     [0, Cerulean.name, Cerulean],
     [0, HorseChestnut.name, HorseChestnut],
     [0, Vermilion.name, Vermilion],

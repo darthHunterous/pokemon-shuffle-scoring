@@ -14,8 +14,8 @@ import {
 } from "../helpers";
 
 describe("An Elk card", () => {
-  it("scores 2 points if there are no Saplings or other cards with Birch or Cerulean symbol", () => {
-    const affectedTreeSymbols = [TreeSymbol.Birch, TreeSymbol.Cerulean];
+  it("scores 2 points if there are no Saplings or other cards with Cinnabar or Cerulean symbol", () => {
+    const affectedTreeSymbols = [TreeSymbol.Cinnabar, TreeSymbol.Cerulean];
     const cardFilter = (c: WoodyPlantCard | DwellerCard) =>
       c.name !== Sapling.name &&
       (!c.treeSymbol || !affectedTreeSymbols.includes(c.treeSymbol));
@@ -39,14 +39,14 @@ describe("An Elk card", () => {
     [4, 0, 0, 1],
     [14, 2, 2, 2],
   ])(
-    "scores $s points with %s Saplings, %s cards with Birch symbol and %s other cards with Cerulean symbol",
-    (expectedPoints, saplingCount, birchCount, ceruleanCount) => {
+    "scores $s points with %s Saplings, %s cards with Cinnabar symbol and %s other cards with Cerulean symbol",
+    (expectedPoints, saplingCount, cinnabarCount, ceruleanCount) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
         dwellerUnderTest: createAnyDweller(Elk),
         otherWoodyPlants: [
           ...createWoodyPlants(Sapling, saplingCount),
-          ...createFakeWoodyPlants(birchCount, {
-            treeSymbol: TreeSymbol.Birch,
+          ...createFakeWoodyPlants(cinnabarCount, {
+            treeSymbol: TreeSymbol.Cinnabar,
           }),
           ...createFakeWoodyPlants(ceruleanCount, {
             treeSymbol: TreeSymbol.Cerulean,

@@ -10,7 +10,7 @@ import {
 } from "../types";
 
 const name = "ELK";
-const pointsPerSaplingBirchOrCerulean = 2;
+const pointsPerSaplingCinnabarOrCerulean = 2;
 
 // Promo card P011
 const blueprint: DwellerCardBlueprint = {
@@ -22,21 +22,21 @@ const blueprint: DwellerCardBlueprint = {
     {
       gameBox: GameBox.Exploration,
       position: DwellerPosition.Left,
-      treeSymbol: TreeSymbol.Birch,
+      treeSymbol: TreeSymbol.Cinnabar,
       count: 1,
     },
     {
       gameBox: GameBox.PromoCards,
       position: DwellerPosition.Left,
-      treeSymbol: TreeSymbol.Birch,
+      treeSymbol: TreeSymbol.Cinnabar,
       count: 1,
     },
   ],
   score: ({ forest }) => {
     const count =
       countCardNames(forest, [Sapling.name]) +
-      countTreeSymbols(forest, [TreeSymbol.Birch, TreeSymbol.Cerulean]);
-    return count * pointsPerSaplingBirchOrCerulean;
+      countTreeSymbols(forest, [TreeSymbol.Cinnabar, TreeSymbol.Cerulean]);
+    return count * pointsPerSaplingCinnabarOrCerulean;
   },
 };
 

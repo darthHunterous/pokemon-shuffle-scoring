@@ -5,7 +5,7 @@ import { CardType } from "@/game/types";
 import * as WoodyPlants from "@/game/woody-plants";
 import {
   Fuchsia,
-  Birch,
+  Cinnabar,
   Blackthorne,
   Cerulean,
   Elderberry,
@@ -68,7 +68,7 @@ describe("A Pewter card", () => {
         createAnyWoodyPlant(Blackthorne),
         // Trees
         createAnyWoodyPlant(Fuchsia),
-        createAnyWoodyPlant(Birch),
+        createAnyWoodyPlant(Cinnabar),
         createAnyWoodyPlant(Cerulean),
         createAnyWoodyPlant(EuropeanLarch),
         createAnyWoodyPlant(HorseChestnut),

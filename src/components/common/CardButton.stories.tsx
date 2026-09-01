@@ -37,7 +37,7 @@ export const Gradient: Story = {
       id: "ba8ed761-0364-437f-858d-61c7f5147a16",
       name: "PURPLE_EMPEROR",
       types: [CardType.Butterfly, CardType.Insect],
-      treeSymbol: TreeSymbol.Birch,
+      treeSymbol: TreeSymbol.Cinnabar,
       isPartOfDeck: true,
       position: DwellerPosition.Top,
     } as DwellerCard,

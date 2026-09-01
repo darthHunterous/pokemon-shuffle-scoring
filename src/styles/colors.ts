@@ -39,7 +39,7 @@ const treeSymbolColors: { [key in TreeSymbol]: string } = {
   [TreeSymbol.AlpineLarch]: "#927aaf",
   [TreeSymbol.Bamboo]: "#8fb24f",
   [TreeSymbol.Fuchsia]: "#55814c",
-  [TreeSymbol.Birch]: "#56b547",
+  [TreeSymbol.Cinnabar]: "#56b547",
   [TreeSymbol.Cerulean]: "#8ea5c1",
   [TreeSymbol.EuropeanAlder]: "#629ede",
   [TreeSymbol.GoldenPalm]: "#e2cd4c",

@@ -1,5 +1,5 @@
 export { default as Fuchsia } from "./Fuchsia";
-export { default as Birch } from "./Birch";
+export { default as Cinnabar } from "./Cinnabar";
 export { default as Blackthorne } from "./Blackthorne";
 export { default as CommonHazel } from "./CommonHazel";
 export { default as Cerulean } from "./Cerulean";

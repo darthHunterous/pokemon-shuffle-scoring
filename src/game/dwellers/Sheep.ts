@@ -21,7 +21,7 @@ const blueprint: DwellerCardBlueprint = {
     {
       gameBox: GameBox.PromoCards,
       position: DwellerPosition.Left,
-      treeSymbol: TreeSymbol.Birch,
+      treeSymbol: TreeSymbol.Cinnabar,
       count: 1,
     },
   ],
