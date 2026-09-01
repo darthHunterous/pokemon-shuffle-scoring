@@ -334,9 +334,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.PalmTree",
     defaultMessage: "Palm Tree",
   },
-  PARASOL_MUSHROOM: {
-    id: "CardNames.ParasolMushroom",
-    defaultMessage: "Parasol Mushroom",
+  EXEGGCUTE: {
+    id: "CardNames.Exeggcute",
+    defaultMessage: "Exeggcute",
   },
   PEACOCK_BUTTERFLY: {
     id: "CardNames.PeacockButterfly",

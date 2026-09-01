@@ -6,7 +6,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "PARASOL_MUSHROOM";
+const name = "EXEGGCUTE";
 const gameBox = GameBox.Base;
 const points = 0;
 

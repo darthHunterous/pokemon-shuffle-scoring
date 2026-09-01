@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { ParasolMushroom } from "@/game/dwellers";
+import { Exeggcute } from "@/game/dwellers";
 
 import {
   createAnyDweller,
@@ -9,14 +9,14 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Parasol Mushroom card", () => {
+describe("A Exeggcute card", () => {
   it("scores no points in an empty forest", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(ParasolMushroom),
+      dwellerUnderTest: createAnyDweller(Exeggcute),
     });
     const game = createGame(forest);
 
-    const points = ParasolMushroom.score({
+    const points = Exeggcute.score({
       game,
       forest,
       woodyPlant,
@@ -28,11 +28,11 @@ describe("A Parasol Mushroom card", () => {
 
   it("scores no points in a complete forest", () => {
     const { dweller, woodyPlant, forest } = createCompleteForestWithDweller({
-      dwellerUnderTest: createAnyDweller(ParasolMushroom),
+      dwellerUnderTest: createAnyDweller(Exeggcute),
     });
     const game = createGame(forest);
 
-    const points = ParasolMushroom.score({
+    const points = Exeggcute.score({
       game,
       forest,
       woodyPlant,

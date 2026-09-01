@@ -62,7 +62,7 @@ export { default as Mole } from "./Mole";
 export { default as Moss } from "./Moss";
 export { default as DiglettAlola } from "./DiglettAlola";
 export { default as Nightingale } from "./Nightingale";
-export { default as ParasolMushroom } from "./ParasolMushroom";
+export { default as Exeggcute } from "./Exeggcute";
 export { default as PeacockButterfly } from "./PeacockButterfly";
 export { default as Abra } from "./Abra";
 export { default as PhoebusApollo } from "./PhoebusApollo";
