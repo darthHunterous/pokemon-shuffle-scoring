@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { EurasianMagpie } from "@/game/dwellers";
+import { Wingull } from "@/game/dwellers";
 
 import {
   createAnyDweller,
@@ -9,14 +9,14 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Eurasian Magpie card", () => {
+describe("A Wingull card", () => {
   it("scores 3 points in an empty forest", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(EurasianMagpie),
+      dwellerUnderTest: createAnyDweller(Wingull),
     });
     const game = createGame(forest);
 
-    const points = EurasianMagpie.score({
+    const points = Wingull.score({
       game,
       forest,
       woodyPlant,
@@ -28,11 +28,11 @@ describe("A Eurasian Magpie card", () => {
 
   it("scores 3 points in a complete forest", () => {
     const { dweller, woodyPlant, forest } = createCompleteForestWithDweller({
-      dwellerUnderTest: createAnyDweller(EurasianMagpie),
+      dwellerUnderTest: createAnyDweller(Wingull),
     });
     const game = createGame(forest);
 
-    const points = EurasianMagpie.score({
+    const points = Wingull.score({
       game,
       forest,
       woodyPlant,

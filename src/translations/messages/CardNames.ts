@@ -202,13 +202,13 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Elk",
     defaultMessage: "Elk",
   },
-  EURASIAN_JAY: {
-    id: "CardNames.EurasianJay",
-    defaultMessage: "Eurasian Jay",
+  FARFETCHD: {
+    id: "CardNames.Farfetchd",
+    defaultMessage: "Farfetchd",
   },
-  EURASIAN_MAGPIE: {
-    id: "CardNames.EurasianMagpie",
-    defaultMessage: "Eurasian Magpie",
+  WINGULL: {
+    id: "CardNames.Wingull",
+    defaultMessage: "Wingull",
   },
   EUROPEAN_BADGER: {
     id: "CardNames.EuropeanBadger",

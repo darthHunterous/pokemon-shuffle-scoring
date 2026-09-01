@@ -6,7 +6,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "EURASIAN_MAGPIE";
+const name = "WINGULL";
 const gameBox = GameBox.WoodlandEdge;
 const points = 3;
 

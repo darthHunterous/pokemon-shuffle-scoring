@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { EurasianJay } from "@/game/dwellers";
+import { Farfetchd } from "@/game/dwellers";
 
 import {
   createAnyDweller,
@@ -12,11 +12,11 @@ import {
 describe("A European Badger card", () => {
   it("scores 3 points in an empty forest", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(EurasianJay),
+      dwellerUnderTest: createAnyDweller(Farfetchd),
     });
     const game = createGame(forest);
 
-    const points = EurasianJay.score({
+    const points = Farfetchd.score({
       game,
       forest,
       woodyPlant,
@@ -28,11 +28,11 @@ describe("A European Badger card", () => {
 
   it("scores 3 points in a complete forest", () => {
     const { dweller, woodyPlant, forest } = createCompleteForestWithDweller({
-      dwellerUnderTest: createAnyDweller(EurasianJay),
+      dwellerUnderTest: createAnyDweller(Farfetchd),
     });
     const game = createGame(forest);
 
-    const points = EurasianJay.score({
+    const points = Farfetchd.score({
       game,
       forest,
       woodyPlant,
