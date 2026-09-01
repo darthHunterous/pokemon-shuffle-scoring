@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { WoodAnt } from "@/game/dwellers";
+import { Durant } from "@/game/dwellers";
 
 import { CardType, DwellerPosition } from "../..";
 import {
@@ -14,7 +14,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Wood Ant card", () => {
+describe("A Durant card", () => {
   it.each([
     [2, 0],
     [4, 1],
@@ -23,7 +23,7 @@ describe("A Wood Ant card", () => {
     "scores %i points if there are %i other cards in any bottom slot",
     (expectedPoints, count) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(WoodAnt),
+        dwellerUnderTest: createAnyDweller(Durant),
         otherDwellers: [
           createFakeDweller(DwellerPosition.Top),
           createFakeDweller(DwellerPosition.Left),
@@ -33,7 +33,7 @@ describe("A Wood Ant card", () => {
       });
       const game = createGame(forest);
 
-      const points = WoodAnt.score({
+      const points = Durant.score({
         game,
         forest,
         woodyPlant,
@@ -46,12 +46,12 @@ describe("A Wood Ant card", () => {
 
   it("ignores cards on shrubs", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(WoodAnt),
+      dwellerUnderTest: createAnyDweller(Durant),
       woodyPlantUnderTest: createFakeWoodyPlant({ types: [CardType.Shrub] }),
     });
     const game = createGame(forest);
 
-    const points = WoodAnt.score({
+    const points = Durant.score({
       game,
       forest,
       woodyPlant,
