@@ -73,7 +73,7 @@ export const Dweller: Story = {
     cards: [
       {
         id: "ba8ed761-0364-437f-858d-61c7f5147a16",
-        name: "PURPLE_EMPEROR",
+        name: "DUSTOX",
         gameBox: GameBox.Base,
         types: [CardType.Butterfly, CardType.Insect],
         treeSymbol: TreeSymbol.Cinnabar,
@@ -82,7 +82,7 @@ export const Dweller: Story = {
       },
       {
         id: "f5813a6d-9c07-47fe-bc74-1c22948212e9",
-        name: "PURPLE_EMPEROR",
+        name: "DUSTOX",
         gameBox: GameBox.Base,
         types: [CardType.Butterfly, CardType.Insect],
         treeSymbol: TreeSymbol.HorseChestnut,

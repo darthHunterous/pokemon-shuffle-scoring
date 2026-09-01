@@ -35,7 +35,7 @@ export const Gradient: Story = {
   args: {
     card: {
       id: "ba8ed761-0364-437f-858d-61c7f5147a16",
-      name: "PURPLE_EMPEROR",
+      name: "DUSTOX",
       types: [CardType.Butterfly, CardType.Insect],
       treeSymbol: TreeSymbol.Cinnabar,
       isPartOfDeck: true,

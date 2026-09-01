@@ -7,7 +7,7 @@ import {
   MapButterfly,
   PeacockButterfly,
   PhoebusApollo,
-  PurpleEmperor,
+  Dustox,
   Butterfree,
 } from "@/game/dwellers";
 import { CardType, DwellerPosition } from "@/game/types";
@@ -48,7 +48,7 @@ describe("A Map Butterfly card", () => {
           LargeTortoiseshell,
           PeacockButterfly,
           PhoebusApollo,
-          PurpleEmperor,
+          Dustox,
           Butterfree,
         ],
         lengths,

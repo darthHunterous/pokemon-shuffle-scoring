@@ -67,7 +67,7 @@ export const Default: Story = {
           [DwellerPosition.Top]: [
             {
               id: "ba8ed761-0364-437f-858d-61c7f5147a16",
-              name: "PURPLE_EMPEROR",
+              name: "DUSTOX",
               gameBox: GameBox.Base,
               types: [CardType.Butterfly, CardType.Insect],
               treeSymbol: TreeSymbol.Cinnabar,

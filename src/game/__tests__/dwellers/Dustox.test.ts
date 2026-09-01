@@ -7,7 +7,7 @@ import {
   MapButterfly,
   PeacockButterfly,
   PhoebusApollo,
-  PurpleEmperor,
+  Dustox,
   Butterfree,
 } from "@/game/dwellers";
 import { CardType, DwellerPosition } from "@/game/types";
@@ -21,7 +21,7 @@ import {
   generateCardIds,
 } from "../helpers";
 
-describe("A Purple Emperor card", () => {
+describe("A Dustox card", () => {
   it.each([
     [0, [1]],
     [3, [2]],
@@ -41,7 +41,7 @@ describe("A Purple Emperor card", () => {
     "scores %i points for a set of butterflies with lengths %p",
     (expectedPoints, lengths) => {
       const { dwellerUnderTest, otherDwellers } = createDwellerSets(
-        PurpleEmperor,
+        Dustox,
         [
           Brimstone,
           Beautifly,
@@ -59,7 +59,7 @@ describe("A Purple Emperor card", () => {
       });
       const game = createGame(forest);
 
-      const points = PurpleEmperor.score({
+      const points = Dustox.score({
         game,
         forest,
         woodyPlant,
@@ -74,7 +74,7 @@ describe("A Purple Emperor card", () => {
     const ids = generateCardIds(2).toSorted();
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
       dwellerUnderTest: {
-        ...createAnyDweller(PurpleEmperor),
+        ...createAnyDweller(Dustox),
         id: ids[1],
       },
       otherDwellers: [
@@ -86,7 +86,7 @@ describe("A Purple Emperor card", () => {
     });
     const game = createGame(forest);
 
-    const points = PurpleEmperor.score({
+    const points = Dustox.score({
       game,
       forest,
       woodyPlant,
