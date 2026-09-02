@@ -314,9 +314,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Mistletoe",
     defaultMessage: "Mistletoe",
   },
-  MOLE: {
-    id: "CardNames.Mole",
-    defaultMessage: "Mole",
+  MR_MIME: {
+    id: "CardNames.MrMime",
+    defaultMessage: "Mr. Mime",
   },
   MOSS: {
     id: "CardNames.Moss",

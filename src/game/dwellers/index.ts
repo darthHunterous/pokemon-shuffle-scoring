@@ -58,7 +58,7 @@ export { default as MapButterfly } from "./MapButterfly";
 export { default as MarshCinquefoil } from "./MarshCinquefoil";
 export { default as Meeps } from "./Meeps";
 export { default as Mistletoe } from "./Mistletoe";
-export { default as Mole } from "./Mole";
+export { default as MrMime } from "./MrMime";
 export { default as Moss } from "./Moss";
 export { default as DiglettAlola } from "./DiglettAlola";
 export { default as Nightingale } from "./Nightingale";

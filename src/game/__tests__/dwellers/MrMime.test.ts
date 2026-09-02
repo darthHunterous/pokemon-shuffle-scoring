@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { Mole } from "@/game/dwellers";
+import { MrMime } from "@/game/dwellers";
 
 import {
   createAnyDweller,
@@ -9,14 +9,14 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Mole card", () => {
+describe("A MrMime card", () => {
   it("scores no points in an empty forest", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(Mole),
+      dwellerUnderTest: createAnyDweller(MrMime),
     });
     const game = createGame(forest);
 
-    const points = Mole.score({
+    const points = MrMime.score({
       game,
       forest,
       woodyPlant,
@@ -28,11 +28,11 @@ describe("A Mole card", () => {
 
   it("scores no points in a complete forest", () => {
     const { dweller, woodyPlant, forest } = createCompleteForestWithDweller({
-      dwellerUnderTest: createAnyDweller(Mole),
+      dwellerUnderTest: createAnyDweller(MrMime),
     });
     const game = createGame(forest);
 
-    const points = Mole.score({
+    const points = MrMime.score({
       game,
       forest,
       woodyPlant,
