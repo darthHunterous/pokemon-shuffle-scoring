@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { TawnyOwl } from "@/game/dwellers";
+import { Hoothoot } from "@/game/dwellers";
 
 import {
   createAnyDweller,
@@ -9,14 +9,14 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Tawny Owl card", () => {
+describe("A Hoothoot card", () => {
   it("scores 5 points in an empty forest", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(TawnyOwl),
+      dwellerUnderTest: createAnyDweller(Hoothoot),
     });
     const game = createGame(forest);
 
-    const points = TawnyOwl.score({
+    const points = Hoothoot.score({
       game,
       forest,
       woodyPlant,
@@ -28,11 +28,11 @@ describe("A Tawny Owl card", () => {
 
   it("scores 5 points in a complete forest", () => {
     const { dweller, woodyPlant, forest } = createCompleteForestWithDweller({
-      dwellerUnderTest: createAnyDweller(TawnyOwl),
+      dwellerUnderTest: createAnyDweller(Hoothoot),
     });
     const game = createGame(forest);
 
-    const points = TawnyOwl.score({
+    const points = Hoothoot.score({
       game,
       forest,
       woodyPlant,

@@ -85,7 +85,7 @@ export { default as Squeaker } from "./Squeaker";
 export { default as StagBeetle } from "./StagBeetle";
 export { default as Steinbock } from "./Steinbock";
 export { default as StingingNettle } from "./StingingNettle";
-export { default as TawnyOwl } from "./TawnyOwl";
+export { default as Hoothoot } from "./Hoothoot";
 export { default as TreeFerns } from "./TreeFerns";
 export { default as TreeFrog } from "./TreeFrog";
 export { default as Troll } from "./Troll";
