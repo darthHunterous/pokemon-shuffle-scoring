@@ -63,7 +63,7 @@ export { default as Moss } from "./Moss";
 export { default as DiglettAlola } from "./DiglettAlola";
 export { default as Nightingale } from "./Nightingale";
 export { default as Exeggcute } from "./Exeggcute";
-export { default as PeacockButterfly } from "./PeacockButterfly";
+export { default as Mothim } from "./Mothim";
 export { default as Abra } from "./Abra";
 export { default as PhoebusApollo } from "./PhoebusApollo";
 export { default as PondTurtle } from "./PondTurtle";

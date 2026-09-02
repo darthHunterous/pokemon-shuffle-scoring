@@ -5,7 +5,7 @@ import {
   Beautifly,
   LargeTortoiseshell,
   MapButterfly,
-  PeacockButterfly,
+  Mothim,
   PhoebusApollo,
   Dustox,
   Butterfree,
@@ -21,7 +21,7 @@ import {
   generateCardIds,
 } from "../helpers";
 
-describe("A Peacock Butterfly card", () => {
+describe("A Mothim card", () => {
   it.each([
     [0, [1]],
     [3, [2]],
@@ -41,7 +41,7 @@ describe("A Peacock Butterfly card", () => {
     "scores %i points for a set of butterflies with lengths %p",
     (expectedPoints, lengths) => {
       const { dwellerUnderTest, otherDwellers } = createDwellerSets(
-        PeacockButterfly,
+        Mothim,
         [
           Brimstone,
           Beautifly,
@@ -59,7 +59,7 @@ describe("A Peacock Butterfly card", () => {
       });
       const game = createGame(forest);
 
-      const points = PeacockButterfly.score({
+      const points = Mothim.score({
         game,
         forest,
         woodyPlant,
@@ -74,7 +74,7 @@ describe("A Peacock Butterfly card", () => {
     const ids = generateCardIds(2).toSorted();
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
       dwellerUnderTest: {
-        ...createAnyDweller(PeacockButterfly),
+        ...createAnyDweller(Mothim),
         id: ids[1],
       },
       otherDwellers: [
@@ -86,7 +86,7 @@ describe("A Peacock Butterfly card", () => {
     });
     const game = createGame(forest);
 
-    const points = PeacockButterfly.score({
+    const points = Mothim.score({
       game,
       forest,
       woodyPlant,
