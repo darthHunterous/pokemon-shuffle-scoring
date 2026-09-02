@@ -2,7 +2,7 @@ import { describe, expect, it } from "@jest/globals";
 
 import {
   BarbastelleBat,
-  BechsteinsBat,
+  Growlithe,
   Charmander,
   CommonPipistrelle,
   DuererFledermaus,
@@ -20,7 +20,7 @@ import {
 describe("A Dürer-Fledermaus card", () => {
   const otherBats = [
     BarbastelleBat,
-    BechsteinsBat,
+    Growlithe,
     Charmander,
     CommonPipistrelle,
     GreaterHorseshoeBat,

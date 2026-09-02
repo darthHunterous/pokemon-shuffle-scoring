@@ -2,7 +2,7 @@ import { describe, expect, it } from "@jest/globals";
 
 import {
   BarbastelleBat,
-  BechsteinsBat,
+  Growlithe,
   Charmander,
   CommonPipistrelle,
   DuererFledermaus,
@@ -19,7 +19,7 @@ import {
 
 describe("A Barbastelle Bat card", () => {
   const otherBats = [
-    BechsteinsBat,
+    Growlithe,
     Charmander,
     CommonPipistrelle,
     DuererFledermaus,
@@ -56,7 +56,7 @@ describe("A Barbastelle Bat card", () => {
   it("ignores multiple instances of the same bat", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
       dwellerUnderTest: createAnyDweller(BarbastelleBat),
-      otherDwellers: createAllDwellers(BechsteinsBat),
+      otherDwellers: createAllDwellers(Growlithe),
     });
     const game = createGame(forest);
 

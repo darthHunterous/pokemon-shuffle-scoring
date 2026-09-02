@@ -4,7 +4,7 @@ export { default as GigantamaxEevee } from "./GigantamaxEevee";
 export { default as BarbastelleBat } from "./BarbastelleBat";
 export { default as BarnOwl } from "./BarnOwl";
 export { default as BeardedVulture } from "./BeardedVulture";
-export { default as BechsteinsBat } from "./BechsteinsBat";
+export { default as Growlithe } from "./Growlithe";
 export { default as Cubone } from "./Cubone";
 export { default as BeeSwarm } from "./BeeSwarm";
 export { default as Bulbasaur } from "./Bulbasaur";
