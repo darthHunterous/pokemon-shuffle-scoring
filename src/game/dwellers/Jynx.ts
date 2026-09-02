@@ -6,7 +6,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "CHANTERELLE";
+const name = "JYNX";
 const gameBox = GameBox.Base;
 const points = 0;
 

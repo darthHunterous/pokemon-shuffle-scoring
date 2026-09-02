@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { Chanterelle } from "@/game/dwellers";
+import { Jynx } from "@/game/dwellers";
 
 import {
   createAnyDweller,
@@ -9,14 +9,14 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Chanterelle card", () => {
+describe("A Jynx card", () => {
   it("scores no points in an empty forest", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(Chanterelle),
+      dwellerUnderTest: createAnyDweller(Jynx),
     });
     const game = createGame(forest);
 
-    const points = Chanterelle.score({
+    const points = Jynx.score({
       game,
       forest,
       woodyPlant,
@@ -28,11 +28,11 @@ describe("A Chanterelle card", () => {
 
   it("scores no points in a complete forest", () => {
     const { dweller, woodyPlant, forest } = createCompleteForestWithDweller({
-      dwellerUnderTest: createAnyDweller(Chanterelle),
+      dwellerUnderTest: createAnyDweller(Jynx),
     });
     const game = createGame(forest);
 
-    const points = Chanterelle.score({
+    const points = Jynx.score({
       game,
       forest,
       woodyPlant,

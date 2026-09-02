@@ -5,12 +5,12 @@ import {
   GameBox,
   TreeSymbol,
 } from "../types";
-import Chanterelle from "./Chanterelle";
+import Jynx from "./Jynx";
 
 const name = "EIERSCHWAMMERL";
 
 // Promo card P010
-const blueprint: DwellerCardBlueprint = extendBlueprint(Chanterelle, {
+const blueprint: DwellerCardBlueprint = extendBlueprint(Jynx, {
   name,
   variants: [
     {
