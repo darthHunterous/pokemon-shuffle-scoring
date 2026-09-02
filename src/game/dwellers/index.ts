@@ -41,7 +41,7 @@ export { default as EuropeanWildcat } from "./EuropeanWildcat";
 export { default as Magnemite } from "./Magnemite";
 export { default as FemaleWildBoar } from "./FemaleWildBoar";
 export { default as Fireflies } from "./Fireflies";
-export { default as FireSalamander } from "./FireSalamander";
+export { default as Lapras } from "./Lapras";
 export { default as FlyAgaric } from "./FlyAgaric";
 export { default as Genet } from "./Genet";
 export { default as Gentian } from "./Gentian";

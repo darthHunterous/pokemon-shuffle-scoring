@@ -7,7 +7,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "FIRE_SALAMANDER";
+const name = "LAPRAS";
 const pointsByCount = {
   1: 5,
   2: 15,

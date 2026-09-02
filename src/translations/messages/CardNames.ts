@@ -242,9 +242,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.FemaleWildBoar",
     defaultMessage: "Wild Boar ♀",
   },
-  FIRE_SALAMANDER: {
-    id: "CardNames.FireSalamander",
-    defaultMessage: "Fire Salamander",
+  LAPRAS: {
+    id: "CardNames.Lapras",
+    defaultMessage: "Lapras",
   },
   FIREFLIES: {
     id: "CardNames.Fireflies",
