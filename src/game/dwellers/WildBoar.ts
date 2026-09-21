@@ -6,7 +6,7 @@ import {
   GameBox,
   TreeSymbol,
 } from "../types";
-import Squeaker from "./Squeaker";
+import Pichu from "./Pichu";
 
 const name = "WILD_BOAR";
 const gameBox = GameBox.Base;
@@ -44,7 +44,7 @@ const blueprint: DwellerCardBlueprint = {
     },
   ],
   score: ({ forest }) =>
-    countCardNames(forest, [Squeaker.name]) > 0 ? points : 0,
+    countCardNames(forest, [Pichu.name]) > 0 ? points : 0,
 };
 
 export default blueprint;

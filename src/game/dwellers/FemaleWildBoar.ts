@@ -6,11 +6,11 @@ import {
   GameBox,
   TreeSymbol,
 } from "../types";
-import Squeaker from "./Squeaker";
+import Pichu from "./Pichu";
 
 const name = "FEMALE_WILD_BOAR";
 const gameBox = GameBox.WoodlandEdge;
-const pointsPerSqueaker = 10;
+const pointsPerPichu = 10;
 
 const blueprint: DwellerCardBlueprint = {
   name,
@@ -38,7 +38,7 @@ const blueprint: DwellerCardBlueprint = {
     },
   ],
   score: ({ forest }) =>
-    countCardNames(forest, [Squeaker.name]) * pointsPerSqueaker,
+    countCardNames(forest, [Pichu.name]) * pointsPerPichu,
 };
 
 export default blueprint;

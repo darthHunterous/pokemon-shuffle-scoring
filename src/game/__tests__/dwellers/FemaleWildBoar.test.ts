@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { FemaleWildBoar, Squeaker } from "@/game/dwellers";
+import { FemaleWildBoar, Pichu } from "@/game/dwellers";
 
 import {
   createAllDwellers,
@@ -15,11 +15,11 @@ describe("A Female Wild Boar card", () => {
     [10, 1],
     [20, 2],
   ])(
-    "scores %i points if there are %i Squeaker cards",
+    "scores %i points if there are %i Pichu cards",
     (expectedPoints, count) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
         dwellerUnderTest: createAnyDweller(FemaleWildBoar),
-        otherDwellers: createAllDwellers(Squeaker).slice(0, count),
+        otherDwellers: createAllDwellers(Pichu).slice(0, count),
       });
       const game = createGame(forest);
 

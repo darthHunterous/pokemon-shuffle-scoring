@@ -6,7 +6,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "SQUEAKER";
+const name = "PICHU";
 const points = 1;
 
 const blueprint: DwellerCardBlueprint = {

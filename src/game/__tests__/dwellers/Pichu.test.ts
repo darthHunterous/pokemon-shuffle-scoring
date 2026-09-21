@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { Squeaker } from "@/game/dwellers";
+import { Pichu } from "@/game/dwellers";
 
 import {
   createAnyDweller,
@@ -9,14 +9,14 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Squeaker card", () => {
+describe("A Pichu card", () => {
   it("scores 1 point in an empty forest", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(Squeaker),
+      dwellerUnderTest: createAnyDweller(Pichu),
     });
     const game = createGame(forest);
 
-    const points = Squeaker.score({
+    const points = Pichu.score({
       game,
       forest,
       woodyPlant,
@@ -28,11 +28,11 @@ describe("A Squeaker card", () => {
 
   it("scores 1 point in a complete forest", () => {
     const { dweller, woodyPlant, forest } = createCompleteForestWithDweller({
-      dwellerUnderTest: createAnyDweller(Squeaker),
+      dwellerUnderTest: createAnyDweller(Pichu),
     });
     const game = createGame(forest);
 
-    const points = Squeaker.score({
+    const points = Pichu.score({
       game,
       forest,
       woodyPlant,
