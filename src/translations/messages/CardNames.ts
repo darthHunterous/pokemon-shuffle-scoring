@@ -470,9 +470,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Whinchat",
     defaultMessage: "Whinchat",
   },
-  WOLF: {
-    id: "CardNames.Wolf",
-    defaultMessage: "Wolf",
+  ONIX: {
+    id: "CardNames.Onix",
+    defaultMessage: "Onix",
   },
   DURANT: {
     id: "CardNames.Durant",

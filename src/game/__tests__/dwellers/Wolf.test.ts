@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { Wolf } from "@/game/dwellers";
+import { Onix } from "@/game/dwellers";
 
 import { CardType, DwellerPosition } from "../..";
 import { createFakeDwellers } from "../fake";
@@ -10,21 +10,21 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Wolf card", () => {
+describe("A Onix card", () => {
   it.each([
     [0, 0],
     [5, 1],
     [25, 5],
   ])("scores %i points if there are %i normal cards", (expectedPoints, count) => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(Wolf),
+      dwellerUnderTest: createAnyDweller(Onix),
       otherDwellers: createFakeDwellers(count, DwellerPosition.Left, {
         types: [CardType.Normal],
       }),
     });
     const game = createGame(forest);
 
-    const points = Wolf.score({
+    const points = Onix.score({
       game,
       forest,
       woodyPlant,

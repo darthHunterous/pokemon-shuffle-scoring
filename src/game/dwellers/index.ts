@@ -96,5 +96,5 @@ export { default as WhiteStork } from "./WhiteStork";
 export { default as WildBoar } from "./WildBoar";
 export { default as Bellsprout } from "./Bellsprout";
 export { default as WildTulip } from "./WildTulip";
-export { default as Wolf } from "./Wolf";
+export { default as Onix } from "./Onix";
 export { default as Durant } from "./Durant";
