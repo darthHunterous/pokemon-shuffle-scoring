@@ -8,7 +8,7 @@ import {
 } from "../types";
 import Voltorb from "./Voltorb";
 
-const name = "LYNX";
+const name = "RHYHORN";
 const gameBox = GameBox.Base;
 const pointsWithVoltorb = 10;
 
@@ -27,7 +27,7 @@ const blueprint: DwellerCardBlueprint = {
     {
       gameBox,
       position: DwellerPosition.Left,
-      treeSymbol: TreeSymbol.HorseChestnut,
+      treeSymbol: TreeSymbol.Saffron,
       count: 1,
     },
     {

@@ -6,7 +6,7 @@ import {
   WoodyPlantCardBlueprint,
 } from "../types";
 
-const name = "HORSE_CHESTNUT";
+const name = "SAFFRON";
 const pointsByCount = {
   1: 1,
   2: 4,
@@ -25,7 +25,7 @@ const blueprint: WoodyPlantCardBlueprint = {
   variants: [
     {
       gameBox: GameBox.Base,
-      treeSymbol: TreeSymbol.HorseChestnut,
+      treeSymbol: TreeSymbol.Saffron,
       count: 11,
     },
   ],

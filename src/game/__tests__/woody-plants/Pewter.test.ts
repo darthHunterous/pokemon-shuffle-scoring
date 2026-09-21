@@ -10,7 +10,7 @@ import {
   Cerulean,
   Elderberry,
   EuropeanLarch,
-  HorseChestnut,
+  Saffron,
   Vermilion,
   Lavaridge,
   OChristmasTree,
@@ -71,7 +71,7 @@ describe("A Pewter card", () => {
         createAnyWoodyPlant(Cinnabar),
         createAnyWoodyPlant(Cerulean),
         createAnyWoodyPlant(EuropeanLarch),
-        createAnyWoodyPlant(HorseChestnut),
+        createAnyWoodyPlant(Saffron),
       ],
     });
     const game = createGame(forest);
@@ -95,7 +95,7 @@ describe("A Pewter card", () => {
         ),
         createAnyWoodyPlant(Fuchsia),
         createAnyWoodyPlant(EuropeanLarch),
-        createAnyWoodyPlant(HorseChestnut),
+        createAnyWoodyPlant(Saffron),
         createAnyWoodyPlant(Vermilion),
         createAnyWoodyPlant(StonePine),
       ],

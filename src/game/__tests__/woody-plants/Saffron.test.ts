@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import { DwellerPosition } from "@/game";
-import { HorseChestnut } from "@/game/woody-plants";
+import { Saffron } from "@/game/woody-plants";
 
 import { createFakeDweller } from "../fake";
 import {
@@ -12,7 +12,7 @@ import {
   createWoodyPlants,
 } from "../helpers";
 
-describe("A Horse Chestnut card", () => {
+describe("A Saffron card", () => {
   it.each([
     [1, 1],
     [4, 2],
@@ -23,12 +23,12 @@ describe("A Horse Chestnut card", () => {
     [49, 7],
     [49, 8],
   ])("scores %i points for a set of %i", (expectedPoints, count) => {
-    const woodyPlants = createWoodyPlants(HorseChestnut, count);
+    const woodyPlants = createWoodyPlants(Saffron, count);
     const forest = createForestWith({ woodyPlants });
     const game = createGame(forest);
 
     const points = woodyPlants
-      .map((woodyPlant) => HorseChestnut.score({ game, forest, woodyPlant }))
+      .map((woodyPlant) => Saffron.score({ game, forest, woodyPlant }))
       .reduce((a, b) => a + b, 0);
 
     expect(points).toBe(expectedPoints);
@@ -36,7 +36,7 @@ describe("A Horse Chestnut card", () => {
 
   it("takes into account cards increasing the tree count when scoring", () => {
     const woodyPlant = addDwellersToWoodyPlant(
-      createAnyWoodyPlant(HorseChestnut),
+      createAnyWoodyPlant(Saffron),
       createFakeDweller(DwellerPosition.Left, {
         modifiers: {
           woodyPlantCount: () => 1,
@@ -46,7 +46,7 @@ describe("A Horse Chestnut card", () => {
     const forest = createForestWith({ woodyPlants: [woodyPlant] });
     const game = createGame(forest);
 
-    const points = HorseChestnut.score({ game, forest, woodyPlant });
+    const points = Saffron.score({ game, forest, woodyPlant });
 
     expect(points).toBe(4);
   });

@@ -16,7 +16,7 @@ const blueprint: DwellerCardBlueprint = extendBlueprint(EuropeanWildcat, {
     {
       gameBox: GameBox.PromoCards,
       position: DwellerPosition.Left,
-      treeSymbol: TreeSymbol.HorseChestnut,
+      treeSymbol: TreeSymbol.Saffron,
       count: 1,
     },
   ],

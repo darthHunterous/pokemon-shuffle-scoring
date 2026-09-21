@@ -18,9 +18,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.EuropeanLarch",
     defaultMessage: "European Larch",
   },
-  HORSE_CHESTNUT: {
-    id: "CardNames.HorseChestnut",
-    defaultMessage: "Horse Chestnut",
+  SAFFRON: {
+    id: "CardNames.Saffron",
+    defaultMessage: "Saffron",
   },
   VERMILION: {
     id: "CardNames.Vermilion",
@@ -294,9 +294,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.LargeTortoiseshell",
     defaultMessage: "Large Tortoiseshell",
   },
-  LYNX: {
-    id: "CardNames.Lynx",
-    defaultMessage: "Lynx",
+  RHYHORN: {
+    id: "CardNames.Rhyhorn",
+    defaultMessage: "Rhyhorn",
   },
   MAP_BUTTERFLY: {
     id: "CardNames.MapButterfly",

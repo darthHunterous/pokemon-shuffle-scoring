@@ -53,7 +53,7 @@ export { default as GreatGreenBushCricket } from "./GreatGreenBushCricket";
 export { default as Pikipek } from "./Pikipek";
 export { default as Clefairy } from "./Clefairy";
 export { default as LargeTortoiseshell } from "./LargeTortoiseshell";
-export { default as Lynx } from "./Lynx";
+export { default as Rhyhorn } from "./Rhyhorn";
 export { default as MapButterfly } from "./MapButterfly";
 export { default as MarshCinquefoil } from "./MarshCinquefoil";
 export { default as Meeps } from "./Meeps";

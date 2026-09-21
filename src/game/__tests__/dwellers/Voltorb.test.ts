@@ -17,7 +17,7 @@ describe("A Voltorb card", () => {
     [TreeSymbol.SilverFir],
     [TreeSymbol.Fuchsia],
     [TreeSymbol.Cinnabar],
-    [TreeSymbol.HorseChestnut],
+    [TreeSymbol.Saffron],
   ])(
     "with %s symbol scores 3 points if there's no other cards with that symbol",
     (treeSymbol) => {
@@ -42,7 +42,7 @@ describe("A Voltorb card", () => {
     [TreeSymbol.SilverFir, 12],
     [TreeSymbol.Fuchsia, 15],
     [TreeSymbol.Cinnabar, 18],
-    [TreeSymbol.HorseChestnut, 21],
+    [TreeSymbol.Saffron, 21],
   ])("with %s symbol scores %i points", (treeSymbol, expectedPoints) => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
       dwellerUnderTest: createDweller(
@@ -63,7 +63,7 @@ describe("A Voltorb card", () => {
           treeSymbol: TreeSymbol.Cinnabar,
         }),
         ...createFakeDwellers(5, DwellerPosition.Left, {
-          treeSymbol: TreeSymbol.HorseChestnut,
+          treeSymbol: TreeSymbol.Saffron,
         }),
       ],
       otherWoodyPlants: [
@@ -72,7 +72,7 @@ describe("A Voltorb card", () => {
         createFakeWoodyPlant({ treeSymbol: TreeSymbol.SilverFir }),
         createFakeWoodyPlant({ treeSymbol: TreeSymbol.Fuchsia }),
         createFakeWoodyPlant({ treeSymbol: TreeSymbol.Cinnabar }),
-        createFakeWoodyPlant({ treeSymbol: TreeSymbol.HorseChestnut }),
+        createFakeWoodyPlant({ treeSymbol: TreeSymbol.Saffron }),
       ],
     });
     const game = createGame(forest);

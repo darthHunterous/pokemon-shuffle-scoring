@@ -27,7 +27,7 @@ const blueprint: WoodyPlantCardBlueprint = {
     },
     {
       gameBox,
-      treeSymbol: TreeSymbol.HorseChestnut,
+      treeSymbol: TreeSymbol.Saffron,
       count: 1,
     },
     {

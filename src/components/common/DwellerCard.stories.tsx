@@ -51,7 +51,7 @@ export const Left: Story = {
       name: "BARBASTELLE_BAT",
       gameBox: GameBox.Base,
       types: [CardType.Bat],
-      treeSymbol: TreeSymbol.HorseChestnut,
+      treeSymbol: TreeSymbol.Saffron,
       isPartOfDeck: true,
       position: DwellerPosition.Left,
     },
@@ -62,7 +62,7 @@ export const Right: Story = {
   args: {
     card: {
       id: "6cfebd3e-b770-4f7b-9f17-64aef35b1a6d",
-      name: "LYNX",
+      name: "RHYHORN",
       gameBox: GameBox.Base,
       types: [CardType.PawedAnimal],
       treeSymbol: TreeSymbol.Cerulean,

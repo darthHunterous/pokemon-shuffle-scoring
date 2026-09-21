@@ -18,7 +18,7 @@ const blueprint: DwellerCardBlueprint = {
     {
       gameBox: GameBox.Base,
       position: DwellerPosition.Left,
-      treeSymbol: TreeSymbol.HorseChestnut,
+      treeSymbol: TreeSymbol.Saffron,
       count: 1,
     },
     {
@@ -42,7 +42,7 @@ const blueprint: DwellerCardBlueprint = {
     {
       gameBox: GameBox.WoodlandEdge,
       position: DwellerPosition.Left,
-      treeSymbol: TreeSymbol.HorseChestnut,
+      treeSymbol: TreeSymbol.Saffron,
       extraTypes: [CardType.WoodlandEdge],
       count: 1,
     },

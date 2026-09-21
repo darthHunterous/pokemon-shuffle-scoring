@@ -43,7 +43,7 @@ const treeSymbolColors: { [key in TreeSymbol]: string } = {
   [TreeSymbol.Cerulean]: "#8ea5c1",
   [TreeSymbol.EuropeanAlder]: "#629ede",
   [TreeSymbol.GoldenPalm]: "#e2cd4c",
-  [TreeSymbol.HorseChestnut]: "#f79d4d",
+  [TreeSymbol.Saffron]: "#f79d4d",
   [TreeSymbol.Vermilion]: "#f3c909",
   [TreeSymbol.Pewter]: "#c27e29",
   [TreeSymbol.SilverFir]: "#568f9c",

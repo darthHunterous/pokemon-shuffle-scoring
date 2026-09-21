@@ -5,7 +5,7 @@ export { default as CommonHazel } from "./CommonHazel";
 export { default as Cerulean } from "./Cerulean";
 export { default as Elderberry } from "./Elderberry";
 export { default as EuropeanLarch } from "./EuropeanLarch";
-export { default as HorseChestnut } from "./HorseChestnut";
+export { default as Saffron } from "./Saffron";
 export { default as Vermilion } from "./Vermilion";
 export { default as Lavaridge } from "./Lavaridge";
 export { default as Pewter } from "./Pewter";
