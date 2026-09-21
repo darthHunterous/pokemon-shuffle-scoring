@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import { CardType, DwellerPosition } from "@/game";
-import { TreeFerns } from "@/game/dwellers";
+import { Oddish } from "@/game/dwellers";
 
 import { createFakeDwellers } from "../fake";
 import {
@@ -10,7 +10,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Tree Ferns card", () => {
+describe("An Oddish card", () => {
   it.each([
     [0, 0],
     [6, 1],
@@ -19,14 +19,14 @@ describe("A Tree Ferns card", () => {
     "scores %i points if there are %i amphibian cards",
     (expectedPoints, count) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(TreeFerns),
+        dwellerUnderTest: createAnyDweller(Oddish),
         otherDwellers: createFakeDwellers(count, DwellerPosition.Bottom, {
           types: [CardType.Amphibian],
         }),
       });
       const game = createGame(forest);
 
-      const points = TreeFerns.score({
+      const points = Oddish.score({
         game,
         forest,
         woodyPlant,
