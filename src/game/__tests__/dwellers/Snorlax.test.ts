@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { BrownBear } from "@/game/dwellers";
+import { Snorlax } from "@/game/dwellers";
 
 import {
   createAnyDweller,
@@ -9,14 +9,14 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Brown Bear card", () => {
+describe("A Snorlax card", () => {
   it("scores no points in an empty forest", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(BrownBear),
+      dwellerUnderTest: createAnyDweller(Snorlax),
     });
     const game = createGame(forest);
 
-    const points = BrownBear.score({
+    const points = Snorlax.score({
       game,
       forest,
       woodyPlant,
@@ -28,11 +28,11 @@ describe("A Brown Bear card", () => {
 
   it("scores no points in a complete forest", () => {
     const { dweller, woodyPlant, forest } = createCompleteForestWithDweller({
-      dwellerUnderTest: createAnyDweller(BrownBear),
+      dwellerUnderTest: createAnyDweller(Snorlax),
     });
     const game = createGame(forest);
 
-    const points = BrownBear.score({
+    const points = Snorlax.score({
       game,
       forest,
       woodyPlant,

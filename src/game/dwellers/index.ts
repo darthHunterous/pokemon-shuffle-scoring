@@ -11,7 +11,7 @@ export { default as Bulbasaur } from "./Bulbasaur";
 export { default as BlackTrumpet } from "./BlackTrumpet";
 export { default as Blueberry } from "./Blueberry";
 export { default as Brimstone } from "./Brimstone";
-export { default as BrownBear } from "./BrownBear";
+export { default as Snorlax } from "./Snorlax";
 export { default as Charmander } from "./Charmander";
 export { default as Pidgey } from "./Pidgey";
 export { default as Beautifly } from "./Beautifly";
