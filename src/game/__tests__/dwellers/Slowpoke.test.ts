@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { FlyAgaric } from "@/game/dwellers";
+import { Slowpoke } from "@/game/dwellers";
 
 import {
   createAnyDweller,
@@ -9,14 +9,14 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Fly Agaric card", () => {
+describe("A Slowpoke card", () => {
   it("scores no points in an empty forest", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(FlyAgaric),
+      dwellerUnderTest: createAnyDweller(Slowpoke),
     });
     const game = createGame(forest);
 
-    const points = FlyAgaric.score({
+    const points = Slowpoke.score({
       game,
       forest,
       woodyPlant,
@@ -28,11 +28,11 @@ describe("A Fly Agaric card", () => {
 
   it("scores no points in a complete forest", () => {
     const { dweller, woodyPlant, forest } = createCompleteForestWithDweller({
-      dwellerUnderTest: createAnyDweller(FlyAgaric),
+      dwellerUnderTest: createAnyDweller(Slowpoke),
     });
     const game = createGame(forest);
 
-    const points = FlyAgaric.score({
+    const points = Slowpoke.score({
       game,
       forest,
       woodyPlant,

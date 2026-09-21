@@ -42,7 +42,7 @@ export { default as Magnemite } from "./Magnemite";
 export { default as Raichu } from "./Raichu";
 export { default as Fireflies } from "./Fireflies";
 export { default as Lapras } from "./Lapras";
-export { default as FlyAgaric } from "./FlyAgaric";
+export { default as Slowpoke } from "./Slowpoke";
 export { default as Genet } from "./Genet";
 export { default as Gentian } from "./Gentian";
 export { default as Scyther } from "./Scyther";
