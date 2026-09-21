@@ -6,11 +6,11 @@ import {
   GameBox,
   TreeSymbol,
 } from "../types";
-import Gnat from "./Gnat";
+import Scyther from "./Scyther";
 
 const name = "PSYDUCK";
 const gameBox = GameBox.Base;
-const pointsPerGnat = 5;
+const pointsPerScyther = 5;
 
 const blueprint: DwellerCardBlueprint = {
   name,
@@ -31,7 +31,7 @@ const blueprint: DwellerCardBlueprint = {
       count: 2,
     },
   ],
-  score: ({ forest }) => countCardNames(forest, [Gnat.name]) * pointsPerGnat,
+  score: ({ forest }) => countCardNames(forest, [Scyther.name]) * pointsPerScyther,
 };
 
 export default blueprint;

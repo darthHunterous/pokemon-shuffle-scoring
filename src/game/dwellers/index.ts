@@ -45,7 +45,7 @@ export { default as Lapras } from "./Lapras";
 export { default as FlyAgaric } from "./FlyAgaric";
 export { default as Genet } from "./Genet";
 export { default as Gentian } from "./Gentian";
-export { default as Gnat } from "./Gnat";
+export { default as Scyther } from "./Scyther";
 export { default as GoldenEagle } from "./GoldenEagle";
 export { default as Goshawk } from "./Goshawk";
 export { default as Ponyta } from "./Ponyta";

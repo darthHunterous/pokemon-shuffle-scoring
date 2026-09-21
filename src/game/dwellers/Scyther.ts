@@ -7,7 +7,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "GNAT";
+const name = "SCYTHER";
 const pointsPerBat = 1;
 
 const blueprint: DwellerCardBlueprint = {

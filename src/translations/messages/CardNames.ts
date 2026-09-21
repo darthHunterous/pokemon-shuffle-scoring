@@ -262,9 +262,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Gentian",
     defaultMessage: "Gentian",
   },
-  GNAT: {
-    id: "CardNames.Gnat",
-    defaultMessage: "Gnat",
+  SCYTHER: {
+    id: "CardNames.Scyther",
+    defaultMessage: "Scyther",
   },
   GOLDEN_EAGLE: {
     id: "CardNames.GoldenEagle",

@@ -140,7 +140,7 @@ export const FullyOccupied: Story = {
         [DwellerPosition.Right]: [
           {
             id: "6cfebd3e-b770-4f7b-9f17-64aef35b1a6d",
-            name: "GNAT",
+            name: "SCYTHER",
             gameBox: GameBox.Base,
             types: [CardType.Insect],
             treeSymbol: TreeSymbol.Cinnabar,
