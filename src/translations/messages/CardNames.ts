@@ -282,9 +282,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Pikipek",
     defaultMessage: "Pikipek",
   },
-  GREATER_HORSESHOE_BAT: {
-    id: "CardNames.GreaterHorseshoeBat",
-    defaultMessage: "Greater Horseshoe Bat",
+  PONYTA: {
+    id: "CardNames.Ponyta",
+    defaultMessage: "Ponyta",
   },
   CLEFAIRY: {
     id: "CardNames.Clefairy",

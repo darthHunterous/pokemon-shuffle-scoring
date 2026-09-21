@@ -6,7 +6,7 @@ import {
   Charmander,
   CommonPipistrelle,
   DuererFledermaus,
-  GreaterHorseshoeBat,
+  Ponyta,
   SavisPipistrelle,
 } from "@/game/dwellers";
 
@@ -23,7 +23,7 @@ describe("A Charmander card", () => {
     Growlithe,
     CommonPipistrelle,
     DuererFledermaus,
-    GreaterHorseshoeBat,
+    Ponyta,
     SavisPipistrelle,
   ];
 

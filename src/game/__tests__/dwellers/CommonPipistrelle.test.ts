@@ -6,7 +6,7 @@ import {
   Charmander,
   CommonPipistrelle,
   DuererFledermaus,
-  GreaterHorseshoeBat,
+  Ponyta,
   SavisPipistrelle,
 } from "@/game/dwellers";
 
@@ -23,7 +23,7 @@ describe("A Barbastelle Bat card", () => {
     Growlithe,
     Charmander,
     DuererFledermaus,
-    GreaterHorseshoeBat,
+    Ponyta,
     SavisPipistrelle,
   ];
   it.each([

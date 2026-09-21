@@ -6,7 +6,7 @@ import {
   Charmander,
   CommonPipistrelle,
   DuererFledermaus,
-  GreaterHorseshoeBat,
+  Ponyta,
   SavisPipistrelle,
 } from "@/game/dwellers";
 
@@ -23,7 +23,7 @@ describe("A Dürer-Fledermaus card", () => {
     Growlithe,
     Charmander,
     CommonPipistrelle,
-    GreaterHorseshoeBat,
+    Ponyta,
     SavisPipistrelle,
   ];
 
@@ -61,7 +61,7 @@ describe("A Dürer-Fledermaus card", () => {
     });
     const game = createGame(forest);
 
-    const points = GreaterHorseshoeBat.score({
+    const points = Ponyta.score({
       game,
       forest,
       woodyPlant,

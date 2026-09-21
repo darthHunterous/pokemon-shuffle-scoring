@@ -6,7 +6,7 @@ import {
   Charmander,
   CommonPipistrelle,
   DuererFledermaus,
-  GreaterHorseshoeBat,
+  Ponyta,
   SavisPipistrelle,
 } from "@/game/dwellers";
 
@@ -17,7 +17,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Greater Horseshoe Bat card", () => {
+describe("A Ponyta card", () => {
   const otherBats = [
     BarbastelleBat,
     Growlithe,
@@ -38,12 +38,12 @@ describe("A Greater Horseshoe Bat card", () => {
     "scores %i points if there are %i other bat species",
     (expectedPoints, _, otherBatBlueprints) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(GreaterHorseshoeBat),
+        dwellerUnderTest: createAnyDweller(Ponyta),
         otherDwellers: otherBatBlueprints.map(createAnyDweller),
       });
       const game = createGame(forest);
 
-      const points = GreaterHorseshoeBat.score({
+      const points = Ponyta.score({
         game,
         forest,
         woodyPlant,
@@ -56,12 +56,12 @@ describe("A Greater Horseshoe Bat card", () => {
 
   it("ignores multiple instances of the same bat", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(GreaterHorseshoeBat),
+      dwellerUnderTest: createAnyDweller(Ponyta),
       otherDwellers: createAllDwellers(BarbastelleBat),
     });
     const game = createGame(forest);
 
-    const points = GreaterHorseshoeBat.score({
+    const points = Ponyta.score({
       game,
       forest,
       woodyPlant,
