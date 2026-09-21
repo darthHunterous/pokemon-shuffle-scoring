@@ -238,9 +238,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Magnemite",
     defaultMessage: "Magnemite",
   },
-  FEMALE_WILD_BOAR: {
-    id: "CardNames.FemaleWildBoar",
-    defaultMessage: "Wild Boar ♀",
+  RAICHU: {
+    id: "CardNames.Raichu",
+    defaultMessage: "Raichu",
   },
   LAPRAS: {
     id: "CardNames.Lapras",

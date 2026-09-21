@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { FemaleWildBoar, Pichu } from "@/game/dwellers";
+import { Raichu, Pichu } from "@/game/dwellers";
 
 import {
   createAllDwellers,
@@ -9,7 +9,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Female Wild Boar card", () => {
+describe("A Raichu card", () => {
   it.each([
     [0, 0],
     [10, 1],
@@ -18,12 +18,12 @@ describe("A Female Wild Boar card", () => {
     "scores %i points if there are %i Pichu cards",
     (expectedPoints, count) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(FemaleWildBoar),
+        dwellerUnderTest: createAnyDweller(Raichu),
         otherDwellers: createAllDwellers(Pichu).slice(0, count),
       });
       const game = createGame(forest);
 
-      const points = FemaleWildBoar.score({
+      const points = Raichu.score({
         game,
         forest,
         woodyPlant,

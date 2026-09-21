@@ -39,7 +39,7 @@ export { default as Diglett } from "./Diglett";
 export { default as EuropeanPolecat } from "./EuropeanPolecat";
 export { default as EuropeanWildcat } from "./EuropeanWildcat";
 export { default as Magnemite } from "./Magnemite";
-export { default as FemaleWildBoar } from "./FemaleWildBoar";
+export { default as Raichu } from "./Raichu";
 export { default as Fireflies } from "./Fireflies";
 export { default as Lapras } from "./Lapras";
 export { default as FlyAgaric } from "./FlyAgaric";

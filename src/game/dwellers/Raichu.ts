@@ -8,7 +8,7 @@ import {
 } from "../types";
 import Pichu from "./Pichu";
 
-const name = "FEMALE_WILD_BOAR";
+const name = "RAICHU";
 const gameBox = GameBox.WoodlandEdge;
 const pointsPerPichu = 10;
 
