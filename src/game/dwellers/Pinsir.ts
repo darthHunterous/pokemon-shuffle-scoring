@@ -7,7 +7,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "STAG_BEETLE";
+const name = "PINSIR";
 const gameBox = GameBox.Base;
 const pointsPerPawedAnimal = 1;
 

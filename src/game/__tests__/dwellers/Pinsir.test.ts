@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import { CardType, DwellerPosition } from "@/game";
-import { StagBeetle } from "@/game/dwellers";
+import { Pinsir } from "@/game/dwellers";
 
 import { createFakeDwellers } from "../fake";
 import {
@@ -10,7 +10,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Stag Beetle card", () => {
+describe("A Pinsir card", () => {
   it.each([
     [0, 0],
     [1, 1],
@@ -19,14 +19,14 @@ describe("A Stag Beetle card", () => {
     "scores %i points if there are %i pawed animal cards",
     (expectedPoints, count) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(StagBeetle),
+        dwellerUnderTest: createAnyDweller(Pinsir),
         otherDwellers: createFakeDwellers(count, DwellerPosition.Left, {
           types: [CardType.PawedAnimal],
         }),
       });
       const game = createGame(forest);
 
-      const points = StagBeetle.score({
+      const points = Pinsir.score({
         game,
         forest,
         woodyPlant,

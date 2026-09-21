@@ -278,7 +278,7 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.GreatGreenBushCricket",
     defaultMessage: "Great Green Bush-Cricket",
   },
-  GREAT_SPOTTED_WOODPECKER: {
+  PIKIPEK: {
     id: "CardNames.Pikipek",
     defaultMessage: "Pikipek",
   },
@@ -414,9 +414,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Pichu",
     defaultMessage: "Pichu",
   },
-  STAG_BEETLE: {
-    id: "CardNames.StagBeetle",
-    defaultMessage: "Stag Beetle",
+  PINSIR: {
+    id: "CardNames.Pinsir",
+    defaultMessage: "Pinsir",
   },
   STEINBOCK: {
     id: "CardNames.Steinbock",
