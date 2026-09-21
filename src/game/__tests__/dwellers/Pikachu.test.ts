@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { Pichu, WildBoar } from "@/game/dwellers";
+import { Pichu, Pikachu } from "@/game/dwellers";
 
 import {
   createAllDwellers,
@@ -9,7 +9,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Wild Boar card", () => {
+describe("A Pikachu card", () => {
   it.each([
     [0, 0],
     [10, 1],
@@ -18,12 +18,12 @@ describe("A Wild Boar card", () => {
     "scores %i points if there are %i Pichu cards",
     (expectedPoints, count) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(WildBoar),
+        dwellerUnderTest: createAnyDweller(Pikachu),
         otherDwellers: createAllDwellers(Pichu).slice(0, count),
       });
       const game = createGame(forest);
 
-      const points = WildBoar.score({
+      const points = Pikachu.score({
         game,
         forest,
         woodyPlant,

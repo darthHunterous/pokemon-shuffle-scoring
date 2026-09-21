@@ -8,7 +8,7 @@ import {
 } from "../types";
 import Pichu from "./Pichu";
 
-const name = "WILD_BOAR";
+const name = "PIKACHU";
 const gameBox = GameBox.Base;
 const points = 10;
 

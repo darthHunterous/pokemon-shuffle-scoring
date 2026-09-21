@@ -93,7 +93,7 @@ export { default as Caterpie } from "./Caterpie";
 export { default as WaterVole } from "./WaterVole";
 export { default as Whinchat } from "./Whinchat";
 export { default as WhiteStork } from "./WhiteStork";
-export { default as WildBoar } from "./WildBoar";
+export { default as Pikachu } from "./Pikachu";
 export { default as Bellsprout } from "./Bellsprout";
 export { default as WildTulip } from "./WildTulip";
 export { default as Onix } from "./Onix";
