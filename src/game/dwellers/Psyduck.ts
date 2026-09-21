@@ -8,7 +8,7 @@ import {
 } from "../types";
 import Gnat from "./Gnat";
 
-const name = "TREE_FROG";
+const name = "PSYDUCK";
 const gameBox = GameBox.Base;
 const pointsPerGnat = 5;
 
