@@ -32,7 +32,7 @@ export { default as Eierschwammerl } from "./Eierschwammerl";
 export { default as Elk } from "./Elk";
 export { default as Farfetchd } from "./Farfetchd";
 export { default as Wingull } from "./Wingull";
-export { default as EuropeanBadger } from "./EuropeanBadger";
+export { default as Sandshrew } from "./Sandshrew";
 export { default as EuropeanBison } from "./EuropeanBison";
 export { default as Ratatta } from "./Ratatta";
 export { default as Diglett } from "./Diglett";

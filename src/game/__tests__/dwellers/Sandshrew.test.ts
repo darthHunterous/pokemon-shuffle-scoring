@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { EuropeanBadger } from "@/game/dwellers";
+import { Sandshrew } from "@/game/dwellers";
 
 import {
   createAnyDweller,
@@ -9,14 +9,14 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A European Badger card", () => {
+describe("A Sandshrew card", () => {
   it("scores 2 points in an empty forest", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(EuropeanBadger),
+      dwellerUnderTest: createAnyDweller(Sandshrew),
     });
     const game = createGame(forest);
 
-    const points = EuropeanBadger.score({
+    const points = Sandshrew.score({
       game,
       forest,
       woodyPlant,
@@ -28,11 +28,11 @@ describe("A European Badger card", () => {
 
   it("scores 2 points in a complete forest", () => {
     const { dweller, woodyPlant, forest } = createCompleteForestWithDweller({
-      dwellerUnderTest: createAnyDweller(EuropeanBadger),
+      dwellerUnderTest: createAnyDweller(Sandshrew),
     });
     const game = createGame(forest);
 
-    const points = EuropeanBadger.score({
+    const points = Sandshrew.score({
       game,
       forest,
       woodyPlant,

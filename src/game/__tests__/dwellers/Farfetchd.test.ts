@@ -9,7 +9,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A European Badger card", () => {
+describe("A Sandshrew card", () => {
   it("scores 3 points in an empty forest", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
       dwellerUnderTest: createAnyDweller(Farfetchd),
