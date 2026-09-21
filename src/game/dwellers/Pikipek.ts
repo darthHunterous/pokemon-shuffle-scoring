@@ -7,7 +7,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "GREAT_SPOTTED_WOODPECKER";
+const name = "PIKIPEK";
 const gameBox = GameBox.Base;
 const pointsMinority = 0;
 const pointsMajority = 10;

@@ -50,7 +50,7 @@ export { default as GoldenEagle } from "./GoldenEagle";
 export { default as Goshawk } from "./Goshawk";
 export { default as GreaterHorseshoeBat } from "./GreaterHorseshoeBat";
 export { default as GreatGreenBushCricket } from "./GreatGreenBushCricket";
-export { default as GreatSpottedWoodpecker } from "./GreatSpottedWoodpecker";
+export { default as Pikipek } from "./Pikipek";
 export { default as Clefairy } from "./Clefairy";
 export { default as LargeTortoiseshell } from "./LargeTortoiseshell";
 export { default as Lynx } from "./Lynx";
