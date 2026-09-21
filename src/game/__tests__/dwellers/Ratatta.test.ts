@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { EuropeanFatDormouse } from "@/game/dwellers";
+import { Ratatta } from "@/game/dwellers";
 import { createDweller } from "@/game/factory";
 import { CardType, DwellerPosition } from "@/game/types";
 
@@ -12,7 +12,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A European Fat Dormouse card", () => {
+describe("A Ratatta card", () => {
   it.each([
     [0, DwellerPosition.Left, null],
     [0, DwellerPosition.Right, null],
@@ -23,10 +23,10 @@ describe("A European Fat Dormouse card", () => {
   ])(
     "scores %i being in the %s slot with a %p card in the opposite slot",
     (expectedPoints, position, oppositeCardType) => {
-      const variant = EuropeanFatDormouse.variants.find(
+      const variant = Ratatta.variants.find(
         (v) => v.position === position,
       );
-      const dweller = createDweller(EuropeanFatDormouse, variant!);
+      const dweller = createDweller(Ratatta, variant!);
 
       let dwellers = [dweller];
       if (oppositeCardType) {
@@ -47,7 +47,7 @@ describe("A European Fat Dormouse card", () => {
       const forest = createForestWith({ woodyPlants: [woodyPlant] });
       const game = createGame(forest);
 
-      const points = EuropeanFatDormouse.score({
+      const points = Ratatta.score({
         game,
         forest,
         woodyPlant,
@@ -59,7 +59,7 @@ describe("A European Fat Dormouse card", () => {
   );
 
   it("scores 0 points if paired with a bat on a shrub", () => {
-    const dweller = createAnyDweller(EuropeanFatDormouse);
+    const dweller = createAnyDweller(Ratatta);
 
     const oppositePosition =
       dweller.position === DwellerPosition.Left
@@ -77,7 +77,7 @@ describe("A European Fat Dormouse card", () => {
     const forest = createForestWith({ woodyPlants: [woodyPlant] });
     const game = createGame(forest);
 
-    const points = EuropeanFatDormouse.score({
+    const points = Ratatta.score({
       game,
       forest,
       woodyPlant,

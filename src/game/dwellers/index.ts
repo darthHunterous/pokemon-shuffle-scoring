@@ -34,7 +34,7 @@ export { default as Farfetchd } from "./Farfetchd";
 export { default as Wingull } from "./Wingull";
 export { default as EuropeanBadger } from "./EuropeanBadger";
 export { default as EuropeanBison } from "./EuropeanBison";
-export { default as EuropeanFatDormouse } from "./EuropeanFatDormouse";
+export { default as Ratatta } from "./Ratatta";
 export { default as Diglett } from "./Diglett";
 export { default as EuropeanPolecat } from "./EuropeanPolecat";
 export { default as EuropeanWildcat } from "./EuropeanWildcat";
