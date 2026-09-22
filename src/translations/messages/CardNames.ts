@@ -230,9 +230,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Mudkip",
     defaultMessage: "Mudkip",
   },
-  EUROPEAN_WILDCAT: {
-    id: "CardNames.EuropeanWildcat",
-    defaultMessage: "European Wildcat",
+  ZIGZAGOON: {
+    id: "CardNames.Zigzagoon",
+    defaultMessage: "Zigzagoon",
   },
   MAGNEMITE: {
     id: "CardNames.Magnemite",

@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import { CardType, DwellerPosition } from "@/game";
-import { EuropeanWildcat } from "@/game/dwellers";
+import { Zigzagoon } from "@/game/dwellers";
 
 import { createFakeDwellers } from "../fake";
 import {
@@ -10,7 +10,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A European Wildcat card", () => {
+describe("A Zigzagoon card", () => {
   it.each([
     [1, 0],
     [2, 1],
@@ -20,7 +20,7 @@ describe("A European Wildcat card", () => {
     "scores %i points for %i other woodland edge cards",
     (expectedPoints, woodlandEdgeCount) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(EuropeanWildcat),
+        dwellerUnderTest: createAnyDweller(Zigzagoon),
         otherDwellers: createFakeDwellers(
           woodlandEdgeCount,
           DwellerPosition.Bottom,
@@ -29,7 +29,7 @@ describe("A European Wildcat card", () => {
       });
       const game = createGame(forest);
 
-      const points = EuropeanWildcat.score({
+      const points = Zigzagoon.score({
         game,
         forest,
         woodyPlant,

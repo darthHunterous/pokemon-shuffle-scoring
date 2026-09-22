@@ -5,12 +5,12 @@ import {
   GameBox,
   TreeSymbol,
 } from "../types";
-import EuropeanWildcat from "./EuropeanWildcat";
+import Zigzagoon from "./Zigzagoon";
 
 const name = "MEEPS";
 
 // Promo card P013
-const blueprint: DwellerCardBlueprint = extendBlueprint(EuropeanWildcat, {
+const blueprint: DwellerCardBlueprint = extendBlueprint(Zigzagoon, {
   name,
   variants: [
     {

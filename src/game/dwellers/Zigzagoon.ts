@@ -7,7 +7,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "EUROPEAN_WILDCAT";
+const name = "ZIGZAGOON";
 const gameBox = GameBox.WoodlandEdge;
 const pointsPerWoodlandEdgeCard = 1;
 

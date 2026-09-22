@@ -37,7 +37,7 @@ export { default as Electrike } from "./Electrike";
 export { default as Ratatta } from "./Ratatta";
 export { default as Diglett } from "./Diglett";
 export { default as Mudkip } from "./Mudkip";
-export { default as EuropeanWildcat } from "./EuropeanWildcat";
+export { default as Zigzagoon } from "./Zigzagoon";
 export { default as Magnemite } from "./Magnemite";
 export { default as Raichu } from "./Raichu";
 export { default as Volbeat } from "./Volbeat";
