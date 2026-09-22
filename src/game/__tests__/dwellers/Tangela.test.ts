@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { Moss } from "@/game/dwellers";
+import { Tangela } from "@/game/dwellers";
 import { DwellerPosition } from "@/game/types";
 import { Sapling } from "@/game/woody-plants";
 
@@ -12,7 +12,7 @@ import {
   createWoodyPlants,
 } from "../helpers";
 
-describe("A Moss card", () => {
+describe("A Tangela card", () => {
   it.each([
     [0, 1],
     [0, 9],
@@ -22,12 +22,12 @@ describe("A Moss card", () => {
     "scores %i points if forest has at least %i trees",
     (expectedPoints, count) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(Moss),
+        dwellerUnderTest: createAnyDweller(Tangela),
         otherWoodyPlants: createFakeWoodyPlants(count),
       });
       const game = createGame(forest);
 
-      const points = Moss.score({
+      const points = Tangela.score({
         game,
         forest,
         woodyPlant,
@@ -40,12 +40,12 @@ describe("A Moss card", () => {
 
   it("takes into account Sapling cards when scoring", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(Moss),
+      dwellerUnderTest: createAnyDweller(Tangela),
       otherWoodyPlants: createWoodyPlants(Sapling, 10),
     });
     const game = createGame(forest);
 
-    const points = Moss.score({
+    const points = Tangela.score({
       game,
       forest,
       woodyPlant,
@@ -57,7 +57,7 @@ describe("A Moss card", () => {
 
   it("takes into account cards increasing the tree count when scoring", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(Moss),
+      dwellerUnderTest: createAnyDweller(Tangela),
       otherDwellers: [
         createFakeDweller(DwellerPosition.Left, {
           modifiers: {
@@ -69,7 +69,7 @@ describe("A Moss card", () => {
     });
     const game = createGame(forest);
 
-    const points = Moss.score({
+    const points = Tangela.score({
       game,
       forest,
       woodyPlant,

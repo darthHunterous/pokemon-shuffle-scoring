@@ -7,7 +7,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "MOSS";
+const name = "TANGELA";
 const gameBox = GameBox.Base;
 const minTreeCount = 10;
 const points = 10;
