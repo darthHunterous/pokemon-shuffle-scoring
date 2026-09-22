@@ -22,7 +22,7 @@ export { default as Chamois } from "./Chamois";
 export { default as Jynx } from "./Jynx";
 export { default as CommonPipistrelle } from "./CommonPipistrelle";
 export { default as CommonRaven } from "./CommonRaven";
-export { default as CommonToad } from "./CommonToad";
+export { default as Staryu } from "./Staryu";
 export { default as CraneFly } from "./CraneFly";
 export { default as Cuckoo } from "./Cuckoo";
 export { default as Digitalis } from "./Digitalis";

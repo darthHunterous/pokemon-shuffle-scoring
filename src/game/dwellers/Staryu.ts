@@ -6,7 +6,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "COMMON_TOAD";
+const name = "STARYU";
 const gameBox = GameBox.Base;
 const pointsIfPaired = 5;
 
