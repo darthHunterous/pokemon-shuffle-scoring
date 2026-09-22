@@ -4,10 +4,10 @@ import {
   Vulpix,
   Growlithe,
   Charmander,
-  CommonPipistrelle,
+  Torchic,
   DuererFledermaus,
   Ponyta,
-  SavisPipistrelle,
+  Cyndaquil,
 } from "@/game/dwellers";
 
 import {
@@ -21,10 +21,10 @@ describe("A Vulpix card", () => {
   const otherBats = [
     Growlithe,
     Charmander,
-    CommonPipistrelle,
+    Torchic,
     DuererFledermaus,
     Ponyta,
-    SavisPipistrelle,
+    Cyndaquil,
   ];
   it.each([
     [0, 0, []],

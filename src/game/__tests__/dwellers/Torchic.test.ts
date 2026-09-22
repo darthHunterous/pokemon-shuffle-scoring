@@ -4,10 +4,10 @@ import {
   Vulpix,
   Growlithe,
   Charmander,
-  CommonPipistrelle,
+  Torchic,
   DuererFledermaus,
   Ponyta,
-  SavisPipistrelle,
+  Cyndaquil,
 } from "@/game/dwellers";
 
 import {
@@ -24,7 +24,7 @@ describe("A Vulpix card", () => {
     Charmander,
     DuererFledermaus,
     Ponyta,
-    SavisPipistrelle,
+    Cyndaquil,
   ];
   it.each([
     [0, 0, []],
@@ -37,12 +37,12 @@ describe("A Vulpix card", () => {
     "scores %i points if there are %i other bat species",
     (expectedPoints, _, otherBatBlueprints) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(CommonPipistrelle),
+        dwellerUnderTest: createAnyDweller(Torchic),
         otherDwellers: otherBatBlueprints.map(createAnyDweller),
       });
       const game = createGame(forest);
 
-      const points = CommonPipistrelle.score({
+      const points = Torchic.score({
         game,
         forest,
         woodyPlant,
@@ -55,12 +55,12 @@ describe("A Vulpix card", () => {
 
   it("ignores multiple instances of the same bat", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(CommonPipistrelle),
+      dwellerUnderTest: createAnyDweller(Torchic),
       otherDwellers: createAllDwellers(Growlithe),
     });
     const game = createGame(forest);
 
-    const points = CommonPipistrelle.score({
+    const points = Torchic.score({
       game,
       forest,
       woodyPlant,

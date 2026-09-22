@@ -162,9 +162,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Jynx",
     defaultMessage: "Jynx",
   },
-  COMMON_PIPISTRELLE: {
-    id: "CardNames.CommonPipistrelle",
-    defaultMessage: "Common Pipistrelle",
+  TORCHIC: {
+    id: "CardNames.Torchic",
+    defaultMessage: "Torchic",
   },
   COMMON_RAVEN: {
     id: "CardNames.CommonRaven",
@@ -394,9 +394,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Sable",
     defaultMessage: "CardNames.Sable",
   },
-  SAVIS_PIPISTRELLE: {
-    id: "CardNames.SavisPipistrelle",
-    defaultMessage: "Savi's Pipistrelle",
+  CYNDAQUIL: {
+    id: "CardNames.Cyndaquil",
+    defaultMessage: "Cyndaquil",
   },
   SAYS_FIREFLY: {
     id: "CardNames.SaysFirefly",

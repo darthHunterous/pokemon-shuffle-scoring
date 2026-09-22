@@ -7,7 +7,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "COMMON_PIPISTRELLE";
+const name = "TORCHIC";
 const gameBox = GameBox.WoodlandEdge;
 
 const blueprint: DwellerCardBlueprint = {

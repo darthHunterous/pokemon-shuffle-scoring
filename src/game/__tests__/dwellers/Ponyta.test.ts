@@ -4,10 +4,10 @@ import {
   Vulpix,
   Growlithe,
   Charmander,
-  CommonPipistrelle,
+  Torchic,
   DuererFledermaus,
   Ponyta,
-  SavisPipistrelle,
+  Cyndaquil,
 } from "@/game/dwellers";
 
 import {
@@ -22,9 +22,9 @@ describe("A Ponyta card", () => {
     Vulpix,
     Growlithe,
     Charmander,
-    CommonPipistrelle,
+    Torchic,
     DuererFledermaus,
-    SavisPipistrelle,
+    Cyndaquil,
   ];
 
   it.each([
