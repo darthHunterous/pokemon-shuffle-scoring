@@ -137,7 +137,6 @@
   "CardNames.SaysFirefly": "Says Glühwürmchen",
   "CardNames.Scyther": "Scyther",
   "CardNames.Sheep": "Sheep",
-  "CardNames.SilverFir": "Tanne",
   "CardNames.Slowpoke": "Slowpoke",
   "CardNames.Snorlax": "Snorlax",
   "CardNames.Spearow": "Spearow",
@@ -151,6 +150,7 @@
   "CardNames.Troll": "Troll",
   "CardNames.Venomoth": "Venomoth",
   "CardNames.Vermilion": "Vermilion",
+  "CardNames.Viridian": "Viridian",
   "CardNames.Voltorb": "Voltorb",
   "CardNames.WaterVole": "Schermaus",
   "CardNames.Whinchat": "Braunkelchen",
@@ -280,7 +280,7 @@
   "TreeSymbols.GoldenPalm": "Goldene Palme",
   "TreeSymbols.Pewter": "Pewter",
   "TreeSymbols.Saffron": "Saffron",
-  "TreeSymbols.SilverFir": "Tanne",
   "TreeSymbols.SwissPine": "Zirbelkiefer",
-  "TreeSymbols.Vermilion": "Vermilion"
+  "TreeSymbols.Vermilion": "Vermilion",
+  "TreeSymbols.Viridian": "Viridian"
 }

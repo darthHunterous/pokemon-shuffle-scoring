@@ -43,7 +43,7 @@ export enum TreeSymbol {
   Saffron = "SAFFRON",
   Vermilion = "VERMILION",
   Pewter = "PEWTER",
-  SilverFir = "SILVER_FIR",
+  Viridian = "VIRIDIAN",
   SwissPine = "SWISS_PINE",
   Celadon = "CELADON",
 }

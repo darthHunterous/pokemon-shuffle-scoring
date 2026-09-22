@@ -42,9 +42,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Sapling",
     defaultMessage: "Sapling",
   },
-  SILVER_FIR: {
-    id: "CardNames.SilverFir",
-    defaultMessage: "Silver Fir",
+  VIRIDIAN: {
+    id: "CardNames.Viridian",
+    defaultMessage: "Viridian",
   },
   STONE_PINE: {
     id: "CardNames.StonePine",

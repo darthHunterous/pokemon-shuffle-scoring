@@ -1,21 +1,21 @@
 import { extendBlueprint } from "../blueprints";
 import { GameBox, TreeSymbol, WoodyPlantCardBlueprint } from "../types";
-import SilverFir from "./SilverFir";
+import Viridian from "./Viridian";
 
 const name = "O_CHRISTMAS_TREE";
 
 // Promo card P015
-const blueprint: WoodyPlantCardBlueprint = extendBlueprint(SilverFir, {
+const blueprint: WoodyPlantCardBlueprint = extendBlueprint(Viridian, {
   name,
   variants: [
     {
       gameBox: GameBox.Exploration,
-      treeSymbol: TreeSymbol.SilverFir,
+      treeSymbol: TreeSymbol.Viridian,
       count: 1,
     },
     {
       gameBox: GameBox.PromoCards,
-      treeSymbol: TreeSymbol.SilverFir,
+      treeSymbol: TreeSymbol.Viridian,
       count: 1,
     },
   ],

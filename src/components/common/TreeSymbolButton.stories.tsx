@@ -19,7 +19,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    treeSymbol: TreeSymbol.SilverFir,
+    treeSymbol: TreeSymbol.Viridian,
     onClick: fn(),
   },
 };

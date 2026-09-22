@@ -9,7 +9,7 @@ import {
   Vermilion,
   Pewter,
   Sapling,
-  SilverFir,
+  Viridian,
   Celadon,
 } from "@/game/woody-plants";
 
@@ -29,7 +29,7 @@ describe("A Taillow card", () => {
     [0, Vermilion.name, Vermilion],
     [0, Pewter.name, Pewter],
     [0, Sapling.name, Sapling],
-    [0, SilverFir.name, SilverFir],
+    [0, Viridian.name, Viridian],
     [0, Celadon.name, Celadon],
   ])(
     "scores %i points on top on a %s card",

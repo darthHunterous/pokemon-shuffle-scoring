@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import { DwellerPosition } from "@/game/types";
-import { SilverFir } from "@/game/woody-plants";
+import { Viridian } from "@/game/woody-plants";
 
 import { createFakeDwellers } from "../fake";
 import {
@@ -11,7 +11,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Silver Fir card", () => {
+describe("A Viridian card", () => {
   it.each([
     [0, 0, 0, 0, 0],
     [2, 1, 0, 0, 0],
@@ -23,7 +23,7 @@ describe("A Silver Fir card", () => {
     "scores %i points with %i dwellers on top, %i on the bottom, %i on the left and %i on the right",
     (expectedPoints, top, bottom, left, right) => {
       const woodyPlant = addDwellersToWoodyPlant(
-        createAnyWoodyPlant(SilverFir),
+        createAnyWoodyPlant(Viridian),
         ...createFakeDwellers(top, DwellerPosition.Top),
         ...createFakeDwellers(bottom, DwellerPosition.Bottom),
         ...createFakeDwellers(left, DwellerPosition.Left),
@@ -32,7 +32,7 @@ describe("A Silver Fir card", () => {
       const forest = createForestWith({ woodyPlants: [woodyPlant] });
       const game = createGame(forest);
 
-      const points = SilverFir.score({ game, forest, woodyPlant });
+      const points = Viridian.score({ game, forest, woodyPlant });
 
       expect(points).toBe(expectedPoints);
     },

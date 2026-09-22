@@ -14,7 +14,7 @@ import {
 describe("A Voltorb card", () => {
   it.each([
     [TreeSymbol.Vermilion],
-    [TreeSymbol.SilverFir],
+    [TreeSymbol.Viridian],
     [TreeSymbol.Fuchsia],
     [TreeSymbol.Cinnabar],
     [TreeSymbol.Saffron],
@@ -39,7 +39,7 @@ describe("A Voltorb card", () => {
 
   it.each([
     [TreeSymbol.Vermilion, 9],
-    [TreeSymbol.SilverFir, 12],
+    [TreeSymbol.Viridian, 12],
     [TreeSymbol.Fuchsia, 15],
     [TreeSymbol.Cinnabar, 18],
     [TreeSymbol.Saffron, 21],
@@ -54,7 +54,7 @@ describe("A Voltorb card", () => {
           treeSymbol: TreeSymbol.Vermilion,
         }),
         ...createFakeDwellers(2, DwellerPosition.Left, {
-          treeSymbol: TreeSymbol.SilverFir,
+          treeSymbol: TreeSymbol.Viridian,
         }),
         ...createFakeDwellers(3, DwellerPosition.Left, {
           treeSymbol: TreeSymbol.Fuchsia,
@@ -69,7 +69,7 @@ describe("A Voltorb card", () => {
       otherWoodyPlants: [
         createSapling(),
         createFakeWoodyPlant({ treeSymbol: TreeSymbol.Vermilion }),
-        createFakeWoodyPlant({ treeSymbol: TreeSymbol.SilverFir }),
+        createFakeWoodyPlant({ treeSymbol: TreeSymbol.Viridian }),
         createFakeWoodyPlant({ treeSymbol: TreeSymbol.Fuchsia }),
         createFakeWoodyPlant({ treeSymbol: TreeSymbol.Cinnabar }),
         createFakeWoodyPlant({ treeSymbol: TreeSymbol.Saffron }),

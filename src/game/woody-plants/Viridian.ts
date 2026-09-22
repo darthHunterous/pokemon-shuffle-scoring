@@ -6,7 +6,7 @@ import {
   WoodyPlantCardBlueprint,
 } from "../types";
 
-const name = "SILVER_FIR";
+const name = "VIRIDIAN";
 const pointsPerDweller = 2;
 
 const blueprint: WoodyPlantCardBlueprint = {
@@ -17,7 +17,7 @@ const blueprint: WoodyPlantCardBlueprint = {
   variants: [
     {
       gameBox: GameBox.Base,
-      treeSymbol: TreeSymbol.SilverFir,
+      treeSymbol: TreeSymbol.Viridian,
       count: 6,
     },
   ],

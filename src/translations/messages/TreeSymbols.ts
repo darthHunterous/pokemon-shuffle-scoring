@@ -43,9 +43,9 @@ const messages = defineMessages<TreeSymbol, MessageDescriptor>({
     id: "TreeSymbols.Pewter",
     defaultMessage: "Pewter",
   },
-  SILVER_FIR: {
-    id: "TreeSymbols.SilverFir",
-    defaultMessage: "Silver Fir",
+  VIRIDIAN: {
+    id: "TreeSymbols.Viridian",
+    defaultMessage: "Viridian",
   },
   SWISS_PINE: {
     id: "TreeSymbols.SwissPine",

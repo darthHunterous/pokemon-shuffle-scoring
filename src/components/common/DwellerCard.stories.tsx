@@ -37,7 +37,7 @@ export const Bottom: Story = {
       name: "BULBASAUR",
       gameBox: GameBox.Base,
       types: [CardType.Plant],
-      treeSymbol: TreeSymbol.SilverFir,
+      treeSymbol: TreeSymbol.Viridian,
       isPartOfDeck: true,
       position: DwellerPosition.Bottom,
     },

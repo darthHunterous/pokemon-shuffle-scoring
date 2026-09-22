@@ -23,7 +23,7 @@ export const SingleColor: Story = {
       id: "43f458f5-81ea-4019-a479-949d74094776",
       name: "BULBASAUR",
       types: [CardType.Plant],
-      treeSymbol: TreeSymbol.SilverFir,
+      treeSymbol: TreeSymbol.Viridian,
       isPartOfDeck: true,
       position: DwellerPosition.Bottom,
     } as DwellerCard,
