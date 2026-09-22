@@ -6,7 +6,7 @@ import {
   WoodyPlantCardBlueprint,
 } from "../types";
 
-const name = "STONE_PINE";
+const name = "AZALEA";
 const pointsPerAlpsCard = 1;
 
 const blueprint: WoodyPlantCardBlueprint = {

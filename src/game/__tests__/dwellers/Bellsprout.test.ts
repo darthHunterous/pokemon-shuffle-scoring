@@ -112,7 +112,7 @@ describe("A Bellsprout card", () => {
         createAnyWoodyPlant(WoodyPlants.EuropeanLarch),
         createAnyWoodyPlant(WoodyPlants.Saffron),
         createAnyWoodyPlant(WoodyPlants.Vermilion),
-        createAnyWoodyPlant(WoodyPlants.StonePine),
+        createAnyWoodyPlant(WoodyPlants.Azalea),
         createAnyWoodyPlant(WoodyPlants.Celadon),
       ],
     });

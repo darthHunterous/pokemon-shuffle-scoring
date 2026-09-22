@@ -13,6 +13,6 @@ export { default as OChristmasTree } from "./OChristmasTree";
 export { default as PalmTree } from "./PalmTree";
 export { default as Sapling } from "./Sapling";
 export { default as Viridian } from "./Viridian";
-export { default as StonePine } from "./StonePine";
+export { default as Azalea } from "./Azalea";
 export { default as Celadon } from "./Celadon";
 export { default as Mauville } from "./Mauville";

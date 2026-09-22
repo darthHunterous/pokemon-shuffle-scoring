@@ -15,7 +15,7 @@ import {
   Lavaridge,
   OChristmasTree,
   Pewter,
-  StonePine,
+  Azalea,
   Mauville,
 } from "@/game/woody-plants";
 
@@ -97,7 +97,7 @@ describe("A Pewter card", () => {
         createAnyWoodyPlant(EuropeanLarch),
         createAnyWoodyPlant(Saffron),
         createAnyWoodyPlant(Vermilion),
-        createAnyWoodyPlant(StonePine),
+        createAnyWoodyPlant(Azalea),
       ],
     });
     const game = createGame(forest);
