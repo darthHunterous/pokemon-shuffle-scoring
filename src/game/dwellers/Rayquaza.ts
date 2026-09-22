@@ -8,7 +8,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "BARN_OWL";
+const name = "RAYQUAZA";
 const gameBox = GameBox.WoodlandEdge;
 const pointsPerBat = 3;
 

@@ -2,7 +2,7 @@ export { default as AlpineMarmot } from "./AlpineMarmot";
 export { default as AlpineNewt } from "./AlpineNewt";
 export { default as GigantamaxEevee } from "./GigantamaxEevee";
 export { default as Vulpix } from "./Vulpix";
-export { default as BarnOwl } from "./BarnOwl";
+export { default as Rayquaza } from "./Rayquaza";
 export { default as BeardedVulture } from "./BeardedVulture";
 export { default as Growlithe } from "./Growlithe";
 export { default as Cubone } from "./Cubone";
