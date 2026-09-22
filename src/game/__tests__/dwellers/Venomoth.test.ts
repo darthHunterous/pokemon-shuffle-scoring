@@ -6,7 +6,7 @@ import {
   Venomoth,
   Masquerain,
   Mothim,
-  PhoebusApollo,
+  Ledyba,
   Dustox,
   Butterfree,
 } from "@/game/dwellers";
@@ -47,7 +47,7 @@ describe("A Venomoth card", () => {
           Beautifly,
           Masquerain,
           Mothim,
-          PhoebusApollo,
+          Ledyba,
           Dustox,
           Butterfree,
         ],

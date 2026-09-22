@@ -6,7 +6,7 @@ import {
   Venomoth,
   Masquerain,
   Mothim,
-  PhoebusApollo,
+  Ledyba,
   Dustox,
   Butterfree,
 } from "@/game/dwellers";
@@ -21,7 +21,7 @@ import {
   generateCardIds,
 } from "../helpers";
 
-describe("A Phoebus Apollo card", () => {
+describe("A Ledyba card", () => {
   it.each([
     [0, [1]],
     [3, [2]],
@@ -41,7 +41,7 @@ describe("A Phoebus Apollo card", () => {
     "scores %i points for a set of butterflies with lengths %p",
     (expectedPoints, lengths) => {
       const { dwellerUnderTest, otherDwellers } = createDwellerSets(
-        PhoebusApollo,
+        Ledyba,
         [
           Brimstone,
           Beautifly,
@@ -59,7 +59,7 @@ describe("A Phoebus Apollo card", () => {
       });
       const game = createGame(forest);
 
-      const points = PhoebusApollo.score({
+      const points = Ledyba.score({
         game,
         forest,
         woodyPlant,
@@ -74,7 +74,7 @@ describe("A Phoebus Apollo card", () => {
     const ids = generateCardIds(2).toSorted();
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
       dwellerUnderTest: {
-        ...createAnyDweller(PhoebusApollo),
+        ...createAnyDweller(Ledyba),
         id: ids[1],
       },
       otherDwellers: [
@@ -86,7 +86,7 @@ describe("A Phoebus Apollo card", () => {
     });
     const game = createGame(forest);
 
-    const points = PhoebusApollo.score({
+    const points = Ledyba.score({
       game,
       forest,
       woodyPlant,
