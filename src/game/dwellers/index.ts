@@ -61,7 +61,7 @@ export { default as Mistletoe } from "./Mistletoe";
 export { default as MrMime } from "./MrMime";
 export { default as Tangela } from "./Tangela";
 export { default as DiglettAlola } from "./DiglettAlola";
-export { default as Nightingale } from "./Nightingale";
+export { default as Swablu } from "./Swablu";
 export { default as Exeggcute } from "./Exeggcute";
 export { default as Mothim } from "./Mothim";
 export { default as Abra } from "./Abra";

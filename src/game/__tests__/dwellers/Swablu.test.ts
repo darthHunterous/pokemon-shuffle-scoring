@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import { CardType } from "@/game";
-import { Nightingale } from "@/game/dwellers";
+import { Swablu } from "@/game/dwellers";
 
 import { createFakeWoodyPlant } from "../fake";
 import {
@@ -11,9 +11,9 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Nightingale card", () => {
+describe("A Swablu card", () => {
   it("scores 5 points if it's on a shrub", () => {
-    const dweller = createAnyDweller(Nightingale);
+    const dweller = createAnyDweller(Swablu);
     const woodyPlant = addDwellersToWoodyPlant(
       createFakeWoodyPlant({ types: [CardType.Shrub] }),
       dweller,
@@ -21,7 +21,7 @@ describe("A Nightingale card", () => {
     const forest = createForestWith({ woodyPlants: [woodyPlant] });
     const game = createGame(forest);
 
-    const points = Nightingale.score({
+    const points = Swablu.score({
       game,
       forest,
       woodyPlant,
@@ -32,7 +32,7 @@ describe("A Nightingale card", () => {
   });
 
   it("scores no points if it's on a tree", () => {
-    const dweller = createAnyDweller(Nightingale);
+    const dweller = createAnyDweller(Swablu);
     const woodyPlant = addDwellersToWoodyPlant(
       createFakeWoodyPlant({ types: [CardType.Tree] }),
       dweller,
@@ -40,7 +40,7 @@ describe("A Nightingale card", () => {
     const forest = createForestWith({ woodyPlants: [woodyPlant] });
     const game = createGame(forest);
 
-    const points = Nightingale.score({
+    const points = Swablu.score({
       game,
       forest,
       woodyPlant,
