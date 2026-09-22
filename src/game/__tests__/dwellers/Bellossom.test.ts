@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { Gentian } from "@/game/dwellers";
+import { Bellossom } from "@/game/dwellers";
 import { CardType, DwellerPosition } from "@/game/types";
 
 import { createFakeDwellers } from "../fake";
@@ -10,7 +10,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Gentian card", () => {
+describe("A Bellossom card", () => {
   it.each([
     [0, 0],
     [3, 1],
@@ -20,14 +20,14 @@ describe("A Gentian card", () => {
     "scores %i points for %i butterfly cards",
     (expectedPoints, butterflyCount) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(Gentian),
+        dwellerUnderTest: createAnyDweller(Bellossom),
         otherDwellers: createFakeDwellers(butterflyCount, DwellerPosition.Top, {
           types: [CardType.Butterfly],
         }),
       });
       const game = createGame(forest);
 
-      const points = Gentian.score({
+      const points = Bellossom.score({
         game,
         forest,
         woodyPlant,

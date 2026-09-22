@@ -44,7 +44,7 @@ export { default as Volbeat } from "./Volbeat";
 export { default as Lapras } from "./Lapras";
 export { default as Slowpoke } from "./Slowpoke";
 export { default as Genet } from "./Genet";
-export { default as Gentian } from "./Gentian";
+export { default as Bellossom } from "./Bellossom";
 export { default as Scyther } from "./Scyther";
 export { default as GoldenEagle } from "./GoldenEagle";
 export { default as Spearow } from "./Spearow";
