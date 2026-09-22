@@ -64,9 +64,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Blackthorne",
     defaultMessage: "Blackthorne",
   },
-  COMMON_HAZEL: {
-    id: "CardNames.CommonHazel",
-    defaultMessage: "Common Hazel",
+  FIRE_ARENA: {
+    id: "CardNames.FireArena",
+    defaultMessage: "Fire Arena",
   },
   ELDERBERRY: {
     id: "CardNames.Elderberry",

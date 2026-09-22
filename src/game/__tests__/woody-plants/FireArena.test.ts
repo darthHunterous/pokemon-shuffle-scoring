@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { CommonHazel } from "@/game/woody-plants";
+import { FireArena } from "@/game/woody-plants";
 
 import {
   createAnyWoodyPlant,
@@ -9,13 +9,13 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Common Hazel card", () => {
+describe("A Fire Arena card", () => {
   it("scores no points in an empty forest", () => {
-    const woodyPlant = createAnyWoodyPlant(CommonHazel);
+    const woodyPlant = createAnyWoodyPlant(FireArena);
     const forest = createForestWith({ woodyPlants: [woodyPlant] });
     const game = createGame(forest);
 
-    const points = CommonHazel.score({
+    const points = FireArena.score({
       game,
       forest,
       woodyPlant,
@@ -26,11 +26,11 @@ describe("A Common Hazel card", () => {
 
   it("scores no points in a complete forest", () => {
     const { woodyPlant, forest } = createCompleteForestWithWoodyPlant({
-      woodyPlantUnderTest: createAnyWoodyPlant(CommonHazel),
+      woodyPlantUnderTest: createAnyWoodyPlant(FireArena),
     });
     const game = createGame(forest);
 
-    const points = CommonHazel.score({
+    const points = FireArena.score({
       game,
       forest,
       woodyPlant,
