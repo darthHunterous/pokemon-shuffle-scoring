@@ -90,7 +90,7 @@ export { default as Oddish } from "./Oddish";
 export { default as Psyduck } from "./Psyduck";
 export { default as Troll } from "./Troll";
 export { default as Caterpie } from "./Caterpie";
-export { default as WaterVole } from "./WaterVole";
+export { default as Unown } from "./Unown";
 export { default as Whinchat } from "./Whinchat";
 export { default as WhiteStork } from "./WhiteStork";
 export { default as Pikachu } from "./Pikachu";

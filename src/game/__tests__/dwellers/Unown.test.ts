@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { WaterVole } from "@/game/dwellers";
+import { Unown } from "@/game/dwellers";
 
 import {
   createAnyDweller,
@@ -9,14 +9,14 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Water Vole card", () => {
+describe("A Unown card", () => {
   it("scores no points in an empty forest", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(WaterVole),
+      dwellerUnderTest: createAnyDweller(Unown),
     });
     const game = createGame(forest);
 
-    const points = WaterVole.score({
+    const points = Unown.score({
       game,
       forest,
       woodyPlant,
@@ -28,11 +28,11 @@ describe("A Water Vole card", () => {
 
   it("scores no points in a complete forest", () => {
     const { dweller, woodyPlant, forest } = createCompleteForestWithDweller({
-      dwellerUnderTest: createAnyDweller(WaterVole),
+      dwellerUnderTest: createAnyDweller(Unown),
     });
     const game = createGame(forest);
 
-    const points = WaterVole.score({
+    const points = Unown.score({
       game,
       forest,
       woodyPlant,

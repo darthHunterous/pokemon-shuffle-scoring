@@ -446,9 +446,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Caterpie",
     defaultMessage: "Caterpie",
   },
-  WATER_VOLE: {
-    id: "CardNames.WaterVole",
-    defaultMessage: "Water Vole",
+  UNOWN: {
+    id: "CardNames.Unown",
+    defaultMessage: "Unown",
   },
   PIKACHU: {
     id: "CardNames.Pikachu",

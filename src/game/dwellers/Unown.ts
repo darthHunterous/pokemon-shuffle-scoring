@@ -6,7 +6,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "WATER_VOLE";
+const name = "UNOWN";
 const points = 0;
 
 const blueprint: DwellerCardBlueprint = {
