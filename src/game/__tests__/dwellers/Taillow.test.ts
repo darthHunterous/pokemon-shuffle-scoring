@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { Chaffinch } from "@/game/dwellers";
+import { Taillow } from "@/game/dwellers";
 import {
   Fuchsia,
   Cinnabar,
@@ -20,7 +20,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Chaffinch card", () => {
+describe("A Taillow card", () => {
   it.each([
     [5, Fuchsia.name, Fuchsia],
     [0, Cinnabar.name, Cinnabar],
@@ -35,12 +35,12 @@ describe("A Chaffinch card", () => {
     "scores %i points on top on a %s card",
     (expectedPoints, _, woodyPlantBlueprint) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(Chaffinch),
+        dwellerUnderTest: createAnyDweller(Taillow),
         woodyPlantUnderTest: createAnyWoodyPlant(woodyPlantBlueprint),
       });
       const game = createGame(forest);
 
-      const points = Chaffinch.score({
+      const points = Taillow.score({
         game,
         forest,
         woodyPlant,

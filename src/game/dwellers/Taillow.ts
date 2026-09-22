@@ -7,7 +7,7 @@ import {
 } from "../types";
 import { Fuchsia } from "../woody-plants";
 
-const name = "CHAFFINCH";
+const name = "TAILLOW";
 const gameBox = GameBox.Base;
 const pointsOnFuchsia = 5;
 
