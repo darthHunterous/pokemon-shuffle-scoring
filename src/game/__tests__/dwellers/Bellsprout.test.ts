@@ -7,7 +7,7 @@ import * as WoodyPlants from "@/game/woody-plants";
 import {
   Fuchsia,
   Cinnabar,
-  Blackthorne,
+  PoisonArena,
   Cerulean,
   GrassArena,
   EuropeanLarch,
@@ -74,7 +74,7 @@ describe("A Bellsprout card", () => {
       otherWoodyPlants: [
         // Shrubs
         createAnyWoodyPlant(GrassArena),
-        createAnyWoodyPlant(Blackthorne),
+        createAnyWoodyPlant(PoisonArena),
         // Trees
         createAnyWoodyPlant(Fuchsia),
         createAnyWoodyPlant(Cinnabar),

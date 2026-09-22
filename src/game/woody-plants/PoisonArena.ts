@@ -5,7 +5,7 @@ import {
   WoodyPlantCardBlueprint,
 } from "../types";
 
-const name = "BLACKTHORNE";
+const name = "POISON_ARENA";
 const gameBox = GameBox.WoodlandEdge;
 const points = 0;
 

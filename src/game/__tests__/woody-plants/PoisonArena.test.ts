@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { Blackthorne } from "@/game/woody-plants";
+import { PoisonArena } from "@/game/woody-plants";
 
 import {
   createAnyWoodyPlant,
@@ -9,13 +9,13 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Blackthorne card", () => {
+describe("A PoisonArena card", () => {
   it("scores no points in an empty forest", () => {
-    const woodyPlant = createAnyWoodyPlant(Blackthorne);
+    const woodyPlant = createAnyWoodyPlant(PoisonArena);
     const forest = createForestWith({ woodyPlants: [woodyPlant] });
     const game = createGame(forest);
 
-    const points = Blackthorne.score({
+    const points = PoisonArena.score({
       game,
       forest,
       woodyPlant,
@@ -26,11 +26,11 @@ describe("A Blackthorne card", () => {
 
   it("scores no points in a complete forest", () => {
     const { woodyPlant, forest } = createCompleteForestWithWoodyPlant({
-      woodyPlantUnderTest: createAnyWoodyPlant(Blackthorne),
+      woodyPlantUnderTest: createAnyWoodyPlant(PoisonArena),
     });
     const game = createGame(forest);
 
-    const points = Blackthorne.score({
+    const points = PoisonArena.score({
       game,
       forest,
       woodyPlant,
