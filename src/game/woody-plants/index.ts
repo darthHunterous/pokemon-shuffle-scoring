@@ -3,7 +3,7 @@ export { default as Cinnabar } from "./Cinnabar";
 export { default as Blackthorne } from "./Blackthorne";
 export { default as FireArena } from "./FireArena";
 export { default as Cerulean } from "./Cerulean";
-export { default as Elderberry } from "./Elderberry";
+export { default as GrassArena } from "./GrassArena";
 export { default as EuropeanLarch } from "./EuropeanLarch";
 export { default as Saffron } from "./Saffron";
 export { default as Vermilion } from "./Vermilion";

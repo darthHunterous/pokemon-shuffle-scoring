@@ -8,7 +8,7 @@ import {
   Cinnabar,
   Blackthorne,
   Cerulean,
-  Elderberry,
+  GrassArena,
   EuropeanLarch,
   Saffron,
   Vermilion,
@@ -64,7 +64,7 @@ describe("A Pewter card", () => {
       woodyPlantUnderTest: createAnyWoodyPlant(Pewter),
       otherWoodyPlants: [
         // Shrubs
-        createAnyWoodyPlant(Elderberry),
+        createAnyWoodyPlant(GrassArena),
         createAnyWoodyPlant(Blackthorne),
         // Trees
         createAnyWoodyPlant(Fuchsia),

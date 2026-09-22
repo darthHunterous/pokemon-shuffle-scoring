@@ -9,7 +9,7 @@ import {
   Cinnabar,
   Blackthorne,
   Cerulean,
-  Elderberry,
+  GrassArena,
   EuropeanLarch,
   Saffron,
   Vermilion,
@@ -73,7 +73,7 @@ describe("A Bellsprout card", () => {
       dwellerUnderTest: createAnyDweller(Bellsprout),
       otherWoodyPlants: [
         // Shrubs
-        createAnyWoodyPlant(Elderberry),
+        createAnyWoodyPlant(GrassArena),
         createAnyWoodyPlant(Blackthorne),
         // Trees
         createAnyWoodyPlant(Fuchsia),
