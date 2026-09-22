@@ -290,9 +290,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Clefairy",
     defaultMessage: "Clefairy",
   },
-  LARGE_TORTOISESHELL: {
-    id: "CardNames.LargeTortoiseshell",
-    defaultMessage: "Large Tortoiseshell",
+  LARGE_VENOMOTHSHELL: {
+    id: "CardNames.Venomoth",
+    defaultMessage: "Venomoth",
   },
   RHYHORN: {
     id: "CardNames.Rhyhorn",

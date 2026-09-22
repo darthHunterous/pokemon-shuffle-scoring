@@ -3,7 +3,7 @@ import { describe, expect, it } from "@jest/globals";
 import {
   Brimstone,
   Beautifly,
-  LargeTortoiseshell,
+  Venomoth,
   MapButterfly,
   Mothim,
   PhoebusApollo,
@@ -21,7 +21,7 @@ import {
   generateCardIds,
 } from "../helpers";
 
-describe("A Large Tortoiseshell card", () => {
+describe("A Venomoth card", () => {
   it.each([
     [0, [1]],
     [3, [2]],
@@ -41,7 +41,7 @@ describe("A Large Tortoiseshell card", () => {
     "scores %i points for a set of butterflies with lengths %p",
     (expectedPoints, lengths) => {
       const { dwellerUnderTest, otherDwellers } = createDwellerSets(
-        LargeTortoiseshell,
+        Venomoth,
         [
           Brimstone,
           Beautifly,
@@ -59,7 +59,7 @@ describe("A Large Tortoiseshell card", () => {
       });
       const game = createGame(forest);
 
-      const points = LargeTortoiseshell.score({
+      const points = Venomoth.score({
         game,
         forest,
         woodyPlant,
@@ -74,7 +74,7 @@ describe("A Large Tortoiseshell card", () => {
     const ids = generateCardIds(2).toSorted();
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
       dwellerUnderTest: {
-        ...createAnyDweller(LargeTortoiseshell),
+        ...createAnyDweller(Venomoth),
         id: ids[1],
       },
       otherDwellers: [
@@ -86,7 +86,7 @@ describe("A Large Tortoiseshell card", () => {
     });
     const game = createGame(forest);
 
-    const points = LargeTortoiseshell.score({
+    const points = Venomoth.score({
       game,
       forest,
       woodyPlant,

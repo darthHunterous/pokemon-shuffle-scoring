@@ -3,7 +3,7 @@ import { describe, expect, it } from "@jest/globals";
 import {
   Brimstone,
   Beautifly,
-  LargeTortoiseshell,
+  Venomoth,
   MapButterfly,
   Mothim,
   PhoebusApollo,
@@ -45,7 +45,7 @@ describe("A Dustox card", () => {
         [
           Brimstone,
           Beautifly,
-          LargeTortoiseshell,
+          Venomoth,
           MapButterfly,
           Mothim,
           PhoebusApollo,
