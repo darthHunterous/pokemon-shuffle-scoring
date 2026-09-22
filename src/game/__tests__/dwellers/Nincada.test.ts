@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import { createFakeDwellers } from "@/game/__tests__/fake";
-import { CraneFly } from "@/game/dwellers";
+import { Nincada } from "@/game/dwellers";
 import { CardType, DwellerPosition } from "@/game/types";
 
 import {
@@ -10,7 +10,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Crane Fly card", () => {
+describe("A Nincada card", () => {
   it.each([
     [0, 0],
     [1, 1],
@@ -18,14 +18,14 @@ describe("A Crane Fly card", () => {
     [5, 5],
   ])("scores %i points for %i bat cards", (expectedPoints, batCount) => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(CraneFly),
+      dwellerUnderTest: createAnyDweller(Nincada),
       otherDwellers: createFakeDwellers(batCount, DwellerPosition.Left, {
         types: [CardType.Bat],
       }),
     });
     const game = createGame(forest);
 
-    const points = CraneFly.score({
+    const points = Nincada.score({
       game,
       forest,
       woodyPlant,
