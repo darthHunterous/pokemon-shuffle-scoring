@@ -15,7 +15,7 @@ export { default as Snorlax } from "./Snorlax";
 export { default as Charmander } from "./Charmander";
 export { default as Pidgey } from "./Pidgey";
 export { default as Beautifly } from "./Beautifly";
-export { default as Capercaillie } from "./Capercaillie";
+export { default as Hoppip } from "./Hoppip";
 export { default as Cardinal } from "./Cardinal";
 export { default as Taillow } from "./Taillow";
 export { default as Chamois } from "./Chamois";
