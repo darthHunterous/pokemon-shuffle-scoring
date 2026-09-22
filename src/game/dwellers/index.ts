@@ -27,7 +27,7 @@ export { default as Nincada } from "./Nincada";
 export { default as Cuckoo } from "./Cuckoo";
 export { default as Treecko } from "./Treecko";
 export { default as DuererFledermaus } from "./DuererFledermaus";
-export { default as Edelweiss } from "./Edelweiss";
+export { default as Chikorita } from "./Chikorita";
 export { default as Eierschwammerl } from "./Eierschwammerl";
 export { default as Elk } from "./Elk";
 export { default as Farfetchd } from "./Farfetchd";
