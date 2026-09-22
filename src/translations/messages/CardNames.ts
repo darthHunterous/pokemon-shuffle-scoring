@@ -102,9 +102,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Growlithe",
     defaultMessage: "Growlithe",
   },
-  BEE_SWARM: {
-    id: "CardNames.BeeSwarm",
-    defaultMessage: "Bee Swarm",
+  HERACROSS: {
+    id: "CardNames.Heracross",
+    defaultMessage: "Heracross",
   },
   CUBONE: {
     id: "CardNames.Cubone",

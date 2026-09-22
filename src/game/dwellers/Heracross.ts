@@ -7,7 +7,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "BEE_SWARM";
+const name = "HERACROSS";
 const gameBox = GameBox.WoodlandEdge;
 const pointsPerPlant = 1;
 

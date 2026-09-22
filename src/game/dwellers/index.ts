@@ -6,7 +6,7 @@ export { default as BarnOwl } from "./BarnOwl";
 export { default as BeardedVulture } from "./BeardedVulture";
 export { default as Growlithe } from "./Growlithe";
 export { default as Cubone } from "./Cubone";
-export { default as BeeSwarm } from "./BeeSwarm";
+export { default as Heracross } from "./Heracross";
 export { default as Bulbasaur } from "./Bulbasaur";
 export { default as BlackTrumpet } from "./BlackTrumpet";
 export { default as Blueberry } from "./Blueberry";
