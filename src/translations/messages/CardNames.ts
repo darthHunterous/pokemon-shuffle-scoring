@@ -154,9 +154,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Taillow",
     defaultMessage: "Taillow",
   },
-  CHAMOIS: {
-    id: "CardNames.Chamois",
-    defaultMessage: "Chamois",
+  MAREEP: {
+    id: "CardNames.Mareep",
+    defaultMessage: "Mareep",
   },
   JYNX: {
     id: "CardNames.Jynx",

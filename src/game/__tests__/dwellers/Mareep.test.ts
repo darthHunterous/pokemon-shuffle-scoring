@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import { DwellerPosition, TreeSymbol } from "@/game";
-import { Chamois } from "@/game/dwellers";
+import { Mareep } from "@/game/dwellers";
 import { createDweller, createSapling } from "@/game/factory";
 
 import { createFakeDwellers, createFakeWoodyPlant } from "../fake";
@@ -11,7 +11,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Chamois card", () => {
+describe("A Mareep card", () => {
   it.each([
     [TreeSymbol.Goldenrod],
     [TreeSymbol.Cerulean],
@@ -21,15 +21,15 @@ describe("A Chamois card", () => {
     (treeSymbol) => {
       const { dweller, woodyPlant, forest } = createCompleteForestWithDweller({
         dwellerUnderTest: createDweller(
-          Chamois,
-          Chamois.variants.find((v) => v.treeSymbol === treeSymbol)!,
+          Mareep,
+          Mareep.variants.find((v) => v.treeSymbol === treeSymbol)!,
         ),
         filterDwellers: (d) => d.treeSymbol !== treeSymbol,
         filterWoodyPlants: (w) => w.treeSymbol !== treeSymbol,
       });
       const game = createGame(forest);
 
-      const points = Chamois.score({ game, forest, woodyPlant, dweller });
+      const points = Mareep.score({ game, forest, woodyPlant, dweller });
 
       expect(points).toBe(3);
     },
@@ -42,8 +42,8 @@ describe("A Chamois card", () => {
   ])("with %s symbol scores %i points", (treeSymbol, expectedPoints) => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
       dwellerUnderTest: createDweller(
-        Chamois,
-        Chamois.variants.find((v) => v.treeSymbol === treeSymbol)!,
+        Mareep,
+        Mareep.variants.find((v) => v.treeSymbol === treeSymbol)!,
       ),
       otherDwellers: [
         ...createFakeDwellers(1, DwellerPosition.Left, {
@@ -65,7 +65,7 @@ describe("A Chamois card", () => {
     });
     const game = createGame(forest);
 
-    const points = Chamois.score({ game, forest, woodyPlant, dweller });
+    const points = Mareep.score({ game, forest, woodyPlant, dweller });
 
     expect(points).toBe(expectedPoints);
   });

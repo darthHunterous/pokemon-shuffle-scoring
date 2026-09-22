@@ -8,7 +8,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "CHAMOIS";
+const name = "MAREEP";
 const gameBox = GameBox.Alpine;
 const pointsPerTreeSymbol = 3;
 
