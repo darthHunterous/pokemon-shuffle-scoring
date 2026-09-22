@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import {
-  BarbastelleBat,
+  Vulpix,
   Growlithe,
   Charmander,
   CommonPipistrelle,
@@ -19,7 +19,7 @@ import {
 
 describe("A Growlithe card", () => {
   const otherBats = [
-    BarbastelleBat,
+    Vulpix,
     Charmander,
     CommonPipistrelle,
     DuererFledermaus,
@@ -57,11 +57,11 @@ describe("A Growlithe card", () => {
   it("ignores multiple instances of the same bat", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
       dwellerUnderTest: createAnyDweller(Growlithe),
-      otherDwellers: createAllDwellers(BarbastelleBat),
+      otherDwellers: createAllDwellers(Vulpix),
     });
     const game = createGame(forest);
 
-    const points = BarbastelleBat.score({
+    const points = Vulpix.score({
       game,
       forest,
       woodyPlant,

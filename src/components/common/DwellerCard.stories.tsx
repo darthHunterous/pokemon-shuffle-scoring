@@ -48,7 +48,7 @@ export const Left: Story = {
   args: {
     card: {
       id: "85640ef6-30a0-48f7-a7d0-4aba89bc37f1",
-      name: "BARBASTELLE_BAT",
+      name: "VULPIX",
       gameBox: GameBox.Base,
       types: [CardType.Bat],
       treeSymbol: TreeSymbol.Saffron,

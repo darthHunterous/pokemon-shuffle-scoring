@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import {
-  BarbastelleBat,
+  Vulpix,
   Growlithe,
   Charmander,
   CommonPipistrelle,
@@ -17,9 +17,9 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Barbastelle Bat card", () => {
+describe("A Vulpix card", () => {
   const otherBats = [
-    BarbastelleBat,
+    Vulpix,
     Growlithe,
     Charmander,
     DuererFledermaus,

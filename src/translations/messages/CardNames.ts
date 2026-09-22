@@ -86,9 +86,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.GigantamaxEevee",
     defaultMessage: "Gigantamax Eevee",
   },
-  BARBASTELLE_BAT: {
-    id: "CardNames.BarbastelleBat",
-    defaultMessage: "Barbastelle Bat",
+  VULPIX: {
+    id: "CardNames.Vulpix",
+    defaultMessage: "Vulpix",
   },
   BARN_OWL: {
     id: "CardNames.BarnOwl",

@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import {
-  BarbastelleBat,
+  Vulpix,
   Growlithe,
   Charmander,
   CommonPipistrelle,
@@ -17,7 +17,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Barbastelle Bat card", () => {
+describe("A Vulpix card", () => {
   const otherBats = [
     Growlithe,
     Charmander,
@@ -37,12 +37,12 @@ describe("A Barbastelle Bat card", () => {
     "scores %i points if there are %i other bat species",
     (expectedPoints, _, otherBatBlueprints) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(BarbastelleBat),
+        dwellerUnderTest: createAnyDweller(Vulpix),
         otherDwellers: otherBatBlueprints.map(createAnyDweller),
       });
       const game = createGame(forest);
 
-      const points = BarbastelleBat.score({
+      const points = Vulpix.score({
         game,
         forest,
         woodyPlant,
@@ -55,12 +55,12 @@ describe("A Barbastelle Bat card", () => {
 
   it("ignores multiple instances of the same bat", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(BarbastelleBat),
+      dwellerUnderTest: createAnyDweller(Vulpix),
       otherDwellers: createAllDwellers(Growlithe),
     });
     const game = createGame(forest);
 
-    const points = BarbastelleBat.score({
+    const points = Vulpix.score({
       game,
       forest,
       woodyPlant,
