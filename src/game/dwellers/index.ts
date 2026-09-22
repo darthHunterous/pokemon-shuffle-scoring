@@ -47,7 +47,7 @@ export { default as Genet } from "./Genet";
 export { default as Gentian } from "./Gentian";
 export { default as Scyther } from "./Scyther";
 export { default as GoldenEagle } from "./GoldenEagle";
-export { default as Goshawk } from "./Goshawk";
+export { default as Spearow } from "./Spearow";
 export { default as Ponyta } from "./Ponyta";
 export { default as GreatGreenBushCricket } from "./GreatGreenBushCricket";
 export { default as Pikipek } from "./Pikipek";
