@@ -8,7 +8,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "EUROPEAN_POLECAT";
+const name = "MUDKIP";
 const gameBox = GameBox.WoodlandEdge;
 const pointsIfAlone = 10;
 

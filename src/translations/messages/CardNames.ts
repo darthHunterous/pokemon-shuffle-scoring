@@ -226,9 +226,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Diglett",
     defaultMessage: "Diglett",
   },
-  EUROPEAN_POLECAT: {
-    id: "CardNames.EuropeanPolecat",
-    defaultMessage: "European Polecat",
+  MUDKIP: {
+    id: "CardNames.Mudkip",
+    defaultMessage: "Mudkip",
   },
   EUROPEAN_WILDCAT: {
     id: "CardNames.EuropeanWildcat",
@@ -298,9 +298,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Rhyhorn",
     defaultMessage: "Rhyhorn",
   },
-  MAP_BUTTERFLY: {
-    id: "CardNames.MapButterfly",
-    defaultMessage: "Map Butterfly",
+  MASQUERAIN: {
+    id: "CardNames.Masquerain",
+    defaultMessage: "Masquerain",
   },
   MARSH_CINQUEFOIL: {
     id: "CardNames.MarshCinquefoil",

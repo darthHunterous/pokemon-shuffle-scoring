@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import { CardType, DwellerPosition } from "@/game";
-import { EuropeanPolecat } from "@/game/dwellers";
+import { Mudkip } from "@/game/dwellers";
 
 import { createFakeDweller, createFakeWoodyPlant } from "../fake";
 import {
@@ -11,11 +11,11 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A European Polecat card", () => {
+describe("A Mudkip card", () => {
   it.each([[CardType.Tree, CardType.Shrub]])(
     "scores 10 points if it's the only card on its woody plant of type $0",
     (cardType) => {
-      const dweller = createAnyDweller(EuropeanPolecat);
+      const dweller = createAnyDweller(Mudkip);
       const woodyPlant = addDwellersToWoodyPlant(
         createFakeWoodyPlant({ types: [cardType] }),
         dweller,
@@ -23,7 +23,7 @@ describe("A European Polecat card", () => {
       const forest = createForestWith({ woodyPlants: [woodyPlant] });
       const game = createGame(forest);
 
-      const points = EuropeanPolecat.score({
+      const points = Mudkip.score({
         game,
         forest,
         woodyPlant,
@@ -37,7 +37,7 @@ describe("A European Polecat card", () => {
   it.each([[CardType.Tree, CardType.Shrub]])(
     "scores no points if there are other cards on its woody plant of type $0",
     (cardType) => {
-      const dweller = createAnyDweller(EuropeanPolecat);
+      const dweller = createAnyDweller(Mudkip);
       const woodyPlant = addDwellersToWoodyPlant(
         createFakeWoodyPlant({ types: [cardType] }),
         createFakeDweller(DwellerPosition.Top),
@@ -46,7 +46,7 @@ describe("A European Polecat card", () => {
       const forest = createForestWith({ woodyPlants: [woodyPlant] });
       const game = createGame(forest);
 
-      const points = EuropeanPolecat.score({
+      const points = Mudkip.score({
         game,
         forest,
         woodyPlant,

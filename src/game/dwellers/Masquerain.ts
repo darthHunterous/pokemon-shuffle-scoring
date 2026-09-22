@@ -7,7 +7,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "MAP_BUTTERFLY";
+const name = "MASQUERAIN";
 const gameBox = GameBox.WoodlandEdge;
 
 const blueprint: DwellerCardBlueprint = {

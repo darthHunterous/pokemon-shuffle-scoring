@@ -4,7 +4,7 @@ import {
   Brimstone,
   Beautifly,
   Venomoth,
-  MapButterfly,
+  Masquerain,
   Mothim,
   PhoebusApollo,
   Dustox,
@@ -45,7 +45,7 @@ describe("A Venomoth card", () => {
         [
           Brimstone,
           Beautifly,
-          MapButterfly,
+          Masquerain,
           Mothim,
           PhoebusApollo,
           Dustox,

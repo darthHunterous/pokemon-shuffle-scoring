@@ -4,7 +4,7 @@ import {
   Brimstone,
   Beautifly,
   Venomoth,
-  MapButterfly,
+  Masquerain,
   Mothim,
   PhoebusApollo,
   Dustox,
@@ -21,7 +21,7 @@ import {
   generateCardIds,
 } from "../helpers";
 
-describe("A Map Butterfly card", () => {
+describe("A Masquerain card", () => {
   it.each([
     [0, [1]],
     [3, [2]],
@@ -41,7 +41,7 @@ describe("A Map Butterfly card", () => {
     "scores %i points for a set of butterflies with lengths %p",
     (expectedPoints, lengths) => {
       const { dwellerUnderTest, otherDwellers } = createDwellerSets(
-        MapButterfly,
+        Masquerain,
         [
           Brimstone,
           Beautifly,
@@ -59,7 +59,7 @@ describe("A Map Butterfly card", () => {
       });
       const game = createGame(forest);
 
-      const points = MapButterfly.score({
+      const points = Masquerain.score({
         game,
         forest,
         woodyPlant,
@@ -74,7 +74,7 @@ describe("A Map Butterfly card", () => {
     const ids = generateCardIds(2).toSorted();
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
       dwellerUnderTest: {
-        ...createAnyDweller(MapButterfly),
+        ...createAnyDweller(Masquerain),
         id: ids[1],
       },
       otherDwellers: [
@@ -86,7 +86,7 @@ describe("A Map Butterfly card", () => {
     });
     const game = createGame(forest);
 
-    const points = MapButterfly.score({
+    const points = Masquerain.score({
       game,
       forest,
       woodyPlant,
