@@ -66,7 +66,7 @@ export { default as Exeggcute } from "./Exeggcute";
 export { default as Mothim } from "./Mothim";
 export { default as Abra } from "./Abra";
 export { default as PhoebusApollo } from "./PhoebusApollo";
-export { default as PondTurtle } from "./PondTurtle";
+export { default as Squirtle } from "./Squirtle";
 export { default as Dustox } from "./Dustox";
 export { default as Ditto } from "./Ditto";
 export { default as Electabuzz } from "./Electabuzz";

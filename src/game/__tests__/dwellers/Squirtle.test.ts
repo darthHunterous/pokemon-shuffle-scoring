@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { PondTurtle } from "@/game/dwellers";
+import { Squirtle } from "@/game/dwellers";
 
 import {
   createAnyDweller,
@@ -9,14 +9,14 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Pond Turtle card", () => {
+describe("A Squirtle card", () => {
   it("scores 5 points in an empty forest", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(PondTurtle),
+      dwellerUnderTest: createAnyDweller(Squirtle),
     });
     const game = createGame(forest);
 
-    const points = PondTurtle.score({
+    const points = Squirtle.score({
       game,
       forest,
       woodyPlant,
@@ -28,11 +28,11 @@ describe("A Pond Turtle card", () => {
 
   it("scores 5 points in a complete forest", () => {
     const { dweller, woodyPlant, forest } = createCompleteForestWithDweller({
-      dwellerUnderTest: createAnyDweller(PondTurtle),
+      dwellerUnderTest: createAnyDweller(Squirtle),
     });
     const game = createGame(forest);
 
-    const points = PondTurtle.score({
+    const points = Squirtle.score({
       game,
       forest,
       woodyPlant,

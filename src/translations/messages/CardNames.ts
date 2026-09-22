@@ -350,9 +350,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.PhoebusApollo",
     defaultMessage: "Phoebus Apollo",
   },
-  POND_TURTLE: {
-    id: "CardNames.PondTurtle",
-    defaultMessage: "Pond Turtle",
+  SQUIRTLE: {
+    id: "CardNames.Squirtle",
+    defaultMessage: "Squirtle",
   },
   DUSTOX: {
     id: "CardNames.Dustox",
