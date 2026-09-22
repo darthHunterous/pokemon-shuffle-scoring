@@ -40,7 +40,7 @@ export { default as EuropeanPolecat } from "./EuropeanPolecat";
 export { default as EuropeanWildcat } from "./EuropeanWildcat";
 export { default as Magnemite } from "./Magnemite";
 export { default as Raichu } from "./Raichu";
-export { default as Fireflies } from "./Fireflies";
+export { default as Volbeat } from "./Volbeat";
 export { default as Lapras } from "./Lapras";
 export { default as Slowpoke } from "./Slowpoke";
 export { default as Genet } from "./Genet";

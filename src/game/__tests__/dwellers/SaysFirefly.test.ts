@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { Fireflies, SaysFirefly } from "@/game/dwellers";
+import { Volbeat, SaysFirefly } from "@/game/dwellers";
 
 import {
   createAllDwellers,
@@ -18,9 +18,9 @@ describe("A Say's Firefly card", () => {
     [10, 1, 1],
     [20, 4, 1],
   ])(
-    "scores %i points if there are %i Fireflies and %i Say's Firefly cards",
-    (expectedPoints, firefliesCount, saysFireflyCount) => {
-      const allFireflies = createAllDwellers(Fireflies);
+    "scores %i points if there are %i Volbeat and %i Say's Firefly cards",
+    (expectedPoints, volbeatCount, saysFireflyCount) => {
+      const allVolbeat = createAllDwellers(Volbeat);
       const allSaysFireflies = createAllDwellers(SaysFirefly);
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
         dwellerUnderTest: {
@@ -28,7 +28,7 @@ describe("A Say's Firefly card", () => {
           id: "00000000-0000-0000-0000-000000000000",
         },
         otherDwellers: [
-          ...allFireflies.slice(1, firefliesCount),
+          ...allVolbeat.slice(1, volbeatCount),
           ...allSaysFireflies.slice(0, saysFireflyCount),
         ],
       });
@@ -46,7 +46,7 @@ describe("A Say's Firefly card", () => {
   );
 
   it.each([
-    [Fireflies.name, Fireflies],
+    [Volbeat.name, Volbeat],
     [SaysFirefly.name, SaysFirefly],
   ])(
     "scores 0 points if there's another %s card with a smaller id",
