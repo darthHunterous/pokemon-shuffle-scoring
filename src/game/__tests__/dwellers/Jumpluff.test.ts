@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { Blueberry } from "@/game/dwellers";
+import { Jumpluff } from "@/game/dwellers";
 import { CardType, DwellerPosition } from "@/game/types";
 
 import { createFakeDwellers } from "../fake";
@@ -10,7 +10,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Blueberry card", () => {
+describe("A Jumpluff card", () => {
   it.each([
     [0, 0],
     [2, 1],
@@ -20,7 +20,7 @@ describe("A Blueberry card", () => {
     "scores %i points for %i unique bird cards",
     (expectedPoints, birdCount) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(Blueberry),
+        dwellerUnderTest: createAnyDweller(Jumpluff),
         otherDwellers: createFakeDwellers(birdCount, DwellerPosition.Bottom, {
           types: [CardType.Bird],
           uniqueName: true,
@@ -28,7 +28,7 @@ describe("A Blueberry card", () => {
       });
       const game = createGame(forest);
 
-      const points = Blueberry.score({
+      const points = Jumpluff.score({
         game,
         forest,
         woodyPlant,
@@ -41,7 +41,7 @@ describe("A Blueberry card", () => {
 
   it("ignores duplicate birds when scoring", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(Blueberry),
+      dwellerUnderTest: createAnyDweller(Jumpluff),
       otherDwellers: createFakeDwellers(10, DwellerPosition.Bottom, {
         types: [CardType.Bird],
         uniqueName: false,
@@ -49,7 +49,7 @@ describe("A Blueberry card", () => {
     });
     const game = createGame(forest);
 
-    const points = Blueberry.score({
+    const points = Jumpluff.score({
       game,
       forest,
       woodyPlant,
