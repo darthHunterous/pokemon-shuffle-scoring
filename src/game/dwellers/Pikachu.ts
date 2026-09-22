@@ -1,0 +1,50 @@
+import { countCardNames } from "../scoring/helpers";
+import {
+  CardType,
+  DwellerCardBlueprint,
+  DwellerPosition,
+  GameBox,
+  TreeSymbol,
+} from "../types";
+import Pichu from "./Pichu";
+
+const name = "PIKACHU";
+const gameBox = GameBox.Base;
+const points = 10;
+
+const blueprint: DwellerCardBlueprint = {
+  name,
+  types: [CardType.ElectricalPokemon],
+  cost: 2,
+  isPartOfDeck: true,
+  variants: [
+    {
+      gameBox,
+      position: DwellerPosition.Left,
+      treeSymbol: TreeSymbol.Cinnabar,
+      count: 1,
+    },
+    {
+      gameBox,
+      position: DwellerPosition.Left,
+      treeSymbol: TreeSymbol.Celadon,
+      count: 2,
+    },
+    {
+      gameBox,
+      position: DwellerPosition.Right,
+      treeSymbol: TreeSymbol.Cerulean,
+      count: 1,
+    },
+    {
+      gameBox,
+      position: DwellerPosition.Right,
+      treeSymbol: TreeSymbol.Pewter,
+      count: 1,
+    },
+  ],
+  score: ({ forest }) =>
+    countCardNames(forest, [Pichu.name]) > 0 ? points : 0,
+};
+
+export default blueprint;

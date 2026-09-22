@@ -1,0 +1,43 @@
+import { countCardTypes } from "../scoring/helpers";
+import {
+  CardType,
+  DwellerCardBlueprint,
+  DwellerPosition,
+  GameBox,
+  TreeSymbol,
+} from "../types";
+
+const name = "CLEFAIRY";
+const gameBox = GameBox.Base;
+const pointsPerButterfly = 2;
+
+const blueprint: DwellerCardBlueprint = {
+  name,
+  types: [CardType.PawedAnimal],
+  cost: 1,
+  isPartOfDeck: true,
+  variants: [
+    {
+      gameBox,
+      position: DwellerPosition.Bottom,
+      treeSymbol: TreeSymbol.Fuchsia,
+      count: 1,
+    },
+    {
+      gameBox,
+      position: DwellerPosition.Bottom,
+      treeSymbol: TreeSymbol.Saffron,
+      count: 1,
+    },
+    {
+      gameBox,
+      position: DwellerPosition.Bottom,
+      treeSymbol: TreeSymbol.Pewter,
+      count: 1,
+    },
+  ],
+  score: ({ forest }) =>
+    countCardTypes(forest, [CardType.Butterfly]) * pointsPerButterfly,
+};
+
+export default blueprint;

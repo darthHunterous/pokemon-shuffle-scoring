@@ -67,10 +67,10 @@ export const Default: Story = {
           [DwellerPosition.Top]: [
             {
               id: "ba8ed761-0364-437f-858d-61c7f5147a16",
-              name: "PURPLE_EMPEROR",
+              name: "DUSTOX",
               gameBox: GameBox.Base,
               types: [CardType.Butterfly, CardType.Insect],
-              treeSymbol: TreeSymbol.Birch,
+              treeSymbol: TreeSymbol.Cinnabar,
               isPartOfDeck: true,
               position: DwellerPosition.Top,
             },
@@ -78,10 +78,10 @@ export const Default: Story = {
           [DwellerPosition.Bottom]: [
             {
               id: "43f458f5-81ea-4019-a479-949d74094776",
-              name: "BLACKBERRIES",
+              name: "BULBASAUR",
               gameBox: GameBox.Base,
               types: [CardType.Plant],
-              treeSymbol: TreeSymbol.SilverFir,
+              treeSymbol: TreeSymbol.Viridian,
               isPartOfDeck: true,
               position: DwellerPosition.Bottom,
             },
@@ -89,7 +89,7 @@ export const Default: Story = {
           [DwellerPosition.Left]: [
             {
               id: "85640ef6-30a0-48f7-a7d0-4aba89bc37f1",
-              name: "EUROPEAN_HARE",
+              name: "DIGLETT",
               gameBox: GameBox.Base,
               types: [CardType.PawedAnimal],
               treeSymbol: TreeSymbol.Fuchsia,
@@ -104,7 +104,7 @@ export const Default: Story = {
             },
             {
               id: "5d267fc1-d8c1-4ccc-9b30-acd63bacce6d",
-              name: "EUROPEAN_HARE",
+              name: "DIGLETT",
               gameBox: GameBox.Base,
               types: [CardType.PawedAnimal],
               treeSymbol: TreeSymbol.Vermilion,
@@ -121,10 +121,10 @@ export const Default: Story = {
           [DwellerPosition.Right]: [
             {
               id: "6cfebd3e-b770-4f7b-9f17-64aef35b1a6d",
-              name: "GNAT",
+              name: "SCYTHER",
               gameBox: GameBox.Base,
               types: [CardType.Insect],
-              treeSymbol: TreeSymbol.Birch,
+              treeSymbol: TreeSymbol.Cinnabar,
               isPartOfDeck: true,
               position: DwellerPosition.Right,
             },

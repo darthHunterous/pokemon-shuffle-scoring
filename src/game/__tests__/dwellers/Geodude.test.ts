@@ -1,0 +1,53 @@
+import { describe, expect, it } from "@jest/globals";
+
+import { Geodude } from "@/game/dwellers";
+import {
+  Fuchsia,
+  Cinnabar,
+  Cerulean,
+  Saffron,
+  Vermilion,
+  Pewter,
+  Sapling,
+  Viridian,
+  Celadon,
+} from "@/game/woody-plants";
+
+import {
+  createAnyDweller,
+  createAnyWoodyPlant,
+  createForestForDwellerTest,
+  createGame,
+} from "../helpers";
+
+describe("A Geodude card", () => {
+  it.each([
+    [0, Fuchsia.name, Fuchsia],
+    [0, Cinnabar.name, Cinnabar],
+    [0, Cerulean.name, Cerulean],
+    [0, Saffron.name, Saffron],
+    [0, Vermilion.name, Vermilion],
+    [5, Pewter.name, Pewter],
+    [0, Sapling.name, Sapling],
+    [0, Viridian.name, Viridian],
+    [0, Celadon.name, Celadon],
+  ])(
+    "scores %i points on top on a %s card",
+    (expectedPoints, _, woodyPlantBlueprint) => {
+      const { dweller, woodyPlant, forest } = createForestForDwellerTest({
+        dwellerUnderTest: createAnyDweller(Geodude),
+        woodyPlantUnderTest: createAnyWoodyPlant(woodyPlantBlueprint),
+      });
+      const game = createGame(forest);
+
+      const points = Geodude.score({
+        game,
+        forest,
+        woodyPlant,
+        dweller,
+      });
+
+      expect(points).toBe(expectedPoints);
+    },
+  );
+});

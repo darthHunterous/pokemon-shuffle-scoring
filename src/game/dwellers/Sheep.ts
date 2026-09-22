@@ -9,25 +9,25 @@ import {
 } from "../types";
 
 const name = "SHEEP";
-const pointsPerClovenhoofedAnimal = 3;
+const pointsPerElectricalPokemon = 3;
 
 // Promo card P022
 const blueprint: DwellerCardBlueprint = {
   name,
-  types: [CardType.ClovenhoofedAnimal],
+  types: [CardType.ElectricalPokemon],
   cost: 2,
   isPartOfDeck: true,
   variants: [
     {
       gameBox: GameBox.PromoCards,
       position: DwellerPosition.Left,
-      treeSymbol: TreeSymbol.Birch,
+      treeSymbol: TreeSymbol.Cinnabar,
       count: 1,
     },
   ],
   score: ({ forest }) =>
-    countCardTypes(forest, [CardType.ClovenhoofedAnimal]) *
-    pointsPerClovenhoofedAnimal,
+    countCardTypes(forest, [CardType.ElectricalPokemon]) *
+    pointsPerElectricalPokemon,
 };
 
 export default blueprint;

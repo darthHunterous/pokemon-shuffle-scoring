@@ -1,0 +1,60 @@
+import {
+  CardType,
+  DwellerCardBlueprint,
+  DwellerPosition,
+  GameBox,
+  TreeSymbol,
+} from "../types";
+
+const name = "RATATTA";
+const gameBox = GameBox.Base;
+const pointsWithBat = 15;
+
+const blueprint: DwellerCardBlueprint = {
+  name,
+  types: [CardType.PawedAnimal],
+  cost: 1,
+  isPartOfDeck: true,
+  variants: [
+    {
+      gameBox,
+      position: DwellerPosition.Left,
+      treeSymbol: TreeSymbol.Fuchsia,
+      count: 1,
+    },
+    {
+      gameBox,
+      position: DwellerPosition.Left,
+      treeSymbol: TreeSymbol.Viridian,
+      count: 1,
+    },
+    {
+      gameBox,
+      position: DwellerPosition.Right,
+      treeSymbol: TreeSymbol.Cerulean,
+      count: 1,
+    },
+    {
+      gameBox,
+      position: DwellerPosition.Right,
+      treeSymbol: TreeSymbol.Pewter,
+      count: 1,
+    },
+  ],
+  score: ({ woodyPlant, dweller }) => {
+    if (!woodyPlant.types.includes(CardType.Tree)) {
+      return 0;
+    }
+
+    const oppositeDwellers =
+      dweller.position === DwellerPosition.Left
+        ? woodyPlant?.dwellers[DwellerPosition.Right]
+        : woodyPlant?.dwellers[DwellerPosition.Left];
+
+    return oppositeDwellers?.some((c) => c.types.includes(CardType.Bat))
+      ? pointsWithBat
+      : 0;
+  },
+};
+
+export default blueprint;

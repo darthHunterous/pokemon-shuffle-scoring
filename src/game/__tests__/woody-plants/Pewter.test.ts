@@ -5,14 +5,14 @@ import { CardType } from "@/game/types";
 import * as WoodyPlants from "@/game/woody-plants";
 import {
   Fuchsia,
-  Birch,
+  Cinnabar,
   Blackthorne,
-  DouglasFir,
+  Cerulean,
   Elderberry,
   EuropeanLarch,
-  HorseChestnut,
+  Saffron,
   Vermilion,
-  MoorBirch,
+  Lavaridge,
   OChristmasTree,
   Pewter,
   StonePine,
@@ -68,10 +68,10 @@ describe("A Pewter card", () => {
         createAnyWoodyPlant(Blackthorne),
         // Trees
         createAnyWoodyPlant(Fuchsia),
-        createAnyWoodyPlant(Birch),
-        createAnyWoodyPlant(DouglasFir),
+        createAnyWoodyPlant(Cinnabar),
+        createAnyWoodyPlant(Cerulean),
         createAnyWoodyPlant(EuropeanLarch),
-        createAnyWoodyPlant(HorseChestnut),
+        createAnyWoodyPlant(Saffron),
       ],
     });
     const game = createGame(forest);
@@ -82,7 +82,7 @@ describe("A Pewter card", () => {
   });
 
   it.each([
-    [MoorBirch.name, MoorBirch.countsAs, MoorBirch],
+    [Lavaridge.name, Lavaridge.countsAs, Lavaridge],
     [OChristmasTree.name, OChristmasTree.countsAs, OChristmasTree],
     [Mauville.name, Mauville.countsAs, Mauville],
   ])("treats %s as %s when scoring", (_1, _2, blueprint) => {
@@ -95,7 +95,7 @@ describe("A Pewter card", () => {
         ),
         createAnyWoodyPlant(Fuchsia),
         createAnyWoodyPlant(EuropeanLarch),
-        createAnyWoodyPlant(HorseChestnut),
+        createAnyWoodyPlant(Saffron),
         createAnyWoodyPlant(Vermilion),
         createAnyWoodyPlant(StonePine),
       ],

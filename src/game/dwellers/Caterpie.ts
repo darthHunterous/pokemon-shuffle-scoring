@@ -1,0 +1,45 @@
+import {
+  CardType,
+  DwellerCardBlueprint,
+  DwellerPosition,
+  GameBox,
+  TreeSymbol,
+} from "../types";
+
+const name = "CATERPIE";
+const gameBox = GameBox.Base;
+const points = 0;
+
+const blueprint: DwellerCardBlueprint = {
+  name,
+  types: [CardType.Insect],
+  modifiers: {
+    woodyPlantCount: ({ woodyPlant }) =>
+      woodyPlant.types.includes(CardType.Tree) ? 1 : 0,
+  },
+  cost: 1,
+  isPartOfDeck: true,
+  variants: [
+    {
+      gameBox,
+      position: DwellerPosition.Left,
+      treeSymbol: TreeSymbol.Cerulean,
+      count: 1,
+    },
+    {
+      gameBox,
+      position: DwellerPosition.Left,
+      treeSymbol: TreeSymbol.Viridian,
+      count: 1,
+    },
+    {
+      gameBox,
+      position: DwellerPosition.Right,
+      treeSymbol: TreeSymbol.Cerulean,
+      count: 2,
+    },
+  ],
+  score: () => points,
+};
+
+export default blueprint;

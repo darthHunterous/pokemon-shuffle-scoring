@@ -20,10 +20,10 @@ export const Top: Story = {
   args: {
     card: {
       id: "ba8ed761-0364-437f-858d-61c7f5147a16",
-      name: "PURPLE_EMPEROR",
+      name: "DUSTOX",
       gameBox: GameBox.Base,
       types: [CardType.Butterfly, CardType.Insect],
-      treeSymbol: TreeSymbol.Birch,
+      treeSymbol: TreeSymbol.Cinnabar,
       isPartOfDeck: true,
       position: DwellerPosition.Top,
     },
@@ -34,10 +34,10 @@ export const Bottom: Story = {
   args: {
     card: {
       id: "43f458f5-81ea-4019-a479-949d74094776",
-      name: "BLACKBERRIES",
+      name: "BULBASAUR",
       gameBox: GameBox.Base,
       types: [CardType.Plant],
-      treeSymbol: TreeSymbol.SilverFir,
+      treeSymbol: TreeSymbol.Viridian,
       isPartOfDeck: true,
       position: DwellerPosition.Bottom,
     },
@@ -48,10 +48,10 @@ export const Left: Story = {
   args: {
     card: {
       id: "85640ef6-30a0-48f7-a7d0-4aba89bc37f1",
-      name: "BARBASTELLE_BAT",
+      name: "VULPIX",
       gameBox: GameBox.Base,
       types: [CardType.Bat],
-      treeSymbol: TreeSymbol.HorseChestnut,
+      treeSymbol: TreeSymbol.Saffron,
       isPartOfDeck: true,
       position: DwellerPosition.Left,
     },
@@ -62,10 +62,10 @@ export const Right: Story = {
   args: {
     card: {
       id: "6cfebd3e-b770-4f7b-9f17-64aef35b1a6d",
-      name: "LYNX",
+      name: "RHYHORN",
       gameBox: GameBox.Base,
       types: [CardType.PawedAnimal],
-      treeSymbol: TreeSymbol.DouglasFir,
+      treeSymbol: TreeSymbol.Cerulean,
       isPartOfDeck: true,
       position: DwellerPosition.Right,
     },

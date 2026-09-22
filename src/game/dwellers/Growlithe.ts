@@ -1,0 +1,41 @@
+import { scoreBats } from "../scoring/bats";
+import {
+  CardType,
+  DwellerCardBlueprint,
+  DwellerPosition,
+  GameBox,
+  TreeSymbol,
+} from "../types";
+
+const name = "GROWLITHE";
+const gameBox = GameBox.Base;
+
+const blueprint: DwellerCardBlueprint = {
+  name,
+  types: [CardType.Bat],
+  cost: 1,
+  isPartOfDeck: true,
+  variants: [
+    {
+      gameBox,
+      position: DwellerPosition.Left,
+      treeSymbol: TreeSymbol.Fuchsia,
+      count: 1,
+    },
+    {
+      gameBox,
+      position: DwellerPosition.Left,
+      treeSymbol: TreeSymbol.Pewter,
+      count: 1,
+    },
+    {
+      gameBox,
+      position: DwellerPosition.Right,
+      treeSymbol: TreeSymbol.Cinnabar,
+      count: 1,
+    },
+  ],
+  score: ({ forest }) => scoreBats(forest),
+};
+
+export default blueprint;

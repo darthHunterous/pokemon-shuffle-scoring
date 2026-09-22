@@ -1,0 +1,47 @@
+import {
+  CardType,
+  DwellerCardBlueprint,
+  DwellerPosition,
+  GameBox,
+  TreeSymbol,
+} from "../types";
+
+const name = "DITTO";
+const gameBox = GameBox.Base;
+const points = 0;
+
+const blueprint: DwellerCardBlueprint = {
+  name,
+  types: [CardType.PawedAnimal],
+  cost: 1,
+  isPartOfDeck: true,
+  variants: [
+    {
+      gameBox,
+      position: DwellerPosition.Left,
+      treeSymbol: TreeSymbol.Cerulean,
+      count: 1,
+    },
+    {
+      gameBox,
+      position: DwellerPosition.Left,
+      treeSymbol: TreeSymbol.Viridian,
+      count: 1,
+    },
+    {
+      gameBox,
+      position: DwellerPosition.Right,
+      treeSymbol: TreeSymbol.Cinnabar,
+      count: 1,
+    },
+    {
+      gameBox,
+      position: DwellerPosition.Right,
+      treeSymbol: TreeSymbol.Viridian,
+      count: 1,
+    },
+  ],
+  score: () => points,
+};
+
+export default blueprint;

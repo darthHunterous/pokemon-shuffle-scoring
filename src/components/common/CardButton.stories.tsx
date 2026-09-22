@@ -21,9 +21,9 @@ export const SingleColor: Story = {
   args: {
     card: {
       id: "43f458f5-81ea-4019-a479-949d74094776",
-      name: "BLACKBERRIES",
+      name: "BULBASAUR",
       types: [CardType.Plant],
-      treeSymbol: TreeSymbol.SilverFir,
+      treeSymbol: TreeSymbol.Viridian,
       isPartOfDeck: true,
       position: DwellerPosition.Bottom,
     } as DwellerCard,
@@ -35,9 +35,9 @@ export const Gradient: Story = {
   args: {
     card: {
       id: "ba8ed761-0364-437f-858d-61c7f5147a16",
-      name: "PURPLE_EMPEROR",
+      name: "DUSTOX",
       types: [CardType.Butterfly, CardType.Insect],
-      treeSymbol: TreeSymbol.Birch,
+      treeSymbol: TreeSymbol.Cinnabar,
       isPartOfDeck: true,
       position: DwellerPosition.Top,
     } as DwellerCard,

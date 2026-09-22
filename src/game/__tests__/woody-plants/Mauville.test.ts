@@ -16,12 +16,12 @@ describe("A Mauville card", () => {
     [1, 1],
     [5, 5],
   ])(
-    "scores %i points for %i cloven-hoofed cards",
+    "scores %i points for %i electrical cards",
     (expectedPoints, plantCount) => {
       const { woodyPlant, forest } = createForestForWoodyPlantTest({
         woodyPlantUnderTest: createAnyWoodyPlant(Mauville),
         dwellers: createFakeDwellers(plantCount, DwellerPosition.Bottom, {
-          types: [CardType.ClovenhoofedAnimal],
+          types: [CardType.ElectricalPokemon],
         }),
       });
       const game = createGame(forest);

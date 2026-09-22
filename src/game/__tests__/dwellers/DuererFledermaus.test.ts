@@ -1,12 +1,12 @@
 import { describe, expect, it } from "@jest/globals";
 
 import {
-  BarbastelleBat,
-  BechsteinsBat,
-  BrownLongEaredBat,
+  Vulpix,
+  Growlithe,
+  Charmander,
   CommonPipistrelle,
   DuererFledermaus,
-  GreaterHorseshoeBat,
+  Ponyta,
   SavisPipistrelle,
 } from "@/game/dwellers";
 
@@ -19,11 +19,11 @@ import {
 
 describe("A Dürer-Fledermaus card", () => {
   const otherBats = [
-    BarbastelleBat,
-    BechsteinsBat,
-    BrownLongEaredBat,
+    Vulpix,
+    Growlithe,
+    Charmander,
     CommonPipistrelle,
-    GreaterHorseshoeBat,
+    Ponyta,
     SavisPipistrelle,
   ];
 
@@ -57,11 +57,11 @@ describe("A Dürer-Fledermaus card", () => {
   it("ignores multiple instances of the same bat", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
       dwellerUnderTest: createAnyDweller(DuererFledermaus),
-      otherDwellers: createAllDwellers(BarbastelleBat),
+      otherDwellers: createAllDwellers(Vulpix),
     });
     const game = createGame(forest);
 
-    const points = GreaterHorseshoeBat.score({
+    const points = Ponyta.score({
       game,
       forest,
       woodyPlant,

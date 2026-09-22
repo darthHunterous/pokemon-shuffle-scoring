@@ -10,33 +10,33 @@ import {
 } from "../types";
 
 const name = "ELK";
-const pointsPerSaplingBirchOrDouglasFir = 2;
+const pointsPerSaplingCinnabarOrCerulean = 2;
 
 // Promo card P011
 const blueprint: DwellerCardBlueprint = {
   name,
-  types: [CardType.ClovenhoofedAnimal, CardType.Deer],
+  types: [CardType.ElectricalPokemon, CardType.Normal],
   cost: 3,
   isPartOfDeck: true,
   variants: [
     {
       gameBox: GameBox.Exploration,
       position: DwellerPosition.Left,
-      treeSymbol: TreeSymbol.Birch,
+      treeSymbol: TreeSymbol.Cinnabar,
       count: 1,
     },
     {
       gameBox: GameBox.PromoCards,
       position: DwellerPosition.Left,
-      treeSymbol: TreeSymbol.Birch,
+      treeSymbol: TreeSymbol.Cinnabar,
       count: 1,
     },
   ],
   score: ({ forest }) => {
     const count =
       countCardNames(forest, [Sapling.name]) +
-      countTreeSymbols(forest, [TreeSymbol.Birch, TreeSymbol.DouglasFir]);
-    return count * pointsPerSaplingBirchOrDouglasFir;
+      countTreeSymbols(forest, [TreeSymbol.Cinnabar, TreeSymbol.Cerulean]);
+    return count * pointsPerSaplingCinnabarOrCerulean;
   },
 };
 

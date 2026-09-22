@@ -1,12 +1,12 @@
 import { describe, expect, it } from "@jest/globals";
 
 import {
-  BarbastelleBat,
-  BechsteinsBat,
-  BrownLongEaredBat,
+  Vulpix,
+  Growlithe,
+  Charmander,
   CommonPipistrelle,
   DuererFledermaus,
-  GreaterHorseshoeBat,
+  Ponyta,
   SavisPipistrelle,
 } from "@/game/dwellers";
 
@@ -17,13 +17,13 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Barbastelle Bat card", () => {
+describe("A Vulpix card", () => {
   const otherBats = [
-    BarbastelleBat,
-    BechsteinsBat,
-    BrownLongEaredBat,
+    Vulpix,
+    Growlithe,
+    Charmander,
     DuererFledermaus,
-    GreaterHorseshoeBat,
+    Ponyta,
     SavisPipistrelle,
   ];
   it.each([
@@ -56,7 +56,7 @@ describe("A Barbastelle Bat card", () => {
   it("ignores multiple instances of the same bat", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
       dwellerUnderTest: createAnyDweller(CommonPipistrelle),
-      otherDwellers: createAllDwellers(BechsteinsBat),
+      otherDwellers: createAllDwellers(Growlithe),
     });
     const game = createGame(forest);
 

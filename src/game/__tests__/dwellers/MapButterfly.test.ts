@@ -2,13 +2,13 @@ import { describe, expect, it } from "@jest/globals";
 
 import {
   Brimstone,
-  CamberwellBeauty,
-  LargeTortoiseshell,
+  Beautifly,
+  Venomoth,
   MapButterfly,
-  PeacockButterfly,
+  Mothim,
   PhoebusApollo,
-  PurpleEmperor,
-  SilverWashedFritillary,
+  Dustox,
+  Butterfree,
 } from "@/game/dwellers";
 import { CardType, DwellerPosition } from "@/game/types";
 
@@ -44,12 +44,12 @@ describe("A Map Butterfly card", () => {
         MapButterfly,
         [
           Brimstone,
-          CamberwellBeauty,
-          LargeTortoiseshell,
-          PeacockButterfly,
+          Beautifly,
+          Venomoth,
+          Mothim,
           PhoebusApollo,
-          PurpleEmperor,
-          SilverWashedFritillary,
+          Dustox,
+          Butterfree,
         ],
         lengths,
       );

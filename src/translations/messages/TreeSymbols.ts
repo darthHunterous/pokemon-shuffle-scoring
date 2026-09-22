@@ -15,13 +15,13 @@ const messages = defineMessages<TreeSymbol, MessageDescriptor>({
     id: "TreeSymbols.Fuchsia",
     defaultMessage: "Fuchsia",
   },
-  BIRCH: {
-    id: "TreeSymbols.Birch",
-    defaultMessage: "Birch",
+  CINNABAR: {
+    id: "TreeSymbols.Cinnabar",
+    defaultMessage: "Cinnabar",
   },
-  DOUGLAS_FIR: {
-    id: "TreeSymbols.DouglasFir",
-    defaultMessage: "Douglas Fir",
+  CERULEAN: {
+    id: "TreeSymbols.Cerulean",
+    defaultMessage: "Cerulean",
   },
   EUROPEAN_ALDER: {
     id: "TreeSymbols.EuropeanAlder",
@@ -31,9 +31,9 @@ const messages = defineMessages<TreeSymbol, MessageDescriptor>({
     id: "TreeSymbols.GoldenPalm",
     defaultMessage: "Golden Palm",
   },
-  HORSE_CHESTNUT: {
-    id: "TreeSymbols.HorseChestnut",
-    defaultMessage: "Horse Chestnut",
+  SAFFRON: {
+    id: "TreeSymbols.Saffron",
+    defaultMessage: "Saffron",
   },
   VERMILION: {
     id: "TreeSymbols.Vermilion",
@@ -43,17 +43,17 @@ const messages = defineMessages<TreeSymbol, MessageDescriptor>({
     id: "TreeSymbols.Pewter",
     defaultMessage: "Pewter",
   },
-  SILVER_FIR: {
-    id: "TreeSymbols.SilverFir",
-    defaultMessage: "Silver Fir",
+  VIRIDIAN: {
+    id: "TreeSymbols.Viridian",
+    defaultMessage: "Viridian",
   },
   SWISS_PINE: {
     id: "TreeSymbols.SwissPine",
     defaultMessage: "Swiss Pine",
   },
-  SYCAMORE: {
-    id: "TreeSymbols.Sycamore",
-    defaultMessage: "Sycamore",
+  CELADON: {
+    id: "TreeSymbols.Celadon",
+    defaultMessage: "Celadon",
   },
 });
 

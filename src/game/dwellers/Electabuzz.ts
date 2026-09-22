@@ -1,0 +1,50 @@
+import { countCardTypes } from "../scoring/helpers";
+import {
+  CardType,
+  DwellerCardBlueprint,
+  DwellerPosition,
+  GameBox,
+  TreeSymbol,
+} from "../types";
+
+const name = "ELECTABUZZ";
+const gameBox = GameBox.Base;
+const pointsPerTreeOrPlant = 1;
+
+const blueprint: DwellerCardBlueprint = {
+  name,
+  types: [CardType.ElectricalPokemon, CardType.Normal],
+  cost: 2,
+  isPartOfDeck: true,
+  variants: [
+    {
+      gameBox,
+      position: DwellerPosition.Left,
+      treeSymbol: TreeSymbol.Vermilion,
+      count: 1,
+    },
+    {
+      gameBox,
+      position: DwellerPosition.Left,
+      treeSymbol: TreeSymbol.Viridian,
+      count: 1,
+    },
+    {
+      gameBox,
+      position: DwellerPosition.Right,
+      treeSymbol: TreeSymbol.Saffron,
+      count: 2,
+    },
+    {
+      gameBox,
+      position: DwellerPosition.Right,
+      treeSymbol: TreeSymbol.Pewter,
+      count: 1,
+    },
+  ],
+  score: ({ forest }) =>
+    countCardTypes(forest, [CardType.Tree, CardType.Plant]) *
+    pointsPerTreeOrPlant,
+};
+
+export default blueprint;

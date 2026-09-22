@@ -9,7 +9,7 @@ import {
 import Pewter from "./Pewter";
 
 const name = "MAUVILLE";
-const pointsPerClovenhoofedAnimal = 1;
+const pointsPerElectricalPokemon = 1;
 
 const blueprint: WoodyPlantCardBlueprint = extendBlueprint(Pewter, {
   name,
@@ -26,8 +26,8 @@ const blueprint: WoodyPlantCardBlueprint = extendBlueprint(Pewter, {
     },
   ],
   score: ({ forest }) =>
-    countCardTypes(forest, [CardType.ClovenhoofedAnimal]) *
-    pointsPerClovenhoofedAnimal,
+    countCardTypes(forest, [CardType.ElectricalPokemon]) *
+    pointsPerElectricalPokemon,
 });
 
 export default blueprint;

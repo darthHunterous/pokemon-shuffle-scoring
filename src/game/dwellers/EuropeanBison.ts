@@ -12,7 +12,7 @@ const pointsPerFuchsiaOrPewter = 2;
 
 const blueprint: DwellerCardBlueprint = {
   name,
-  types: [CardType.ClovenhoofedAnimal, CardType.WoodlandEdge],
+  types: [CardType.ElectricalPokemon, CardType.WoodlandEdge],
   cost: 3,
   isPartOfDeck: true,
   variants: [

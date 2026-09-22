@@ -6,12 +6,12 @@ import {
   GameBox,
   TreeSymbol,
 } from "../types";
-import Fireflies from "./Fireflies";
+import Volbeat from "./Volbeat";
 
 const name = "SAYS_FIREFLY";
 
 // Promo card P008
-const blueprint: DwellerCardBlueprint = extendBlueprint(Fireflies, {
+const blueprint: DwellerCardBlueprint = extendBlueprint(Volbeat, {
   name,
   types: [CardType.Insect, CardType.WoodlandEdge],
   variants: [

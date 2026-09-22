@@ -14,7 +14,7 @@ const pointsPerTreeSymbol = 3;
 
 const blueprint: DwellerCardBlueprint = {
   name,
-  types: [CardType.Alps, CardType.ClovenhoofedAnimal],
+  types: [CardType.Alps, CardType.ElectricalPokemon],
   cost: 1,
   isPartOfDeck: true,
   variants: [
@@ -27,7 +27,7 @@ const blueprint: DwellerCardBlueprint = {
     {
       gameBox,
       position: DwellerPosition.Right,
-      treeSymbol: TreeSymbol.DouglasFir,
+      treeSymbol: TreeSymbol.Cerulean,
       count: 1,
     },
     {

@@ -1,0 +1,75 @@
+import {
+  CardType,
+  DwellerCardBlueprint,
+  DwellerPosition,
+  GameBox,
+  TreeSymbol,
+} from "../types";
+
+const name = "PICHU";
+const points = 1;
+
+const blueprint: DwellerCardBlueprint = {
+  name,
+  types: [CardType.ElectricalPokemon],
+  cost: 0,
+  isPartOfDeck: true,
+  variants: [
+    {
+      gameBox: GameBox.Base,
+      position: DwellerPosition.Left,
+      treeSymbol: TreeSymbol.Saffron,
+      count: 1,
+    },
+    {
+      gameBox: GameBox.Base,
+      position: DwellerPosition.Left,
+      treeSymbol: TreeSymbol.Pewter,
+      count: 1,
+    },
+    {
+      gameBox: GameBox.Base,
+      position: DwellerPosition.Right,
+      treeSymbol: TreeSymbol.Pewter,
+      count: 1,
+    },
+    {
+      gameBox: GameBox.Base,
+      position: DwellerPosition.Right,
+      treeSymbol: TreeSymbol.Celadon,
+      count: 1,
+    },
+    {
+      gameBox: GameBox.WoodlandEdge,
+      position: DwellerPosition.Left,
+      treeSymbol: TreeSymbol.Saffron,
+      extraTypes: [CardType.WoodlandEdge],
+      count: 1,
+    },
+    {
+      gameBox: GameBox.WoodlandEdge,
+      position: DwellerPosition.Right,
+      treeSymbol: TreeSymbol.Cerulean,
+      extraTypes: [CardType.WoodlandEdge],
+      count: 1,
+    },
+    {
+      gameBox: GameBox.WoodlandEdge,
+      position: DwellerPosition.Right,
+      treeSymbol: TreeSymbol.Viridian,
+      extraTypes: [CardType.WoodlandEdge],
+      count: 1,
+    },
+    // Promo card P013
+    {
+      gameBox: GameBox.PromoCards,
+      position: DwellerPosition.Right,
+      treeSymbol: TreeSymbol.Cerulean,
+      extraTypes: [CardType.WoodlandEdge],
+      count: 1,
+    },
+  ],
+  score: () => points,
+};
+
+export default blueprint;

@@ -2,13 +2,13 @@ import { describe, expect, it } from "@jest/globals";
 
 import {
   Brimstone,
-  CamberwellBeauty,
-  LargeTortoiseshell,
+  Beautifly,
+  Venomoth,
   MapButterfly,
-  PeacockButterfly,
+  Mothim,
   PhoebusApollo,
-  PurpleEmperor,
-  SilverWashedFritillary,
+  Dustox,
+  Butterfree,
 } from "@/game/dwellers";
 import { CardType, DwellerPosition } from "@/game/types";
 
@@ -43,13 +43,13 @@ describe("A Brimstone card", () => {
       const { dwellerUnderTest, otherDwellers } = createDwellerSets(
         Brimstone,
         [
-          CamberwellBeauty,
-          LargeTortoiseshell,
+          Beautifly,
+          Venomoth,
           MapButterfly,
-          PeacockButterfly,
+          Mothim,
           PhoebusApollo,
-          PurpleEmperor,
-          SilverWashedFritillary,
+          Dustox,
+          Butterfree,
         ],
         lengths,
       );
