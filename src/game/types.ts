@@ -33,7 +33,7 @@ export enum DwellerPosition {
 }
 
 export enum TreeSymbol {
-  AlpineLarch = "ALPINE_LARCH",
+  Goldenrod = "GOLDENROD",
   Bamboo = "BAMBOO",
   Fuchsia = "FUCHSIA",
   Cinnabar = "CINNABAR",

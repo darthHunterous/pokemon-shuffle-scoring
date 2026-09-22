@@ -4,7 +4,7 @@ export { default as PoisonArena } from "./PoisonArena";
 export { default as FireArena } from "./FireArena";
 export { default as Cerulean } from "./Cerulean";
 export { default as GrassArena } from "./GrassArena";
-export { default as EuropeanLarch } from "./EuropeanLarch";
+export { default as Goldenrod } from "./Goldenrod";
 export { default as Saffron } from "./Saffron";
 export { default as Vermilion } from "./Vermilion";
 export { default as Lavaridge } from "./Lavaridge";

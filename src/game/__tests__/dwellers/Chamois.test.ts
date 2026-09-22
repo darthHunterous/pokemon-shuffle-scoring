@@ -13,7 +13,7 @@ import {
 
 describe("A Chamois card", () => {
   it.each([
-    [TreeSymbol.AlpineLarch],
+    [TreeSymbol.Goldenrod],
     [TreeSymbol.Cerulean],
     [TreeSymbol.SwissPine],
   ])(
@@ -36,7 +36,7 @@ describe("A Chamois card", () => {
   );
 
   it.each([
-    [TreeSymbol.AlpineLarch, 9],
+    [TreeSymbol.Goldenrod, 9],
     [TreeSymbol.Cerulean, 12],
     [TreeSymbol.SwissPine, 15],
   ])("with %s symbol scores %i points", (treeSymbol, expectedPoints) => {
@@ -47,7 +47,7 @@ describe("A Chamois card", () => {
       ),
       otherDwellers: [
         ...createFakeDwellers(1, DwellerPosition.Left, {
-          treeSymbol: TreeSymbol.AlpineLarch,
+          treeSymbol: TreeSymbol.Goldenrod,
         }),
         ...createFakeDwellers(2, DwellerPosition.Left, {
           treeSymbol: TreeSymbol.Cerulean,
@@ -58,7 +58,7 @@ describe("A Chamois card", () => {
       ],
       otherWoodyPlants: [
         createSapling(),
-        createFakeWoodyPlant({ treeSymbol: TreeSymbol.AlpineLarch }),
+        createFakeWoodyPlant({ treeSymbol: TreeSymbol.Goldenrod }),
         createFakeWoodyPlant({ treeSymbol: TreeSymbol.Cerulean }),
         createFakeWoodyPlant({ treeSymbol: TreeSymbol.SwissPine }),
       ],

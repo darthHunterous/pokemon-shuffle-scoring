@@ -14,9 +14,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Cerulean",
     defaultMessage: "Cerulean",
   },
-  EUROPEAN_LARCH: {
-    id: "CardNames.EuropeanLarch",
-    defaultMessage: "European Larch",
+  GOLDENROD: {
+    id: "CardNames.Goldenrod",
+    defaultMessage: "Goldenrod",
   },
   SAFFRON: {
     id: "CardNames.Saffron",

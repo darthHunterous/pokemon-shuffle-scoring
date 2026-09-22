@@ -3,9 +3,9 @@ import { MessageDescriptor, defineMessages } from "react-intl";
 import { TreeSymbol } from "@/game";
 
 const messages = defineMessages<TreeSymbol, MessageDescriptor>({
-  ALPINE_LARCH: {
-    id: "TreeSymbols.AlpineLarch",
-    defaultMessage: "Alpine Larch",
+  GOLDENROD: {
+    id: "TreeSymbols.Goldenrod",
+    defaultMessage: "Goldenrod",
   },
   BAMBOO: {
     id: "TreeSymbols.Bamboo",

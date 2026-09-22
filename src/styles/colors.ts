@@ -36,7 +36,7 @@ const gameBoxColors: { [key in GameBox]: string } = {
 };
 
 const treeSymbolColors: { [key in TreeSymbol]: string } = {
-  [TreeSymbol.AlpineLarch]: "#927aaf",
+  [TreeSymbol.Goldenrod]: "#927aaf",
   [TreeSymbol.Bamboo]: "#8fb24f",
   [TreeSymbol.Fuchsia]: "#55814c",
   [TreeSymbol.Cinnabar]: "#56b547",
