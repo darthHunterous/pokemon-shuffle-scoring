@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import { createFakeDwellers } from "@/game/__tests__/fake";
-import { Digitalis } from "@/game/dwellers";
+import { Treecko } from "@/game/dwellers";
 import { CardType, DwellerPosition } from "@/game/types";
 
 import {
@@ -10,7 +10,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Digitalis card", () => {
+describe("A Treecko card", () => {
   it.each([
     [1, 1],
     [3, 2],
@@ -23,7 +23,7 @@ describe("A Digitalis card", () => {
     (expectedPoints, plantCount) => {
       const otherPlantCount = plantCount - 1;
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(Digitalis),
+        dwellerUnderTest: createAnyDweller(Treecko),
         otherDwellers: createFakeDwellers(
           otherPlantCount,
           DwellerPosition.Bottom,
@@ -32,7 +32,7 @@ describe("A Digitalis card", () => {
       });
       const game = createGame(forest);
 
-      const points = Digitalis.score({
+      const points = Treecko.score({
         game,
         forest,
         woodyPlant,
@@ -45,7 +45,7 @@ describe("A Digitalis card", () => {
 
   it("ignores duplicate plants when scoring", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(Digitalis),
+      dwellerUnderTest: createAnyDweller(Treecko),
       otherDwellers: createFakeDwellers(10, DwellerPosition.Bottom, {
         types: [CardType.Plant],
         uniqueName: false,
@@ -53,7 +53,7 @@ describe("A Digitalis card", () => {
     });
     const game = createGame(forest);
 
-    const points = Digitalis.score({
+    const points = Treecko.score({
       game,
       forest,
       woodyPlant,

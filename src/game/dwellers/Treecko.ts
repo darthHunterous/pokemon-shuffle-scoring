@@ -8,7 +8,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "DIGITALIS";
+const name = "TREECKO";
 const gameBox = GameBox.WoodlandEdge;
 const pointsByDistinctPlantsCount = {
   1: 1,

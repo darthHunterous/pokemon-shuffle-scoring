@@ -182,9 +182,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Cuckoo",
     defaultMessage: "Cuckoo",
   },
-  DIGITALIS: {
-    id: "CardNames.Digitalis",
-    defaultMessage: "Digitalis",
+  TREECKO: {
+    id: "CardNames.Treecko",
+    defaultMessage: "Treecko",
   },
   DUERER_FLEDERMAUS: {
     id: "CardNames.DuererFledermaus",
