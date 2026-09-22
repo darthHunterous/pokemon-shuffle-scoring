@@ -46,7 +46,7 @@ export { default as Slowpoke } from "./Slowpoke";
 export { default as Genet } from "./Genet";
 export { default as Bellossom } from "./Bellossom";
 export { default as Scyther } from "./Scyther";
-export { default as GoldenEagle } from "./GoldenEagle";
+export { default as HoOh } from "./HoOh";
 export { default as Spearow } from "./Spearow";
 export { default as Ponyta } from "./Ponyta";
 export { default as Surskit } from "./Surskit";

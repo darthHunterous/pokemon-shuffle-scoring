@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import { CardType, DwellerPosition } from "@/game";
-import { GoldenEagle } from "@/game/dwellers";
+import { HoOh } from "@/game/dwellers";
 
 import { createFakeDwellers } from "../fake";
 import {
@@ -10,7 +10,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Golden Eagle card", () => {
+describe("A Ho-Oh card", () => {
   it.each([
     [0, 0, 0],
     [1, 0, 1],
@@ -20,7 +20,7 @@ describe("A Golden Eagle card", () => {
     "scores %i points for %i amphibian and %i pawed-animal cards",
     (expectedPoints, amphibianCount, pawedCount) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(GoldenEagle),
+        dwellerUnderTest: createAnyDweller(HoOh),
         otherDwellers: [
           ...createFakeDwellers(amphibianCount, DwellerPosition.Bottom, {
             types: [CardType.Amphibian],
@@ -32,7 +32,7 @@ describe("A Golden Eagle card", () => {
       });
       const game = createGame(forest);
 
-      const points = GoldenEagle.score({
+      const points = HoOh.score({
         game,
         forest,
         woodyPlant,
