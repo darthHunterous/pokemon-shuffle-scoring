@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import { CardType, DwellerPosition } from "@/game";
-import { GreatGreenBushCricket } from "@/game/dwellers";
+import { Surskit } from "@/game/dwellers";
 
 import { createFakeDwellers } from "../fake";
 import {
@@ -10,7 +10,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Great Green Bush-Cricket card", () => {
+describe("A Surskit card", () => {
   it.each([
     [1, 0],
     [2, 1],
@@ -20,14 +20,14 @@ describe("A Great Green Bush-Cricket card", () => {
     "scores %i points for %i other insect cards",
     (expectedPoints, insectCount) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(GreatGreenBushCricket),
+        dwellerUnderTest: createAnyDweller(Surskit),
         otherDwellers: createFakeDwellers(insectCount, DwellerPosition.Bottom, {
           types: [CardType.Insect],
         }),
       });
       const game = createGame(forest);
 
-      const points = GreatGreenBushCricket.score({
+      const points = Surskit.score({
         game,
         forest,
         woodyPlant,

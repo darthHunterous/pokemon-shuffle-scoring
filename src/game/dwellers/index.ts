@@ -49,7 +49,7 @@ export { default as Scyther } from "./Scyther";
 export { default as GoldenEagle } from "./GoldenEagle";
 export { default as Spearow } from "./Spearow";
 export { default as Ponyta } from "./Ponyta";
-export { default as GreatGreenBushCricket } from "./GreatGreenBushCricket";
+export { default as Surskit } from "./Surskit";
 export { default as Pikipek } from "./Pikipek";
 export { default as Clefairy } from "./Clefairy";
 export { default as Venomoth } from "./Venomoth";

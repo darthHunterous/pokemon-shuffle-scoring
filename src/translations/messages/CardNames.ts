@@ -274,9 +274,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Spearow",
     defaultMessage: "Spearow",
   },
-  GREAT_GREEN_BUSH_CRICKET: {
-    id: "CardNames.GreatGreenBushCricket",
-    defaultMessage: "Great Green Bush-Cricket",
+  SURSKIT: {
+    id: "CardNames.Surskit",
+    defaultMessage: "Surskit",
   },
   PIKIPEK: {
     id: "CardNames.Pikipek",
