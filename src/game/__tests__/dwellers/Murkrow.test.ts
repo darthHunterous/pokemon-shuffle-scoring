@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import { RegularCave } from "@/game/caves";
-import { BeardedVulture } from "@/game/dwellers";
+import { Murkrow } from "@/game/dwellers";
 import { createCave } from "@/game/factory";
 
 import {
@@ -10,7 +10,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Bearded Vulture card", () => {
+describe("A Murkrow card", () => {
   it.each([
     [0, 0],
     [1, 1],
@@ -18,12 +18,12 @@ describe("A Bearded Vulture card", () => {
     [5, 5],
   ])("scores %i points with %i cave cards", (expectedPoints, caveCardCount) => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(BeardedVulture),
+      dwellerUnderTest: createAnyDweller(Murkrow),
       cave: createCave(RegularCave, caveCardCount),
     });
     const game = createGame(forest);
 
-    const points = BeardedVulture.score({
+    const points = Murkrow.score({
       game,
       forest,
       woodyPlant,

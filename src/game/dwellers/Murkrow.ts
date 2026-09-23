@@ -6,7 +6,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "BEARDED_VULTURE";
+const name = "MURKROW";
 const gameBox = GameBox.Alpine;
 const pointsPerCaveCard = 1;
 
