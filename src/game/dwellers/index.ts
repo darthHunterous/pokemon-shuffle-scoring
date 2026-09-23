@@ -57,7 +57,7 @@ export { default as Rhyhorn } from "./Rhyhorn";
 export { default as Masquerain } from "./Masquerain";
 export { default as MarshCinquefoil } from "./MarshCinquefoil";
 export { default as Meeps } from "./Meeps";
-export { default as Mistletoe } from "./Mistletoe";
+export { default as Celebi } from "./Celebi";
 export { default as MrMime } from "./MrMime";
 export { default as Tangela } from "./Tangela";
 export { default as DiglettAlola } from "./DiglettAlola";

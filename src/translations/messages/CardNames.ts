@@ -310,9 +310,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Meeps",
     defaultMessage: "Meeps",
   },
-  MISTLETOE: {
-    id: "CardNames.Mistletoe",
-    defaultMessage: "Mistletoe",
+  CELEBI: {
+    id: "CardNames.Celebi",
+    defaultMessage: "Celebi",
   },
   MR_MIME: {
     id: "CardNames.MrMime",

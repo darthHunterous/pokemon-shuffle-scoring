@@ -7,7 +7,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "MISTLETOE";
+const name = "CELEBI";
 const pointsPerPlant = 1;
 
 // Promo card P012

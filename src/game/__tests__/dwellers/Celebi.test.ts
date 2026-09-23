@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import { createFakeDwellers } from "@/game/__tests__/fake";
-import { Mistletoe } from "@/game/dwellers";
+import { Celebi } from "@/game/dwellers";
 import { CardType, DwellerPosition } from "@/game/types";
 
 import {
@@ -10,7 +10,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Mistletoe card", () => {
+describe("A Celebi card", () => {
   it.each([
     [1, 0],
     [2, 1],
@@ -20,14 +20,14 @@ describe("A Mistletoe card", () => {
     "scores %i points for %i other plant cards",
     (expectedPoints, plantCount) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(Mistletoe),
+        dwellerUnderTest: createAnyDweller(Celebi),
         otherDwellers: createFakeDwellers(plantCount, DwellerPosition.Bottom, {
           types: [CardType.Plant],
         }),
       });
       const game = createGame(forest);
 
-      const points = Mistletoe.score({
+      const points = Celebi.score({
         game,
         forest,
         woodyPlant,
