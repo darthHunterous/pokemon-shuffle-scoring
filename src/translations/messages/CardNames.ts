@@ -114,9 +114,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Bulbasaur",
     defaultMessage: "Bulbasaur",
   },
-  BLACK_TRUMPET: {
-    id: "CardNames.BlackTrumpet",
-    defaultMessage: "Black Trumpet",
+  WOBBUFFET: {
+    id: "CardNames.Wobbuffet",
+    defaultMessage: "Wobbuffet",
   },
   JUMPLUFF: {
     id: "CardNames.Jumpluff",

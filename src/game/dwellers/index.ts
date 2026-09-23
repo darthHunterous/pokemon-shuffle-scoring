@@ -8,7 +8,7 @@ export { default as Growlithe } from "./Growlithe";
 export { default as Cubone } from "./Cubone";
 export { default as Heracross } from "./Heracross";
 export { default as Bulbasaur } from "./Bulbasaur";
-export { default as BlackTrumpet } from "./BlackTrumpet";
+export { default as Wobbuffet } from "./Wobbuffet";
 export { default as Jumpluff } from "./Jumpluff";
 export { default as Brimstone } from "./Brimstone";
 export { default as Snorlax } from "./Snorlax";

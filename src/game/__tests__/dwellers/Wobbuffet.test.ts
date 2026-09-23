@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { BlackTrumpet } from "@/game/dwellers";
+import { Wobbuffet } from "@/game/dwellers";
 
 import {
   createAnyDweller,
@@ -9,14 +9,14 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Black Trumpet card", () => {
+describe("A Wobbuffet card", () => {
   it("scores no points in an empty forest", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(BlackTrumpet),
+      dwellerUnderTest: createAnyDweller(Wobbuffet),
     });
     const game = createGame(forest);
 
-    const points = BlackTrumpet.score({
+    const points = Wobbuffet.score({
       game,
       forest,
       woodyPlant,
@@ -28,11 +28,11 @@ describe("A Black Trumpet card", () => {
 
   it("scores no points in a complete forest", () => {
     const { dweller, woodyPlant, forest } = createCompleteForestWithDweller({
-      dwellerUnderTest: createAnyDweller(BlackTrumpet),
+      dwellerUnderTest: createAnyDweller(Wobbuffet),
     });
     const game = createGame(forest);
 
-    const points = BlackTrumpet.score({
+    const points = Wobbuffet.score({
       game,
       forest,
       woodyPlant,
