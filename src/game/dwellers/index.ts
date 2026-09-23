@@ -83,7 +83,7 @@ export { default as Sheep } from "./Sheep";
 export { default as Butterfree } from "./Butterfree";
 export { default as Pichu } from "./Pichu";
 export { default as Pinsir } from "./Pinsir";
-export { default as Steinbock } from "./Steinbock";
+export { default as Raikou } from "./Raikou";
 export { default as Roselia } from "./Roselia";
 export { default as Hoothoot } from "./Hoothoot";
 export { default as Oddish } from "./Oddish";

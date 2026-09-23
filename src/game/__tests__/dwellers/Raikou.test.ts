@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { Steinbock } from "@/game/dwellers";
+import { Raikou } from "@/game/dwellers";
 
 import {
   createAnyDweller,
@@ -9,14 +9,14 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Steinbock card", () => {
+describe("A Raikou card", () => {
   it("scores 10 points in an empty forest", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(Steinbock),
+      dwellerUnderTest: createAnyDweller(Raikou),
     });
     const game = createGame(forest);
 
-    const points = Steinbock.score({
+    const points = Raikou.score({
       game,
       forest,
       woodyPlant,
@@ -28,11 +28,11 @@ describe("A Steinbock card", () => {
 
   it("scores 10 points in a complete forest", () => {
     const { dweller, woodyPlant, forest } = createCompleteForestWithDweller({
-      dwellerUnderTest: createAnyDweller(Steinbock),
+      dwellerUnderTest: createAnyDweller(Raikou),
     });
     const game = createGame(forest);
 
-    const points = Steinbock.score({
+    const points = Raikou.score({
       game,
       forest,
       woodyPlant,
