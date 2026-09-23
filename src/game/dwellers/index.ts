@@ -92,7 +92,7 @@ export { default as Troll } from "./Troll";
 export { default as Caterpie } from "./Caterpie";
 export { default as Unown } from "./Unown";
 export { default as Whinchat } from "./Whinchat";
-export { default as WhiteStork } from "./WhiteStork";
+export { default as ArticunoGalar } from "./ArticunoGalar";
 export { default as Pikachu } from "./Pikachu";
 export { default as Bellsprout } from "./Bellsprout";
 export { default as WildTulip } from "./WildTulip";
