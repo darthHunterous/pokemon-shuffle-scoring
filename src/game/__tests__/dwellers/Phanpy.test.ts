@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { AlpineMarmot } from "@/game/dwellers";
+import { Phanpy } from "@/game/dwellers";
 import { CardType, DwellerPosition } from "@/game/types";
 
 import { createFakeDwellers } from "../fake";
@@ -10,7 +10,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("An Alpine Marmot card", () => {
+describe("An Phanpy card", () => {
   it.each([
     [0, 0],
     [3, 1],
@@ -20,7 +20,7 @@ describe("An Alpine Marmot card", () => {
     "scores %i points for %i unique plant cards",
     (expectedPoints, plantCount) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(AlpineMarmot),
+        dwellerUnderTest: createAnyDweller(Phanpy),
         otherDwellers: createFakeDwellers(plantCount, DwellerPosition.Bottom, {
           types: [CardType.Plant],
           uniqueName: true,
@@ -28,7 +28,7 @@ describe("An Alpine Marmot card", () => {
       });
       const game = createGame(forest);
 
-      const points = AlpineMarmot.score({
+      const points = Phanpy.score({
         game,
         forest,
         woodyPlant,
@@ -41,7 +41,7 @@ describe("An Alpine Marmot card", () => {
 
   it("ignores duplicate plants when scoring", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(AlpineMarmot),
+      dwellerUnderTest: createAnyDweller(Phanpy),
       otherDwellers: createFakeDwellers(10, DwellerPosition.Bottom, {
         types: [CardType.Plant],
         uniqueName: false,
@@ -49,7 +49,7 @@ describe("An Alpine Marmot card", () => {
     });
     const game = createGame(forest);
 
-    const points = AlpineMarmot.score({
+    const points = Phanpy.score({
       game,
       forest,
       woodyPlant,

@@ -74,9 +74,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
   },
 
   // Dwellers
-  ALPINE_MARMOT: {
-    id: "CardNames.AlpineMarmot",
-    defaultMessage: "Alpine Marmot",
+  PHANPY: {
+    id: "CardNames.Phanpy",
+    defaultMessage: "Phanpy",
   },
   ALPINE_NEWT: {
     id: "CardNames.AlpineNewt",
