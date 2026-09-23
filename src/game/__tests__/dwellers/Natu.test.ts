@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { CommonRaven } from "@/game/dwellers";
+import { Natu } from "@/game/dwellers";
 
 import {
   createAnyDweller,
@@ -9,14 +9,14 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Common Raven card", () => {
+describe("A Natu card", () => {
   it("scores 5 points in an empty forest", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(CommonRaven),
+      dwellerUnderTest: createAnyDweller(Natu),
     });
     const game = createGame(forest);
 
-    const points = CommonRaven.score({
+    const points = Natu.score({
       game,
       forest,
       woodyPlant,
@@ -28,11 +28,11 @@ describe("A Common Raven card", () => {
 
   it("scores 5 points in a complete forest", () => {
     const { dweller, woodyPlant, forest } = createCompleteForestWithDweller({
-      dwellerUnderTest: createAnyDweller(CommonRaven),
+      dwellerUnderTest: createAnyDweller(Natu),
     });
     const game = createGame(forest);
 
-    const points = CommonRaven.score({
+    const points = Natu.score({
       game,
       forest,
       woodyPlant,

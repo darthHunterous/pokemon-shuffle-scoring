@@ -166,9 +166,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Torchic",
     defaultMessage: "Torchic",
   },
-  COMMON_RAVEN: {
-    id: "CardNames.CommonRaven",
-    defaultMessage: "Common Raven",
+  NATU: {
+    id: "CardNames.Natu",
+    defaultMessage: "Natu",
   },
   STARYU: {
     id: "CardNames.Staryu",

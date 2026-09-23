@@ -21,7 +21,7 @@ export { default as Taillow } from "./Taillow";
 export { default as Mareep } from "./Mareep";
 export { default as Jynx } from "./Jynx";
 export { default as Torchic } from "./Torchic";
-export { default as CommonRaven } from "./CommonRaven";
+export { default as Natu } from "./Natu";
 export { default as Staryu } from "./Staryu";
 export { default as Nincada } from "./Nincada";
 export { default as Cuckoo } from "./Cuckoo";
