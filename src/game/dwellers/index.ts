@@ -1,5 +1,5 @@
 export { default as Phanpy } from "./Phanpy";
-export { default as AlpineNewt } from "./AlpineNewt";
+export { default as Totodile } from "./Totodile";
 export { default as GigantamaxEevee } from "./GigantamaxEevee";
 export { default as Vulpix } from "./Vulpix";
 export { default as Rayquaza } from "./Rayquaza";
