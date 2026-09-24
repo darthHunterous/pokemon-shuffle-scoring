@@ -246,6 +246,10 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Lapras",
     defaultMessage: "Lapras",
   },
+  GIGANTAMAX_LAPRAS: {
+    id: "CardNames.GigantamaxLapras",
+    defaultMessage: "Gigantamax Lapras",
+  },
   VOLBEAT: {
     id: "CardNames.Volbeat",
     defaultMessage: "Volbeat",

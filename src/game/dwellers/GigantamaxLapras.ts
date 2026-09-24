@@ -7,7 +7,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "LAPRAS";
+const name = "GIGANTAMAX_LAPRAS";
 const pointsByCount = {
   1: 5,
   2: 15,
@@ -20,22 +20,11 @@ const blueprint: DwellerCardBlueprint = {
   cost: 1,
   isPartOfDeck: true,
   variants: [
+    // Promo card P002
     {
-      gameBox: GameBox.Base,
+      gameBox: GameBox.Exploration,
       position: DwellerPosition.Bottom,
-      treeSymbol: TreeSymbol.Saffron,
-      count: 1,
-    },
-    {
-      gameBox: GameBox.Base,
-      position: DwellerPosition.Bottom,
-      treeSymbol: TreeSymbol.Vermilion,
-      count: 1,
-    },
-    {
-      gameBox: GameBox.Base,
-      position: DwellerPosition.Bottom,
-      treeSymbol: TreeSymbol.Cerulean,
+      treeSymbol: TreeSymbol.Fuchsia,
       count: 1,
     },
   ],
