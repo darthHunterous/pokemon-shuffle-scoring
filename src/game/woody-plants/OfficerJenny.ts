@@ -2,7 +2,7 @@ import { extendBlueprint } from "../blueprints";
 import { GameBox, TreeSymbol, WoodyPlantCardBlueprint } from "../types";
 import Viridian from "./Viridian";
 
-const name = "O_CHRISTMAS_TREE";
+const name = "OFFICER_JENNY";
 
 // Promo card P015
 const blueprint: WoodyPlantCardBlueprint = extendBlueprint(Viridian, {

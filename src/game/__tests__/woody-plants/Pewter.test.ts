@@ -13,7 +13,7 @@ import {
   Saffron,
   Vermilion,
   Lavaridge,
-  OChristmasTree,
+  OfficerJenny,
   Pewter,
   Azalea,
   Mauville,
@@ -83,7 +83,7 @@ describe("A Pewter card", () => {
 
   it.each([
     [Lavaridge.name, Lavaridge.countsAs, Lavaridge],
-    [OChristmasTree.name, OChristmasTree.countsAs, OChristmasTree],
+    [OfficerJenny.name, OfficerJenny.countsAs, OfficerJenny],
     [Mauville.name, Mauville.countsAs, Mauville],
   ])("treats %s as %s when scoring", (_1, _2, blueprint) => {
     const { forest, woodyPlant } = createForestForWoodyPlantTest({
