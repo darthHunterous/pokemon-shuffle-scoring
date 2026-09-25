@@ -89,7 +89,7 @@ export { default as Roselia } from "./Roselia";
 export { default as Hoothoot } from "./Hoothoot";
 export { default as Oddish } from "./Oddish";
 export { default as Psyduck } from "./Psyduck";
-export { default as Troll } from "./Troll";
+export { default as Jigglypuff } from "./Jigglypuff";
 export { default as Caterpie } from "./Caterpie";
 export { default as Unown } from "./Unown";
 export { default as Whinchat } from "./Whinchat";
