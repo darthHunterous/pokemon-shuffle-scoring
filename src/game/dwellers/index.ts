@@ -77,7 +77,7 @@ export { default as Geodude } from "./Geodude";
 export { default as Robber } from "./Robber";
 export { default as Robin } from "./Robin";
 export { default as Voltorb } from "./Voltorb";
-export { default as Sable } from "./Sable";
+export { default as Lickitung } from "./Lickitung";
 export { default as Cyndaquil } from "./Cyndaquil";
 export { default as Illumise } from "./Illumise";
 export { default as Sheep } from "./Sheep";

@@ -394,9 +394,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Voltorb",
     defaultMessage: "Voltorb",
   },
-  SABLE: {
-    id: "CardNames.Sable",
-    defaultMessage: "CardNames.Sable",
+  LICKITUNG: {
+    id: "CardNames.Lickitung",
+    defaultMessage: "CardNames.Lickitung",
   },
   CYNDAQUIL: {
     id: "CardNames.Cyndaquil",
