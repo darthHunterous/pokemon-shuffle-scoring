@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { Volbeat, SaysFirefly } from "@/game/dwellers";
+import { Volbeat, Illumise } from "@/game/dwellers";
 
 import {
   createAllDwellers,
@@ -9,7 +9,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Say's Firefly card", () => {
+describe("An Illumise card", () => {
   it.each([
     [0, 1, 0],
     [10, 2, 0],
@@ -18,23 +18,23 @@ describe("A Say's Firefly card", () => {
     [10, 1, 1],
     [20, 4, 1],
   ])(
-    "scores %i points if there are %i Volbeat and %i Say's Firefly cards",
-    (expectedPoints, volbeatCount, saysFireflyCount) => {
+    "scores %i points if there are %i Volbeat and %i Illumise cards",
+    (expectedPoints, volbeatCount, illumiseCount) => {
       const allVolbeat = createAllDwellers(Volbeat);
-      const allSaysFireflies = createAllDwellers(SaysFirefly);
+      const allIllumises = createAllDwellers(Illumise);
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
         dwellerUnderTest: {
-          ...allSaysFireflies[0],
+          ...allIllumises[0],
           id: "00000000-0000-0000-0000-000000000000",
         },
         otherDwellers: [
           ...allVolbeat.slice(1, volbeatCount),
-          ...allSaysFireflies.slice(0, saysFireflyCount),
+          ...allIllumises.slice(0, illumiseCount),
         ],
       });
       const game = createGame(forest);
 
-      const points = SaysFirefly.score({
+      const points = Illumise.score({
         game,
         forest,
         woodyPlant,
@@ -47,20 +47,20 @@ describe("A Say's Firefly card", () => {
 
   it.each([
     [Volbeat.name, Volbeat],
-    [SaysFirefly.name, SaysFirefly],
+    [Illumise.name, Illumise],
   ])(
     "scores 0 points if there's another %s card with a smaller id",
     (_, otherBlueprint) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
         dwellerUnderTest: {
-          ...createAnyDweller(SaysFirefly),
+          ...createAnyDweller(Illumise),
           id: "ffffffff-fff-ffff-ffff-ffffffffffff",
         },
         otherDwellers: [createAnyDweller(otherBlueprint)],
       });
       const game = createGame(forest);
 
-      const points = SaysFirefly.score({
+      const points = Illumise.score({
         game,
         forest,
         woodyPlant,

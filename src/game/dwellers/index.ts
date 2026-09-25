@@ -79,7 +79,7 @@ export { default as Robin } from "./Robin";
 export { default as Voltorb } from "./Voltorb";
 export { default as Sable } from "./Sable";
 export { default as Cyndaquil } from "./Cyndaquil";
-export { default as SaysFirefly } from "./SaysFirefly";
+export { default as Illumise } from "./Illumise";
 export { default as Sheep } from "./Sheep";
 export { default as Butterfree } from "./Butterfree";
 export { default as Pichu } from "./Pichu";

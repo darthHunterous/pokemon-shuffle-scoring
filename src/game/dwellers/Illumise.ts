@@ -8,7 +8,7 @@ import {
 } from "../types";
 import Volbeat from "./Volbeat";
 
-const name = "SAYS_FIREFLY";
+const name = "ILLUMISE";
 
 // Promo card P008
 const blueprint: DwellerCardBlueprint = extendBlueprint(Volbeat, {
