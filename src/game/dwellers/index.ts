@@ -75,7 +75,7 @@ export { default as Eevee } from "./Eevee";
 export { default as RedPanda } from "./RedPanda";
 export { default as Geodude } from "./Geodude";
 export { default as Robber } from "./Robber";
-export { default as Robin } from "./Robin";
+export { default as Lugia } from "./Lugia";
 export { default as Voltorb } from "./Voltorb";
 export { default as Lickitung } from "./Lickitung";
 export { default as Cyndaquil } from "./Cyndaquil";
