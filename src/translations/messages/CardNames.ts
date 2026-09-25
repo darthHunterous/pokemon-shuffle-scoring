@@ -218,6 +218,10 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Electrike",
     defaultMessage: "Electrike",
   },
+  MEGA_MANECTRIC: {
+    id: "CardNames.MegaManectric",
+    defaultMessage: "Mega Manectric",
+  },
   RATATTA: {
     id: "CardNames.Ratatta",
     defaultMessage: "Ratatta",

@@ -16,7 +16,7 @@ import {
   createWoodyPlants,
 } from "../helpers";
 
-describe("A Electabuzz card", () => {
+describe("An Electabuzz card", () => {
   it.each([
     [1, 0, 1],
     [3, 1, 2],
