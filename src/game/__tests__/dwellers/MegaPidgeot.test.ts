@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import { createFakeDwellers } from "@/game/__tests__/fake";
-import { Whinchat } from "@/game/dwellers";
+import { MegaPidgeot } from "@/game/dwellers";
 import { CardType, DwellerPosition } from "@/game/types";
 
 import {
@@ -10,7 +10,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Whinchat card", () => {
+describe("A MegaPidgeot card", () => {
   it.each([
     [0, 0],
     [1, 1],
@@ -18,14 +18,14 @@ describe("A Whinchat card", () => {
     [5, 5],
   ])("scores %i points for %i plant cards", (expectedPoints, plantCount) => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(Whinchat),
+      dwellerUnderTest: createAnyDweller(MegaPidgeot),
       otherDwellers: createFakeDwellers(plantCount, DwellerPosition.Bottom, {
         types: [CardType.Plant],
       }),
     });
     const game = createGame(forest);
 
-    const points = Whinchat.score({
+    const points = MegaPidgeot.score({
       game,
       forest,
       woodyPlant,

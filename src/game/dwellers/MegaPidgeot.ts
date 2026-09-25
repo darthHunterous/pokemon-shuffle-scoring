@@ -7,7 +7,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "WHINCHAT";
+const name = "MEGA_PIDGEOT";
 const pointsPerPlant = 1;
 
 // Promo card P002

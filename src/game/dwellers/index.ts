@@ -93,7 +93,7 @@ export { default as Psyduck } from "./Psyduck";
 export { default as Jigglypuff } from "./Jigglypuff";
 export { default as Caterpie } from "./Caterpie";
 export { default as Unown } from "./Unown";
-export { default as Whinchat } from "./Whinchat";
+export { default as MegaPidgeot } from "./MegaPidgeot";
 export { default as ArticunoGalar } from "./ArticunoGalar";
 export { default as Pikachu } from "./Pikachu";
 export { default as Bellsprout } from "./Bellsprout";
