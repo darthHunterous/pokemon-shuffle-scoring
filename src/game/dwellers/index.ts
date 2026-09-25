@@ -44,7 +44,7 @@ export { default as Volbeat } from "./Volbeat";
 export { default as Lapras } from "./Lapras";
 export { default as GigantamaxLapras } from "./GigantamaxLapras";
 export { default as Slowpoke } from "./Slowpoke";
-export { default as Genet } from "./Genet";
+export { default as Marowak Alola } from "./Marowak Alola";
 export { default as Bellossom } from "./Bellossom";
 export { default as Scyther } from "./Scyther";
 export { default as HoOh } from "./HoOh";
