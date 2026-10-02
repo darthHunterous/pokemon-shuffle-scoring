@@ -7,7 +7,7 @@ import {
 } from "../types";
 import Jynx from "./Jynx";
 
-const name = "EIERSCHWAMMERL";
+const name = "SMOOCHUM";
 
 // Promo card P010
 const blueprint: DwellerCardBlueprint = extendBlueprint(Jynx, {

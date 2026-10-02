@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { Eierschwammerl } from "@/game/dwellers";
+import { Smoochum } from "@/game/dwellers";
 
 import {
   createAnyDweller,
@@ -9,14 +9,14 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Eierschwammerl card", () => {
+describe("A Smoochum card", () => {
   it("scores no points in an empty forest", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(Eierschwammerl),
+      dwellerUnderTest: createAnyDweller(Smoochum),
     });
     const game = createGame(forest);
 
-    const points = Eierschwammerl.score({
+    const points = Smoochum.score({
       game,
       forest,
       woodyPlant,
@@ -28,11 +28,11 @@ describe("A Eierschwammerl card", () => {
 
   it("scores no points in a complete forest", () => {
     const { dweller, woodyPlant, forest } = createCompleteForestWithDweller({
-      dwellerUnderTest: createAnyDweller(Eierschwammerl),
+      dwellerUnderTest: createAnyDweller(Smoochum),
     });
     const game = createGame(forest);
 
-    const points = Eierschwammerl.score({
+    const points = Smoochum.score({
       game,
       forest,
       woodyPlant,

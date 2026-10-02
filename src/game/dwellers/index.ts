@@ -28,7 +28,7 @@ export { default as Cuckoo } from "./Cuckoo";
 export { default as Treecko } from "./Treecko";
 export { default as DuererFledermaus } from "./DuererFledermaus";
 export { default as Chikorita } from "./Chikorita";
-export { default as Eierschwammerl } from "./Eierschwammerl";
+export { default as Smoochum } from "./Smoochum";
 export { default as Elk } from "./Elk";
 export { default as Farfetchd } from "./Farfetchd";
 export { default as Wingull } from "./Wingull";

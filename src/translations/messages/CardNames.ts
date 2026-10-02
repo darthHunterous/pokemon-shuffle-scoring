@@ -194,9 +194,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Chikorita",
     defaultMessage: "Chikorita",
   },
-  EIERSCHWAMMERL: {
-    id: "CardNames.Eierschwammerl",
-    defaultMessage: "Eierschwammerl",
+  SMOOCHUM: {
+    id: "CardNames.Smoochum",
+    defaultMessage: "Smoochum",
   },
   ELK: {
     id: "CardNames.Elk",
