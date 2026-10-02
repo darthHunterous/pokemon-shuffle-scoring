@@ -1,19 +1,11 @@
-import {
-  CardType,
-  DwellerCardBlueprint,
-  DwellerPosition,
-  GameBox,
-  TreeSymbol,
-} from "../types";
+import { extendBlueprint } from "../blueprints";
+import { GameBox, TreeSymbol, DwellerCardBlueprint, DwellerPosition } from "../types";
+import Sandshrew from "./Sandshrew";
 
 const name = "SANDSHREW_ALOLA";
-const points = 2;
 
-const blueprint: DwellerCardBlueprint = {
+const blueprint: DwellerCardBlueprint = extendBlueprint(Sandshrew, {
   name,
-  types: [CardType.PawedAnimal],
-  cost: 1,
-  isPartOfDeck: true,
   variants: [
     // Promo card P009
     {
@@ -23,7 +15,6 @@ const blueprint: DwellerCardBlueprint = {
       count: 1,
     },
   ],
-  score: () => points,
-};
+});
 
 export default blueprint;
