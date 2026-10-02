@@ -5,7 +5,7 @@ import {
   createFakeWoodyPlant,
   createFakeWoodyPlants,
 } from "@/game/__tests__/fake";
-import { Troll } from "@/game/dwellers";
+import { Jigglypuff } from "@/game/dwellers";
 import { DwellerPosition } from "@/game/types";
 import { Sapling } from "@/game/woody-plants";
 
@@ -18,19 +18,19 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Troll card", () => {
+describe("A Jigglypuff card", () => {
   it.each([
     [1, 1],
     [2, 2],
     [5, 5],
   ])("scores %i points for %i trees", (expectedPoints, treeCount) => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(Troll),
+      dwellerUnderTest: createAnyDweller(Jigglypuff),
       otherWoodyPlants: createFakeWoodyPlants(treeCount),
     });
     const game = createGame(forest);
 
-    const points = Troll.score({
+    const points = Jigglypuff.score({
       game,
       forest,
       woodyPlant,
@@ -42,18 +42,18 @@ describe("A Troll card", () => {
 
   it("scores for Saplings", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(Troll),
+      dwellerUnderTest: createAnyDweller(Jigglypuff),
       otherWoodyPlants: [createAnyWoodyPlant(Sapling)],
     });
     const game = createGame(forest);
 
-    const points = Troll.score({ game, forest, woodyPlant, dweller });
+    const points = Jigglypuff.score({ game, forest, woodyPlant, dweller });
 
     expect(points).toBe(1);
   });
 
   it("ignores cards increasing the tree count when scoring", () => {
-    const dweller = createAnyDweller(Troll);
+    const dweller = createAnyDweller(Jigglypuff);
     const woodyPlant = addDwellersToWoodyPlant(
       createFakeWoodyPlant(),
       dweller,
@@ -66,7 +66,7 @@ describe("A Troll card", () => {
     const forest = createForestWith({ woodyPlants: [woodyPlant] });
     const game = createGame(forest);
 
-    const points = Troll.score({ game, forest, woodyPlant, dweller });
+    const points = Jigglypuff.score({ game, forest, woodyPlant, dweller });
 
     expect(points).toBe(1);
   });

@@ -9,7 +9,7 @@ export { default as Saffron } from "./Saffron";
 export { default as Vermilion } from "./Vermilion";
 export { default as Lavaridge } from "./Lavaridge";
 export { default as Pewter } from "./Pewter";
-export { default as OChristmasTree } from "./OChristmasTree";
+export { default as OfficerJenny } from "./OfficerJenny";
 export { default as PalmTree } from "./PalmTree";
 export { default as Sapling } from "./Sapling";
 export { default as Viridian } from "./Viridian";

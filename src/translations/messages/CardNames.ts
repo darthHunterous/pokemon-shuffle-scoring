@@ -30,9 +30,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Lavaridge",
     defaultMessage: "Lavaridge",
   },
-  O_CHRISTMAS_TREE: {
-    id: "CardNames.OChristmasTree",
-    defaultMessage: "O Christmas Tree",
+  OFFICER_JENNY: {
+    id: "CardNames.OfficerJenny",
+    defaultMessage: "Officer Jenny",
   },
   PEWTER: {
     id: "CardNames.Pewter",
@@ -222,6 +222,10 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Electrike",
     defaultMessage: "Electrike",
   },
+  MEGA_MANECTRIC: {
+    id: "CardNames.MegaManectric",
+    defaultMessage: "Mega Manectric",
+  },
   RATATTA: {
     id: "CardNames.Ratatta",
     defaultMessage: "Ratatta",
@@ -262,9 +266,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Slowpoke",
     defaultMessage: "Slowpoke",
   },
-  GENET: {
-    id: "CardNames.Genet",
-    defaultMessage: "Genet",
+  MAROWAK_ALOLA: {
+    id: "CardNames.Marowak Alola",
+    defaultMessage: "Marowak Alola",
   },
   BELLOSSOM: {
     id: "CardNames.Bellossom",
@@ -390,25 +394,25 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Robber",
     defaultMessage: "Robber",
   },
-  ROBIN: {
-    id: "CardNames.Robin",
-    defaultMessage: "Robin",
+  LUGIA: {
+    id: "CardNames.Lugia",
+    defaultMessage: "Lugia",
   },
   VOLTORB: {
     id: "CardNames.Voltorb",
     defaultMessage: "Voltorb",
   },
-  SABLE: {
-    id: "CardNames.Sable",
-    defaultMessage: "CardNames.Sable",
+  LICKITUNG: {
+    id: "CardNames.Lickitung",
+    defaultMessage: "CardNames.Lickitung",
   },
   CYNDAQUIL: {
     id: "CardNames.Cyndaquil",
     defaultMessage: "Cyndaquil",
   },
-  SAYS_FIREFLY: {
-    id: "CardNames.SaysFirefly",
-    defaultMessage: "Say's Firefly",
+  ILLUMISE: {
+    id: "CardNames.Illumise",
+    defaultMessage: "Illumise",
   },
   BUTTERFREE: {
     id: "CardNames.Butterfree",
@@ -442,9 +446,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Psyduck",
     defaultMessage: "Psyduck",
   },
-  TROLL: {
-    id: "CardNames.Troll",
-    defaultMessage: "Troll",
+  JIGGLYPUFF: {
+    id: "CardNames.Jigglypuff",
+    defaultMessage: "Jigglypuff",
   },
   SHEEP: {
     id: "CardNames.Sheep",
@@ -474,9 +478,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.ArticunoGalar",
     defaultMessage: "Articuno Galar",
   },
-  WHINCHAT: {
-    id: "CardNames.Whinchat",
-    defaultMessage: "Whinchat",
+  MEGA_PIDGEOT: {
+    id: "CardNames.MegaPidgeot",
+    defaultMessage: "MegaPidgeot",
   },
   ONIX: {
     id: "CardNames.Onix",

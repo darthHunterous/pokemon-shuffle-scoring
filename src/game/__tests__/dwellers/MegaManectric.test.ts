@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import { DwellerCard, TreeSymbol, WoodyPlantCard } from "@/game";
-import { Electrike } from "@/game/dwellers";
+import { MegaManectric } from "@/game/dwellers";
 import { createSapling } from "@/game/factory";
 
 import { createFakeWoodyPlants } from "../fake";
@@ -12,20 +12,20 @@ import {
   createGame,
 } from "../helpers";
 
-describe("An Electrike card", () => {
+describe("A Mega Manectric card", () => {
   it("scores 2 points if there are no other cards with Fuchsia or Pewter symbol", () => {
     const affectedTreeSymbols = [TreeSymbol.Fuchsia, TreeSymbol.Pewter];
     const cardFilter = (c: WoodyPlantCard | DwellerCard) =>
       !c.treeSymbol || !affectedTreeSymbols.includes(c.treeSymbol);
 
     const { dweller, woodyPlant, forest } = createCompleteForestWithDweller({
-      dwellerUnderTest: createAnyDweller(Electrike),
+      dwellerUnderTest: createAnyDweller(MegaManectric),
       filterDwellers: cardFilter,
       filterWoodyPlants: cardFilter,
     });
     const game = createGame(forest);
 
-    const points = Electrike.score({ game, forest, woodyPlant, dweller });
+    const points = MegaManectric.score({ game, forest, woodyPlant, dweller });
 
     expect(points).toBe(2);
   });
@@ -40,7 +40,7 @@ describe("An Electrike card", () => {
     "with %s other Fuchsia and %s Pewter symbols scores %i points",
     (fuchsiaCount, pewterCount, expectedPoints) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(Electrike),
+        dwellerUnderTest: createAnyDweller(MegaManectric),
         otherWoodyPlants: [
           createSapling(),
           ...createFakeWoodyPlants(fuchsiaCount, {
@@ -53,7 +53,7 @@ describe("An Electrike card", () => {
       });
       const game = createGame(forest);
 
-      const points = Electrike.score({ game, forest, woodyPlant, dweller });
+      const points = MegaManectric.score({ game, forest, woodyPlant, dweller });
 
       expect(points).toBe(expectedPoints);
     },

@@ -8,7 +8,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "SABLE";
+const name = "LICKITUNG";
 const gameBox = GameBox.Exploration;
 const pointsPerPawedAnimal = 3;
 

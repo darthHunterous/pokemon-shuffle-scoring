@@ -14,7 +14,7 @@ import {
   Saffron,
   Vermilion,
   Lavaridge,
-  OChristmasTree,
+  OfficerJenny,
   Mauville,
 } from "@/game/woody-plants";
 
@@ -98,7 +98,7 @@ describe("A Bellsprout card", () => {
 
   it.each([
     [Lavaridge.name, Lavaridge.countsAs, Lavaridge],
-    [OChristmasTree.name, OChristmasTree.countsAs, OChristmasTree],
+    [OfficerJenny.name, OfficerJenny.countsAs, OfficerJenny],
     [Mauville.name, Mauville.countsAs, Mauville],
   ])("treats %s as %s when scoring", (_1, _2, blueprint) => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({

@@ -8,31 +8,31 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "ROBIN";
-const pointsPerInsect = 1;
+const name = "JIGGLYPUFF";
+const pointsPerTree = 1;
 
-// Promo card P006
+// Promo card P011
 const blueprint: DwellerCardBlueprint = {
   name,
-  types: [CardType.Bird, CardType.WoodlandEdge],
+  types: [CardType.PawedAnimal],
   cost: 1,
   isPartOfDeck: true,
   variants: [
     {
       gameBox: GameBox.Exploration,
-      position: DwellerPosition.Top,
-      treeSymbol: TreeSymbol.Cinnabar,
+      position: DwellerPosition.Right,
+      treeSymbol: TreeSymbol.Cerulean,
       count: 1,
     },
     {
       gameBox: GameBox.PromoCards,
-      position: DwellerPosition.Top,
-      treeSymbol: TreeSymbol.Cinnabar,
+      position: DwellerPosition.Right,
+      treeSymbol: TreeSymbol.Cerulean,
       count: 1,
     },
   ],
   score: ({ forest }) =>
-    countCardTypes(forest, [CardType.Insect]) * pointsPerInsect,
+    countCardTypes(forest, [CardType.Tree]) * pointsPerTree,
 };
 
 export default blueprint;
