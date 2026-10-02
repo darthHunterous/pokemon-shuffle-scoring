@@ -1,20 +1,11 @@
-import { countTreeSymbols } from "../scoring/helpers";
-import {
-  CardType,
-  DwellerCardBlueprint,
-  DwellerPosition,
-  GameBox,
-  TreeSymbol,
-} from "../types";
+import { extendBlueprint } from "../blueprints";
+import { GameBox, TreeSymbol, DwellerCardBlueprint, DwellerPosition } from "../types";
+import Electrike from "./Electrike";
 
 const name = "MEGA_MANECTRIC";
-const pointsPerFuchsiaOrPewter = 2;
 
-const blueprint: DwellerCardBlueprint = {
+const blueprint: DwellerCardBlueprint = extendBlueprint(Electrike, {
   name,
-  types: [CardType.ElectricalPokemon, CardType.WoodlandEdge],
-  cost: 3,
-  isPartOfDeck: true,
   variants: [
     // Promo card P007
     {
@@ -24,9 +15,6 @@ const blueprint: DwellerCardBlueprint = {
       count: 1,
     },
   ],
-  score: ({ forest }) =>
-    countTreeSymbols(forest, [TreeSymbol.Fuchsia, TreeSymbol.Pewter]) *
-    pointsPerFuchsiaOrPewter,
-};
+});
 
 export default blueprint;
