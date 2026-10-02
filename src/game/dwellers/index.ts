@@ -59,7 +59,7 @@ export { default as Clefairy } from "./Clefairy";
 export { default as Venomoth } from "./Venomoth";
 export { default as Rhyhorn } from "./Rhyhorn";
 export { default as Masquerain } from "./Masquerain";
-export { default as MarshCinquefoil } from "./MarshCinquefoil";
+export { default as Scovillain } from "./Scovillain";
 export { default as Meeps } from "./Meeps";
 export { default as Celebi } from "./Celebi";
 export { default as MrMime } from "./MrMime";

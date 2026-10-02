@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { MarshCinquefoil } from "@/game/dwellers";
+import { Scovillain } from "@/game/dwellers";
 import { CardType } from "@/game/types";
 import { Sapling } from "@/game/woody-plants";
 
@@ -12,19 +12,19 @@ import {
   createWoodyPlants,
 } from "../helpers";
 
-describe("A Marsh Cinquefoil card", () => {
+describe("A Scovillain card", () => {
   it.each([
     [15, 1],
     [7, 6],
     [3, 11],
   ])("scores %i points if there are %i trees", (expectedPoints, count) => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(MarshCinquefoil),
+      dwellerUnderTest: createAnyDweller(Scovillain),
       otherWoodyPlants: createFakeWoodyPlants(count),
     });
     const game = createGame(forest);
 
-    const points = MarshCinquefoil.score({
+    const points = Scovillain.score({
       game,
       forest,
       woodyPlant,
@@ -36,12 +36,12 @@ describe("A Marsh Cinquefoil card", () => {
 
   it("considers Saplings for scoring", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(MarshCinquefoil),
+      dwellerUnderTest: createAnyDweller(Scovillain),
       otherWoodyPlants: createWoodyPlants(Sapling, 15),
     });
     const game = createGame(forest);
 
-    const points = MarshCinquefoil.score({
+    const points = Scovillain.score({
       game,
       forest,
       woodyPlant,
@@ -53,14 +53,14 @@ describe("A Marsh Cinquefoil card", () => {
 
   it("ignores shrubs for scoring", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(MarshCinquefoil),
+      dwellerUnderTest: createAnyDweller(Scovillain),
       otherWoodyPlants: createFakeWoodyPlants(15, {
         types: [CardType.Shrub],
       }),
     });
     const game = createGame(forest);
 
-    const points = MarshCinquefoil.score({
+    const points = Scovillain.score({
       game,
       forest,
       woodyPlant,

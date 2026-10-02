@@ -7,7 +7,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "MARSH_CINQUEFOIL";
+const name = "SCOVILLAIN";
 const gameBox = GameBox.Exploration;
 const pointsByTreeCount = {
   0: 15,
