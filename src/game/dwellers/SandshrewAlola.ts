@@ -6,8 +6,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "SANDSHREW";
-const gameBox = GameBox.Base;
+const name = "SANDSHREW_ALOLA";
 const points = 2;
 
 const blueprint: DwellerCardBlueprint = {
@@ -16,17 +15,12 @@ const blueprint: DwellerCardBlueprint = {
   cost: 1,
   isPartOfDeck: true,
   variants: [
+    // Promo card P009
     {
-      gameBox,
-      position: DwellerPosition.Left,
-      treeSymbol: TreeSymbol.Saffron,
-      count: 2,
-    },
-    {
-      gameBox,
+      gameBox: GameBox.Exploration,
       position: DwellerPosition.Right,
-      treeSymbol: TreeSymbol.Cerulean,
-      count: 2,
+      treeSymbol: TreeSymbol.Fuchsia,
+      count: 1,
     },
   ],
   score: () => points,
