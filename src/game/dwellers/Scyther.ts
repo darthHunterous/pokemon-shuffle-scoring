@@ -34,13 +34,6 @@ const blueprint: DwellerCardBlueprint = {
       treeSymbol: TreeSymbol.Pewter,
       count: 1,
     },
-    // Promo card P005
-    {
-      gameBox: GameBox.Exploration,
-      position: DwellerPosition.Left,
-      treeSymbol: TreeSymbol.Pewter,
-      count: 1,
-    },
   ],
   score: ({ forest }) => countCardTypes(forest, [CardType.Bat]) * pointsPerBat,
 };

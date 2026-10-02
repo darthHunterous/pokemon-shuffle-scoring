@@ -278,6 +278,10 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Scyther",
     defaultMessage: "Scyther",
   },
+  SCIZOR: {
+    id: "CardNames.Scizor",
+    defaultMessage: "Scizor",
+  },
   HO_OH: {
     id: "CardNames.HoOh",
     defaultMessage: "Ho-Oh",
