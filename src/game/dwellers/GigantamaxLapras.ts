@@ -1,24 +1,11 @@
-import { scoreSet } from "../scoring/helpers";
-import {
-  CardType,
-  DwellerCardBlueprint,
-  DwellerPosition,
-  GameBox,
-  TreeSymbol,
-} from "../types";
+import { extendBlueprint } from "../blueprints";
+import { GameBox, TreeSymbol, DwellerCardBlueprint, DwellerPosition } from "../types";
+import Lapras from "./Lapras";
 
 const name = "GIGANTAMAX_LAPRAS";
-const pointsByCount = {
-  1: 5,
-  2: 15,
-  3: 25,
-};
 
-const blueprint: DwellerCardBlueprint = {
+const blueprint: DwellerCardBlueprint = extendBlueprint(Lapras, {
   name,
-  types: [CardType.Amphibian],
-  cost: 1,
-  isPartOfDeck: true,
   variants: [
     // Promo card P002
     {
@@ -28,7 +15,6 @@ const blueprint: DwellerCardBlueprint = {
       count: 1,
     },
   ],
-  score: ({ forest, dweller }) => scoreSet(forest, dweller, pointsByCount),
-};
+});
 
 export default blueprint;
