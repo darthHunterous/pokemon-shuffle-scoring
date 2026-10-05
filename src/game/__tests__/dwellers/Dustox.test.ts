@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import {
-  Brimstone,
+  Volcarona,
   Beautifly,
   Venomoth,
   Masquerain,
@@ -43,7 +43,7 @@ describe("A Dustox card", () => {
       const { dwellerUnderTest, otherDwellers } = createDwellerSets(
         Dustox,
         [
-          Brimstone,
+          Volcarona,
           Beautifly,
           Venomoth,
           Masquerain,

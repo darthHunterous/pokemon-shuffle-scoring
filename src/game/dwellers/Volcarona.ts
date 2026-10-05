@@ -7,7 +7,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "BRIMSTONE";
+const name = "VOLCARONA";
 const gameBox = GameBox.Exploration;
 
 // Promo card P028

@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import {
-  Brimstone,
+  Volcarona,
   Beautifly,
   Venomoth,
   Masquerain,
@@ -21,7 +21,7 @@ import {
   generateCardIds,
 } from "../helpers";
 
-describe("A Brimstone card", () => {
+describe("A Volcarona card", () => {
   it.each([
     [0, [1]],
     [3, [2]],
@@ -41,7 +41,7 @@ describe("A Brimstone card", () => {
     "scores %i points for a set of butterflies with lengths %p",
     (expectedPoints, lengths) => {
       const { dwellerUnderTest, otherDwellers } = createDwellerSets(
-        Brimstone,
+        Volcarona,
         [
           Beautifly,
           Venomoth,
@@ -59,7 +59,7 @@ describe("A Brimstone card", () => {
       });
       const game = createGame(forest);
 
-      const points = Brimstone.score({
+      const points = Volcarona.score({
         game,
         forest,
         woodyPlant,
@@ -74,7 +74,7 @@ describe("A Brimstone card", () => {
     const ids = generateCardIds(2).toSorted();
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
       dwellerUnderTest: {
-        ...createAnyDweller(Brimstone),
+        ...createAnyDweller(Volcarona),
         id: ids[1],
       },
       otherDwellers: [
@@ -86,7 +86,7 @@ describe("A Brimstone card", () => {
     });
     const game = createGame(forest);
 
-    const points = Brimstone.score({
+    const points = Volcarona.score({
       game,
       forest,
       woodyPlant,

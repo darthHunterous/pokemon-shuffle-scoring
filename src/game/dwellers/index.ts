@@ -10,7 +10,7 @@ export { default as Heracross } from "./Heracross";
 export { default as Bulbasaur } from "./Bulbasaur";
 export { default as Wobbuffet } from "./Wobbuffet";
 export { default as Jumpluff } from "./Jumpluff";
-export { default as Brimstone } from "./Brimstone";
+export { default as Volcarona } from "./Volcarona";
 export { default as Snorlax } from "./Snorlax";
 export { default as Charmander } from "./Charmander";
 export { default as Pidgey } from "./Pidgey";
