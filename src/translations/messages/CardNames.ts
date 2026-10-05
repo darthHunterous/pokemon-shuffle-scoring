@@ -474,9 +474,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Bellsprout",
     defaultMessage: "Bellsprout",
   },
-  WILD_TULIP: {
-    id: "CardNames.WildTulip",
-    defaultMessage: "Wild Tulip",
+  SUNFLORA: {
+    id: "CardNames.Sunflora",
+    defaultMessage: "Sunflora",
   },
   ARTICUNO_GALAR: {
     id: "CardNames.ArticunoGalar",

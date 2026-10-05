@@ -99,6 +99,6 @@ export { default as MegaPidgeot } from "./MegaPidgeot";
 export { default as ArticunoGalar } from "./ArticunoGalar";
 export { default as Pikachu } from "./Pikachu";
 export { default as Bellsprout } from "./Bellsprout";
-export { default as WildTulip } from "./WildTulip";
+export { default as Sunflora } from "./Sunflora";
 export { default as Onix } from "./Onix";
 export { default as Durant } from "./Durant";
