@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { RedPanda } from "@/game/dwellers";
+import { Stufful } from "@/game/dwellers";
 
 import {
   createAnyDweller,
@@ -9,14 +9,14 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Red Panda card", () => {
+describe("A Stufful card", () => {
   it("scores 2 points in an empty forest", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(RedPanda),
+      dwellerUnderTest: createAnyDweller(Stufful),
     });
     const game = createGame(forest);
 
-    const points = RedPanda.score({
+    const points = Stufful.score({
       game,
       forest,
       woodyPlant,
@@ -28,11 +28,11 @@ describe("A Red Panda card", () => {
 
   it("scores 2 points in a complete forest", () => {
     const { dweller, woodyPlant, forest } = createCompleteForestWithDweller({
-      dwellerUnderTest: createAnyDweller(RedPanda),
+      dwellerUnderTest: createAnyDweller(Stufful),
     });
     const game = createGame(forest);
 
-    const points = RedPanda.score({
+    const points = Stufful.score({
       game,
       forest,
       woodyPlant,

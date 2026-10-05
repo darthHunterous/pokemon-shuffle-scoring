@@ -75,7 +75,7 @@ export { default as Dustox } from "./Dustox";
 export { default as Ditto } from "./Ditto";
 export { default as Electabuzz } from "./Electabuzz";
 export { default as Eevee } from "./Eevee";
-export { default as RedPanda } from "./RedPanda";
+export { default as Stufful } from "./Stufful";
 export { default as Geodude } from "./Geodude";
 export { default as Robber } from "./Robber";
 export { default as Lugia } from "./Lugia";
