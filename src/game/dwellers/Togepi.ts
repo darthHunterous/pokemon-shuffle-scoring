@@ -6,7 +6,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "CUCKOO";
+const name = "TOGEPI";
 const points = 7;
 
 // Promo card P010

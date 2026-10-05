@@ -24,7 +24,7 @@ export { default as Torchic } from "./Torchic";
 export { default as Natu } from "./Natu";
 export { default as Staryu } from "./Staryu";
 export { default as Nincada } from "./Nincada";
-export { default as Cuckoo } from "./Cuckoo";
+export { default as Togepi } from "./Togepi";
 export { default as Treecko } from "./Treecko";
 export { default as DuererFledermaus } from "./DuererFledermaus";
 export { default as Chikorita } from "./Chikorita";
