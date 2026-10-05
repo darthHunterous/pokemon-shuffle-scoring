@@ -6,7 +6,7 @@ import {
   WoodyPlantCardBlueprint,
 } from "../types";
 
-const name = "PALM_TREE";
+const name = "VIOLET";
 const pointsPerBird = 1;
 
 // Promo card P004

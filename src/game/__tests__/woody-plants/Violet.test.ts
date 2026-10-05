@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import { CardType, DwellerPosition } from "@/game/types";
-import { PalmTree } from "@/game/woody-plants";
+import { Violet } from "@/game/woody-plants";
 
 import { createFakeDwellers } from "../fake";
 import {
@@ -10,7 +10,7 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Palm Tree card", () => {
+describe("A Violet card", () => {
   it.each([
     [0, 0],
     [1, 1],
@@ -18,14 +18,14 @@ describe("A Palm Tree card", () => {
     [5, 5],
   ])("scores %i points if there %i bird cards", (expectedPoints, birdCount) => {
     const { woodyPlant, forest } = createForestForWoodyPlantTest({
-      woodyPlantUnderTest: createAnyWoodyPlant(PalmTree),
+      woodyPlantUnderTest: createAnyWoodyPlant(Violet),
       dwellers: createFakeDwellers(birdCount, DwellerPosition.Top, {
         types: [CardType.Bird],
       }),
     });
     const game = createGame(forest);
 
-    const points = PalmTree.score({
+    const points = Violet.score({
       game,
       forest,
       woodyPlant,

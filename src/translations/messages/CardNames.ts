@@ -346,9 +346,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Swablu",
     defaultMessage: "Swablu",
   },
-  PALM_TREE: {
-    id: "CardNames.PalmTree",
-    defaultMessage: "Palm Tree",
+  VIOLET: {
+    id: "CardNames.Violet",
+    defaultMessage: "Violet",
   },
   EXEGGCUTE: {
     id: "CardNames.Exeggcute",

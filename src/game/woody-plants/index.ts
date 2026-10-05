@@ -10,7 +10,7 @@ export { default as Vermilion } from "./Vermilion";
 export { default as Lavaridge } from "./Lavaridge";
 export { default as Pewter } from "./Pewter";
 export { default as OfficerJenny } from "./OfficerJenny";
-export { default as PalmTree } from "./PalmTree";
+export { default as Violet } from "./Violet";
 export { default as Sapling } from "./Sapling";
 export { default as Viridian } from "./Viridian";
 export { default as Azalea } from "./Azalea";
