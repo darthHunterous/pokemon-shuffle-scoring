@@ -9,7 +9,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "ELK";
+const name = "ZERAORA";
 const pointsPerSaplingCinnabarOrCerulean = 2;
 
 // Promo card P011

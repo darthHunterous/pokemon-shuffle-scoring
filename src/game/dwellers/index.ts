@@ -29,7 +29,7 @@ export { default as Treecko } from "./Treecko";
 export { default as DuererFledermaus } from "./DuererFledermaus";
 export { default as Chikorita } from "./Chikorita";
 export { default as Smoochum } from "./Smoochum";
-export { default as Elk } from "./Elk";
+export { default as Zeraora } from "./Zeraora";
 export { default as Farfetchd } from "./Farfetchd";
 export { default as Wingull } from "./Wingull";
 export { default as Sandshrew } from "./Sandshrew";

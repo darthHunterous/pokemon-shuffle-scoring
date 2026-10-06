@@ -1,7 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 
 import { DwellerCard, TreeSymbol, WoodyPlantCard } from "@/game";
-import { Elk } from "@/game/dwellers";
+import { Zeraora } from "@/game/dwellers";
 import { Sapling } from "@/game/woody-plants";
 
 import { createFakeWoodyPlants } from "../fake";
@@ -13,7 +13,7 @@ import {
   createWoodyPlants,
 } from "../helpers";
 
-describe("An Elk card", () => {
+describe("An Zeraora card", () => {
   it("scores 2 points if there are no Saplings or other cards with Cinnabar or Cerulean symbol", () => {
     const affectedTreeSymbols = [TreeSymbol.Cinnabar, TreeSymbol.Cerulean];
     const cardFilter = (c: WoodyPlantCard | DwellerCard) =>
@@ -21,13 +21,13 @@ describe("An Elk card", () => {
       (!c.treeSymbol || !affectedTreeSymbols.includes(c.treeSymbol));
 
     const { dweller, woodyPlant, forest } = createCompleteForestWithDweller({
-      dwellerUnderTest: createAnyDweller(Elk),
+      dwellerUnderTest: createAnyDweller(Zeraora),
       filterDwellers: cardFilter,
       filterWoodyPlants: cardFilter,
     });
     const game = createGame(forest);
 
-    const points = Elk.score({ game, forest, woodyPlant, dweller });
+    const points = Zeraora.score({ game, forest, woodyPlant, dweller });
 
     expect(points).toBe(2);
   });
@@ -42,7 +42,7 @@ describe("An Elk card", () => {
     "scores $s points with %s Saplings, %s cards with Cinnabar symbol and %s other cards with Cerulean symbol",
     (expectedPoints, saplingCount, cinnabarCount, ceruleanCount) => {
       const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-        dwellerUnderTest: createAnyDweller(Elk),
+        dwellerUnderTest: createAnyDweller(Zeraora),
         otherWoodyPlants: [
           ...createWoodyPlants(Sapling, saplingCount),
           ...createFakeWoodyPlants(cinnabarCount, {
@@ -55,7 +55,7 @@ describe("An Elk card", () => {
       });
       const game = createGame(forest);
 
-      const points = Elk.score({ game, forest, woodyPlant, dweller });
+      const points = Zeraora.score({ game, forest, woodyPlant, dweller });
 
       expect(points).toBe(expectedPoints);
     },
