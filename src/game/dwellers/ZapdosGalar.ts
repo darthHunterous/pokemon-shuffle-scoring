@@ -6,7 +6,7 @@ import {
   TreeSymbol,
 } from "../types";
 
-const name = "CARDINAL";
+const name = "ZAPDOS_GALAR";
 const points = 5;
 
 // Promo card P008

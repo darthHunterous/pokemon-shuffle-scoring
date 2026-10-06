@@ -1,6 +1,6 @@
 import { describe, expect, it } from "@jest/globals";
 
-import { Cardinal } from "@/game/dwellers";
+import { Zapdos Galar } from "@/game/dwellers";
 
 import {
   createAnyDweller,
@@ -9,14 +9,14 @@ import {
   createGame,
 } from "../helpers";
 
-describe("A Cardinal card", () => {
+describe("A Zapdos Galar card", () => {
   it("scores 5 points in an empty forest", () => {
     const { dweller, woodyPlant, forest } = createForestForDwellerTest({
-      dwellerUnderTest: createAnyDweller(Cardinal),
+      dwellerUnderTest: createAnyDweller(Zapdos Galar),
     });
     const game = createGame(forest);
 
-    const points = Cardinal.score({
+    const points = Zapdos Galar.score({
       game,
       forest,
       woodyPlant,
@@ -28,11 +28,11 @@ describe("A Cardinal card", () => {
 
   it("scores 5 points in a complete forest", () => {
     const { dweller, woodyPlant, forest } = createCompleteForestWithDweller({
-      dwellerUnderTest: createAnyDweller(Cardinal),
+      dwellerUnderTest: createAnyDweller(Zapdos Galar),
     });
     const game = createGame(forest);
 
-    const points = Cardinal.score({
+    const points = Zapdos Galar.score({
       game,
       forest,
       woodyPlant,

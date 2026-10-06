@@ -16,7 +16,7 @@ export { default as Charmander } from "./Charmander";
 export { default as Pidgey } from "./Pidgey";
 export { default as Beautifly } from "./Beautifly";
 export { default as Hoppip } from "./Hoppip";
-export { default as Cardinal } from "./Cardinal";
+export { default as Zapdos Galar } from "./Zapdos Galar";
 export { default as Taillow } from "./Taillow";
 export { default as Mareep } from "./Mareep";
 export { default as Jynx } from "./Jynx";

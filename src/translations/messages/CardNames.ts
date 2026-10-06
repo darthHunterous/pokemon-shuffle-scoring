@@ -146,9 +146,9 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Hoppip",
     defaultMessage: "Hoppip",
   },
-  CARDINAL: {
-    id: "CardNames.Cardinal",
-    defaultMessage: "Cardinal",
+  ZAPDOS_GALAR: {
+    id: "CardNames.Zapdos Galar",
+    defaultMessage: "Zapdos Galar",
   },
   TAILLOW: {
     id: "CardNames.Taillow",
