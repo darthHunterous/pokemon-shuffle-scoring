@@ -32,6 +32,7 @@ export { default as Smoochum } from "./Smoochum";
 export { default as Zeraora } from "./Zeraora";
 export { default as Farfetchd } from "./Farfetchd";
 export { default as Aerodactyl } from "./Aerodactyl";
+export { default as InfatuatedBulbasaur } from "./InfatuatedBulbasaur";
 export { default as Wingull } from "./Wingull";
 export { default as Sandshrew } from "./Sandshrew";
 export { default as SandshrewAlola } from "./SandshrewAlola";

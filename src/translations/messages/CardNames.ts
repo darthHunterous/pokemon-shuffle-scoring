@@ -206,6 +206,10 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Farfetchd",
     defaultMessage: "Farfetchd",
   },
+  INFATUATED_BULBASAUR: {
+    id: "CardNames.InfatuatedBulbasaur",
+    defaultMessage: "Infatuated Bulbasaur",
+  },
   AERODACTYL: {
     id: "CardNames.Aerodactyl",
     defaultMessage: "Aerodactyl",
