@@ -206,6 +206,10 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.Farfetchd",
     defaultMessage: "Farfetchd",
   },
+  AERODACTYL: {
+    id: "CardNames.Aerodactyl",
+    defaultMessage: "Aerodactyl",
+  },
   WINGULL: {
     id: "CardNames.Wingull",
     defaultMessage: "Wingull",
