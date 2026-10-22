@@ -354,6 +354,10 @@ const messages = defineMessages<string, MessageDescriptor | undefined>({
     id: "CardNames.DiglettAlola",
     defaultMessage: "Diglett Alola",
   },
+  DUGTRIO_ALOLA: {
+    id: "CardNames.DugtrioAlola",
+    defaultMessage: "Dugtrio Alola",
+  },
   SWABLU: {
     id: "CardNames.Swablu",
     defaultMessage: "Swablu",

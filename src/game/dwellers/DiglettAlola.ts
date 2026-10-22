@@ -1,5 +1,5 @@
 import { Diglett } from "@/game/dwellers";
-import { countCardNames } from "@/game/scoring/helpers";
+import { extendBlueprint } from "../blueprints";
 
 import {
   CardType,
@@ -11,13 +11,10 @@ import {
 
 const name = "DIGLETT_ALOLA";
 const gameBox = GameBox.Alpine;
-const pointsPerCard = 1;
 
-const blueprint: DwellerCardBlueprint = {
+const blueprint: DwellerCardBlueprint = extendBlueprint(Diglett, {
   name,
   types: [CardType.Alps, CardType.PawedAnimal],
-  cost: 0,
-  isPartOfDeck: true,
   variants: [
     {
       gameBox,
@@ -38,8 +35,6 @@ const blueprint: DwellerCardBlueprint = {
       count: 1,
     },
   ],
-  score: ({ forest }) =>
-    countCardNames(forest, [name, Diglett.name]) * pointsPerCard,
-};
+});
 
 export default blueprint;
