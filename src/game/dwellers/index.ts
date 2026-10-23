@@ -69,6 +69,7 @@ export { default as MrMime } from "./MrMime";
 export { default as Tangela } from "./Tangela";
 export { default as DiglettAlola } from "./DiglettAlola";
 export { default as DugtrioAlola } from "./DugtrioAlola";
+export { default as CharmanderPromo } from "./CharmanderPromo";
 export { default as Swablu } from "./Swablu";
 export { default as Exeggcute } from "./Exeggcute";
 export { default as Mothim } from "./Mothim";

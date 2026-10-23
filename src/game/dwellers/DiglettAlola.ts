@@ -1,4 +1,4 @@
-import { Diglett } from "@/game/dwellers";
+import Diglett from "./Diglett";
 import { extendBlueprint } from "../blueprints";
 
 import {
